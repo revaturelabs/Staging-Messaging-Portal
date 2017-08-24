@@ -1,6 +1,5 @@
 ### Maven ###
 target/
-!.mvn/wrapper/maven-wrapper.jar
 
 ### Eclipse plugin file ###
 spartanizer.xml
