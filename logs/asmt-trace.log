@@ -1,0 +1,1246 @@
+[DEBUG] [1578 ms] [08-29-2017 15:09:53] [StandardServletEnvironment (addFirst : 98)] -
+					Adding [configurationProperties] PropertySource with highest search precedence
+[DEBUG] [1623 ms] [08-29-2017 15:09:53] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletConfigInitParams] PropertySource with lowest search precedence
+[DEBUG] [1623 ms] [08-29-2017 15:09:53] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletContextInitParams] PropertySource with lowest search precedence
+[DEBUG] [1623 ms] [08-29-2017 15:09:53] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG] [1623 ms] [08-29-2017 15:09:53] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG] [1623 ms] [08-29-2017 15:09:53] [StandardServletEnvironment (<init> : 125)] -
+					Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+[DEBUG] [4384 ms] [08-29-2017 15:09:55] [StandardServletEnvironment (remove : 161)] -
+					Removing [defaultProperties] PropertySource
+[DEBUG] [5914 ms] [08-29-2017 15:09:57] [ContextLoader (prepareWebApplicationContext : 259)] -
+					Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[INFO] [5915 ms] [08-29-2017 15:09:57] [ContextLoader (prepareWebApplicationContext : 267)] -
+					Root WebApplicationContext: initialization completed in 4074 ms
+[DEBUG] [6390 ms] [08-29-2017 15:09:57] [StandardServletEnvironment (replace : 176)] -
+					Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+[DEBUG] [1148 ms] [08-29-2017 15:10:15] [StandardServletEnvironment (addFirst : 98)] -
+					Adding [configurationProperties] PropertySource with highest search precedence
+[DEBUG] [1217 ms] [08-29-2017 15:10:15] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletConfigInitParams] PropertySource with lowest search precedence
+[DEBUG] [1217 ms] [08-29-2017 15:10:15] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletContextInitParams] PropertySource with lowest search precedence
+[DEBUG] [1217 ms] [08-29-2017 15:10:15] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG] [1217 ms] [08-29-2017 15:10:15] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG] [1217 ms] [08-29-2017 15:10:15] [StandardServletEnvironment (<init> : 125)] -
+					Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+[DEBUG] [3404 ms] [08-29-2017 15:10:18] [StandardServletEnvironment (remove : 161)] -
+					Removing [defaultProperties] PropertySource
+[DEBUG] [4653 ms] [08-29-2017 15:10:19] [ContextLoader (prepareWebApplicationContext : 259)] -
+					Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[INFO] [4653 ms] [08-29-2017 15:10:19] [ContextLoader (prepareWebApplicationContext : 267)] -
+					Root WebApplicationContext: initialization completed in 3274 ms
+[DEBUG] [5065 ms] [08-29-2017 15:10:19] [StandardServletEnvironment (replace : 176)] -
+					Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+[DEBUG] [1287 ms] [08-29-2017 15:11:16] [StandardServletEnvironment (addFirst : 98)] -
+					Adding [configurationProperties] PropertySource with highest search precedence
+[DEBUG] [1351 ms] [08-29-2017 15:11:16] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletConfigInitParams] PropertySource with lowest search precedence
+[DEBUG] [1351 ms] [08-29-2017 15:11:16] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletContextInitParams] PropertySource with lowest search precedence
+[DEBUG] [1351 ms] [08-29-2017 15:11:16] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG] [1351 ms] [08-29-2017 15:11:16] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG] [1351 ms] [08-29-2017 15:11:16] [StandardServletEnvironment (<init> : 125)] -
+					Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+[DEBUG] [3725 ms] [08-29-2017 15:11:18] [StandardServletEnvironment (remove : 161)] -
+					Removing [defaultProperties] PropertySource
+[DEBUG] [5081 ms] [08-29-2017 15:11:19] [ContextLoader (prepareWebApplicationContext : 259)] -
+					Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[INFO] [5081 ms] [08-29-2017 15:11:19] [ContextLoader (prepareWebApplicationContext : 267)] -
+					Root WebApplicationContext: initialization completed in 3578 ms
+[DEBUG] [5485 ms] [08-29-2017 15:11:20] [StandardServletEnvironment (replace : 176)] -
+					Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+[DEBUG] [1120 ms] [08-29-2017 15:11:45] [StandardServletEnvironment (addFirst : 98)] -
+					Adding [configurationProperties] PropertySource with highest search precedence
+[DEBUG] [1173 ms] [08-29-2017 15:11:45] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletConfigInitParams] PropertySource with lowest search precedence
+[DEBUG] [1173 ms] [08-29-2017 15:11:45] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletContextInitParams] PropertySource with lowest search precedence
+[DEBUG] [1173 ms] [08-29-2017 15:11:45] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG] [1189 ms] [08-29-2017 15:11:45] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG] [1189 ms] [08-29-2017 15:11:45] [StandardServletEnvironment (<init> : 125)] -
+					Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+[DEBUG] [3526 ms] [08-29-2017 15:11:47] [StandardServletEnvironment (remove : 161)] -
+					Removing [defaultProperties] PropertySource
+[DEBUG] [4791 ms] [08-29-2017 15:11:49] [ContextLoader (prepareWebApplicationContext : 259)] -
+					Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[INFO] [4791 ms] [08-29-2017 15:11:49] [ContextLoader (prepareWebApplicationContext : 267)] -
+					Root WebApplicationContext: initialization completed in 3401 ms
+[DEBUG] [5223 ms] [08-29-2017 15:11:49] [StandardServletEnvironment (replace : 176)] -
+					Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+[DEBUG] [1127 ms] [08-29-2017 15:15:34] [StandardServletEnvironment (addFirst : 98)] -
+					Adding [configurationProperties] PropertySource with highest search precedence
+[DEBUG] [1180 ms] [08-29-2017 15:15:34] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletConfigInitParams] PropertySource with lowest search precedence
+[DEBUG] [1180 ms] [08-29-2017 15:15:34] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletContextInitParams] PropertySource with lowest search precedence
+[DEBUG] [1180 ms] [08-29-2017 15:15:34] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG] [1180 ms] [08-29-2017 15:15:34] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG] [1180 ms] [08-29-2017 15:15:34] [StandardServletEnvironment (<init> : 125)] -
+					Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+[DEBUG] [3566 ms] [08-29-2017 15:15:36] [StandardServletEnvironment (remove : 161)] -
+					Removing [defaultProperties] PropertySource
+[DEBUG] [4922 ms] [08-29-2017 15:15:38] [ContextLoader (prepareWebApplicationContext : 259)] -
+					Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[INFO] [4923 ms] [08-29-2017 15:15:38] [ContextLoader (prepareWebApplicationContext : 267)] -
+					Root WebApplicationContext: initialization completed in 3580 ms
+[DEBUG] [5402 ms] [08-29-2017 15:15:38] [StandardServletEnvironment (replace : 176)] -
+					Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+[DEBUG] [1109 ms] [08-29-2017 15:16:23] [StandardServletEnvironment (addFirst : 98)] -
+					Adding [configurationProperties] PropertySource with highest search precedence
+[DEBUG] [1172 ms] [08-29-2017 15:16:23] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletConfigInitParams] PropertySource with lowest search precedence
+[DEBUG] [1172 ms] [08-29-2017 15:16:23] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletContextInitParams] PropertySource with lowest search precedence
+[DEBUG] [1172 ms] [08-29-2017 15:16:23] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG] [1172 ms] [08-29-2017 15:16:23] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG] [1172 ms] [08-29-2017 15:16:23] [StandardServletEnvironment (<init> : 125)] -
+					Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+[DEBUG] [3422 ms] [08-29-2017 15:16:25] [StandardServletEnvironment (remove : 161)] -
+					Removing [defaultProperties] PropertySource
+[DEBUG] [4735 ms] [08-29-2017 15:16:26] [ContextLoader (prepareWebApplicationContext : 259)] -
+					Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[INFO] [4736 ms] [08-29-2017 15:16:26] [ContextLoader (prepareWebApplicationContext : 267)] -
+					Root WebApplicationContext: initialization completed in 3349 ms
+[DEBUG] [5142 ms] [08-29-2017 15:16:27] [StandardServletEnvironment (replace : 176)] -
+					Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+[DEBUG] [1088 ms] [08-29-2017 15:18:18] [StandardServletEnvironment (addFirst : 98)] -
+					Adding [configurationProperties] PropertySource with highest search precedence
+[DEBUG] [1157 ms] [08-29-2017 15:18:18] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletConfigInitParams] PropertySource with lowest search precedence
+[DEBUG] [1157 ms] [08-29-2017 15:18:18] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletContextInitParams] PropertySource with lowest search precedence
+[DEBUG] [1157 ms] [08-29-2017 15:18:18] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG] [1157 ms] [08-29-2017 15:18:18] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG] [1157 ms] [08-29-2017 15:18:18] [StandardServletEnvironment (<init> : 125)] -
+					Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+[DEBUG] [3431 ms] [08-29-2017 15:18:20] [StandardServletEnvironment (remove : 161)] -
+					Removing [defaultProperties] PropertySource
+[DEBUG] [4772 ms] [08-29-2017 15:18:21] [ContextLoader (prepareWebApplicationContext : 259)] -
+					Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[INFO] [4772 ms] [08-29-2017 15:18:21] [ContextLoader (prepareWebApplicationContext : 267)] -
+					Root WebApplicationContext: initialization completed in 3430 ms
+[DEBUG] [5203 ms] [08-29-2017 15:18:22] [StandardServletEnvironment (replace : 176)] -
+					Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+[INFO] [9843 ms] [08-29-2017 15:18:27] [RequestMappingHandlerAdapter (initControllerAdviceCache : 566)] -
+					Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@485966cc: startup date [Tue Aug 29 15:18:18 EDT 2017]; root of context hierarchy
+[INFO] [9856 ms] [08-29-2017 15:18:27] [RequestMappingHandlerAdapter (initControllerAdviceCache : 602)] -
+					Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+[DEBUG] [9959 ms] [08-29-2017 15:18:27] [RequestMappingHandlerMapping (initHandlerMethods : 199)] -
+					Looking for request mappings in application context: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@485966cc: startup date [Tue Aug 29 15:18:18 EDT 2017]; root of context hierarchy
+[DEBUG] [9975 ms] [08-29-2017 15:18:27] [RequestMappingHandlerMapping (detectHandlerMethods : 246)] -
+					1 request handler methods found on class com.revature.smp.GreetingsController: {public java.lang.String com.revature.smp.GreetingsController.greeting(java.lang.String,org.springframework.ui.Model)={[/greetings]}}
+[INFO] [9977 ms] [08-29-2017 15:18:27] [RequestMappingHandlerMapping (register : 549)] -
+					Mapped "{[/greetings]}" onto public java.lang.String com.revature.smp.GreetingsController.greeting(java.lang.String,org.springframework.ui.Model)
+[DEBUG] [9978 ms] [08-29-2017 15:18:27] [RequestMappingHandlerMapping (detectHandlerMethods : 246)] -
+					1 request handler methods found on class com.revature.smp.HelloController: {public java.lang.String com.revature.smp.HelloController.index()={[/]}}
+[INFO] [9979 ms] [08-29-2017 15:18:27] [RequestMappingHandlerMapping (register : 549)] -
+					Mapped "{[/]}" onto public java.lang.String com.revature.smp.HelloController.index()
+[DEBUG] [9984 ms] [08-29-2017 15:18:27] [RequestMappingHandlerMapping (detectHandlerMethods : 246)] -
+					2 request handler methods found on class org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController: {public org.springframework.http.ResponseEntity org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)={[/error]}, public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)={[/error],produces=[text/html]}}
+[INFO] [9984 ms] [08-29-2017 15:18:27] [RequestMappingHandlerMapping (register : 549)] -
+					Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO] [9985 ms] [08-29-2017 15:18:27] [RequestMappingHandlerMapping (register : 549)] -
+					Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[DEBUG] [10022 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 74)] -
+					Looking for URL mappings in application context: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@485966cc: startup date [Tue Aug 29 15:18:18 EDT 2017]; root of context hierarchy
+[DEBUG] [10022 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+[DEBUG] [10023 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+[DEBUG] [10023 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+[DEBUG] [10023 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+[DEBUG] [10023 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor': no URL paths identified
+[DEBUG] [10023 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.context.event.internalEventListenerProcessor': no URL paths identified
+[DEBUG] [10023 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.context.event.internalEventListenerFactory': no URL paths identified
+[DEBUG] [10024 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'smpApplication': no URL paths identified
+[DEBUG] [10024 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory': no URL paths identified
+[DEBUG] [10024 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'greetingsController': no URL paths identified
+[DEBUG] [10024 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'helloController': no URL paths identified
+[DEBUG] [10024 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'alpsController': no URL paths identified
+[DEBUG] [10024 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'profileController': no URL paths identified
+[DEBUG] [10025 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'repositoryPropertyReferenceController': no URL paths identified
+[DEBUG] [10025 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'repositorySearchController': no URL paths identified
+[DEBUG] [10025 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'repositoryController': no URL paths identified
+[DEBUG] [10025 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'repositoryEntityController': no URL paths identified
+[DEBUG] [10025 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'repositorySchemaController': no URL paths identified
+[DEBUG] [10025 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.scheduling.annotation.SchedulingConfiguration': no URL paths identified
+[DEBUG] [10026 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.context.annotation.internalScheduledAnnotationProcessor': no URL paths identified
+[DEBUG] [10026 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'restTemplate': no URL paths identified
+[DEBUG] [10026 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.AutoConfigurationPackages': no URL paths identified
+[DEBUG] [10026 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension#0': no URL paths identified
+[DEBUG] [10026 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'emBeanDefinitionRegistrarPostProcessor': no URL paths identified
+[DEBUG] [10026 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'jpaMappingContext': no URL paths identified
+[DEBUG] [10026 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'jpaContext': no URL paths identified
+[DEBUG] [10027 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration': no URL paths identified
+[DEBUG] [10027 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry': no URL paths identified
+[DEBUG] [10027 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'propertySourcesPlaceholderConfigurer': no URL paths identified
+[DEBUG] [10027 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration': no URL paths identified
+[DEBUG] [10027 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'standardJacksonObjectMapperBuilderCustomizer': no URL paths identified
+[DEBUG] [10027 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties': no URL paths identified
+[DEBUG] [10027 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': no URL paths identified
+[DEBUG] [10028 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store': no URL paths identified
+[DEBUG] [10028 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration': no URL paths identified
+[DEBUG] [10028 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'jacksonObjectMapperBuilder': no URL paths identified
+[DEBUG] [10028 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration': no URL paths identified
+[DEBUG] [10028 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'parameterNamesModule': no URL paths identified
+[DEBUG] [10029 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration': no URL paths identified
+[DEBUG] [10029 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'jacksonObjectMapper': no URL paths identified
+[DEBUG] [10029 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration': no URL paths identified
+[DEBUG] [10029 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'jsonComponentModule': no URL paths identified
+[DEBUG] [10030 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration': no URL paths identified
+[DEBUG] [10030 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'websocketContainerCustomizer': no URL paths identified
+[DEBUG] [10030 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration': no URL paths identified
+[DEBUG] [10030 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration$EmbeddedTomcat': no URL paths identified
+[DEBUG] [10030 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'tomcatServletWebServerFactory': no URL paths identified
+[DEBUG] [10031 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration': no URL paths identified
+[DEBUG] [10031 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'serverPropertiesWebServerFactoryCustomizer': no URL paths identified
+[DEBUG] [10031 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'server-org.springframework.boot.autoconfigure.web.ServerProperties': no URL paths identified
+[DEBUG] [10034 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'webServerFactoryCustomizerBeanPostProcessor': no URL paths identified
+[DEBUG] [10034 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'errorPageRegistrarBeanPostProcessor': no URL paths identified
+[DEBUG] [10034 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration': no URL paths identified
+[DEBUG] [10034 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'dispatcherServlet': no URL paths identified
+[DEBUG] [10035 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties': no URL paths identified
+[DEBUG] [10035 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration': no URL paths identified
+[DEBUG] [10035 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'dispatcherServletRegistration': no URL paths identified
+[DEBUG] [10035 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration': no URL paths identified
+[DEBUG] [10036 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$JacksonCodecConfiguration': no URL paths identified
+[DEBUG] [10036 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'jacksonCodecCustomizer': no URL paths identified
+[DEBUG] [10036 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration': no URL paths identified
+[DEBUG] [10036 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration': no URL paths identified
+[DEBUG] [10037 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'defaultValidator': no URL paths identified
+[DEBUG] [10037 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'methodValidationPostProcessor': no URL paths identified
+[DEBUG] [10037 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration': no URL paths identified
+[DEBUG] [10038 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'conventionErrorViewResolver': no URL paths identified
+[DEBUG] [10038 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration': no URL paths identified
+[DEBUG] [10038 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'errorAttributes': no URL paths identified
+[DEBUG] [10038 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'basicErrorController': no URL paths identified
+[DEBUG] [10038 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'errorPageCustomizer': no URL paths identified
+[DEBUG] [10038 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'preserveErrorControllerTargetClassPostProcessor': no URL paths identified
+[DEBUG] [10039 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties': no URL paths identified
+[DEBUG] [10039 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration': no URL paths identified
+[DEBUG] [10039 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'requestMappingHandlerAdapter': no URL paths identified
+[DEBUG] [10039 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'requestMappingHandlerMapping': no URL paths identified
+[DEBUG] [10039 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'mvcValidator': no URL paths identified
+[DEBUG] [10040 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+[DEBUG] [10040 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'mvcPathMatcher': no URL paths identified
+[DEBUG] [10040 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'mvcUrlPathHelper': no URL paths identified
+[DEBUG] [10040 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'viewControllerHandlerMapping': no URL paths identified
+[DEBUG] [10040 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'beanNameHandlerMapping': no URL paths identified
+[DEBUG] [10041 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'resourceHandlerMapping': no URL paths identified
+[DEBUG] [10041 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'mvcResourceUrlProvider': no URL paths identified
+[DEBUG] [10041 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'defaultServletHandlerMapping': no URL paths identified
+[DEBUG] [10041 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'mvcConversionService': no URL paths identified
+[DEBUG] [10041 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'mvcUriComponentsContributor': no URL paths identified
+[DEBUG] [10041 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'httpRequestHandlerAdapter': no URL paths identified
+[DEBUG] [10042 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'simpleControllerHandlerAdapter': no URL paths identified
+[DEBUG] [10042 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'handlerExceptionResolver': no URL paths identified
+[DEBUG] [10042 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'mvcViewResolver': no URL paths identified
+[DEBUG] [10042 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration': no URL paths identified
+[DEBUG] [10042 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'faviconHandlerMapping': no URL paths identified
+[DEBUG] [10042 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'faviconRequestHandler': no URL paths identified
+[DEBUG] [10043 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter': no URL paths identified
+[DEBUG] [10043 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'defaultViewResolver': no URL paths identified
+[DEBUG] [10043 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'viewResolver': no URL paths identified
+[DEBUG] [10043 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'welcomePageHandlerMapping': no URL paths identified
+[DEBUG] [10043 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'requestContextFilter': no URL paths identified
+[DEBUG] [10043 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration': no URL paths identified
+[DEBUG] [10043 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'hiddenHttpMethodFilter': no URL paths identified
+[DEBUG] [10044 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'httpPutFormContentFilter': no URL paths identified
+[DEBUG] [10044 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.AuditAutoConfiguration$AuditEventRepositoryConfiguration': no URL paths identified
+[DEBUG] [10044 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'auditEventRepository': no URL paths identified
+[DEBUG] [10044 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.AuditAutoConfiguration': no URL paths identified
+[DEBUG] [10044 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'auditListener': no URL paths identified
+[DEBUG] [10044 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'authenticationAuditListener': no URL paths identified
+[DEBUG] [10044 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'authorizationAuditListener': no URL paths identified
+[DEBUG] [10045 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.transaction.jta.JtaAutoConfiguration': no URL paths identified
+[DEBUG] [10045 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'spring.jta-org.springframework.boot.autoconfigure.transaction.jta.JtaProperties': no URL paths identified
+[DEBUG] [10045 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari': no URL paths identified
+[DEBUG] [10045 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'dataSource': no URL paths identified
+[DEBUG] [10045 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceJmxConfiguration$Hikari': no URL paths identified
+[DEBUG] [10045 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceJmxConfiguration': no URL paths identified
+[DEBUG] [10045 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration': no URL paths identified
+[DEBUG] [10046 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration': no URL paths identified
+[DEBUG] [10046 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'hikariPoolDataSourceMetadataProvider': no URL paths identified
+[DEBUG] [10046 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration': no URL paths identified
+[DEBUG] [10046 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration': no URL paths identified
+[DEBUG] [10046 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'dataSourceInitializer': no URL paths identified
+[DEBUG] [10046 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties': no URL paths identified
+[DEBUG] [10046 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'dataSourceInitializerPostProcessor': no URL paths identified
+[DEBUG] [10047 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration': no URL paths identified
+[DEBUG] [10047 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'openEntityManagerInViewInterceptor': no URL paths identified
+[DEBUG] [10047 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration': no URL paths identified
+[DEBUG] [10047 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': no URL paths identified
+[DEBUG] [10048 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'transactionManager': no URL paths identified
+[DEBUG] [10048 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'jpaVendorAdapter': no URL paths identified
+[DEBUG] [10048 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'entityManagerFactoryBuilder': no URL paths identified
+[DEBUG] [10048 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'entityManagerFactory': no URL paths identified
+[DEBUG] [10049 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties': no URL paths identified
+[DEBUG] [10049 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'dataSourceInitializedPublisher': no URL paths identified
+[DEBUG] [10052 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration': no URL paths identified
+[DEBUG] [10052 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties': no URL paths identified
+[DEBUG] [10053 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.InfoContributorAutoConfiguration': no URL paths identified
+[DEBUG] [10053 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'envInfoContributor': no URL paths identified
+[DEBUG] [10053 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'management.info-org.springframework.boot.actuate.autoconfigure.InfoContributorProperties': no URL paths identified
+[DEBUG] [10053 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration$DiskSpaceHealthIndicatorConfiguration': no URL paths identified
+[DEBUG] [10053 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'diskSpaceHealthIndicator': no URL paths identified
+[DEBUG] [10053 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'diskSpaceHealthIndicatorProperties': no URL paths identified
+[DEBUG] [10054 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration$DataSourcesHealthIndicatorConfiguration': no URL paths identified
+[DEBUG] [10054 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'dbHealthIndicator': no URL paths identified
+[DEBUG] [10054 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration': no URL paths identified
+[DEBUG] [10054 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'healthAggregator': no URL paths identified
+[DEBUG] [10054 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'management.health.status-org.springframework.boot.actuate.autoconfigure.HealthIndicatorProperties': no URL paths identified
+[DEBUG] [10054 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.MetricRepositoryAutoConfiguration$FastMetricServicesConfiguration': no URL paths identified
+[DEBUG] [10055 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'counterBuffers': no URL paths identified
+[DEBUG] [10055 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'gaugeBuffers': no URL paths identified
+[DEBUG] [10055 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'actuatorMetricReader': no URL paths identified
+[DEBUG] [10055 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'counterService': no URL paths identified
+[DEBUG] [10055 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'gaugeService': no URL paths identified
+[DEBUG] [10055 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.MetricRepositoryAutoConfiguration': no URL paths identified
+[DEBUG] [10055 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration': no URL paths identified
+[DEBUG] [10056 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'mbeanExporter': no URL paths identified
+[DEBUG] [10056 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'objectNamingStrategy': no URL paths identified
+[DEBUG] [10056 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'mbeanServer': no URL paths identified
+[DEBUG] [10056 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.PublicMetricsAutoConfiguration$TomcatMetricsConfiguration': no URL paths identified
+[DEBUG] [10056 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'tomcatPublicMetrics': no URL paths identified
+[DEBUG] [10057 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.PublicMetricsAutoConfiguration$DataSourceMetricsConfiguration': no URL paths identified
+[DEBUG] [10057 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'dataSourcePublicMetrics': no URL paths identified
+[DEBUG] [10057 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.PublicMetricsAutoConfiguration': no URL paths identified
+[DEBUG] [10057 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'systemPublicMetrics': no URL paths identified
+[DEBUG] [10057 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'metricReaderPublicMetrics': no URL paths identified
+[DEBUG] [10057 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.EndpointAutoConfiguration$RequestMappingEndpointConfiguration': no URL paths identified
+[DEBUG] [10058 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'requestMappingEndpoint': no URL paths identified
+[DEBUG] [10058 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.EndpointAutoConfiguration': no URL paths identified
+[DEBUG] [10058 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'environmentEndpoint': no URL paths identified
+[DEBUG] [10058 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'healthEndpoint': no URL paths identified
+[DEBUG] [10058 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'beansEndpoint': no URL paths identified
+[DEBUG] [10058 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'infoEndpoint': no URL paths identified
+[DEBUG] [10059 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'loggersEndpoint': no URL paths identified
+[DEBUG] [10059 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'metricsEndpoint': no URL paths identified
+[DEBUG] [10059 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'traceEndpoint': no URL paths identified
+[DEBUG] [10059 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'dumpEndpoint': no URL paths identified
+[DEBUG] [10059 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'autoConfigurationReportEndpoint': no URL paths identified
+[DEBUG] [10059 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'shutdownEndpoint': no URL paths identified
+[DEBUG] [10059 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'configurationPropertiesReportEndpoint': no URL paths identified
+[DEBUG] [10060 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'endpoints-org.springframework.boot.actuate.endpoint.EndpointProperties': no URL paths identified
+[DEBUG] [10060 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.EndpointMBeanExportAutoConfiguration': no URL paths identified
+[DEBUG] [10060 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'endpointMBeanExporter': no URL paths identified
+[DEBUG] [10060 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'auditEventsEndpoint': no URL paths identified
+[DEBUG] [10060 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'endpoints.jmx-org.springframework.boot.actuate.autoconfigure.EndpointMBeanExportProperties': no URL paths identified
+[DEBUG] [10060 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration': no URL paths identified
+[DEBUG] [10060 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'stringHttpMessageConverter': no URL paths identified
+[DEBUG] [10061 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'spring.http.encoding-org.springframework.boot.autoconfigure.http.HttpEncodingProperties': no URL paths identified
+[DEBUG] [10061 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration': no URL paths identified
+[DEBUG] [10061 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'mappingJackson2HttpMessageConverter': no URL paths identified
+[DEBUG] [10061 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration': no URL paths identified
+[DEBUG] [10061 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration': no URL paths identified
+[DEBUG] [10061 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'messageConverters': no URL paths identified
+[DEBUG] [10062 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.hateoas.config.HateoasConfiguration': no URL paths identified
+[DEBUG] [10062 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'linkRelationMessageSource': no URL paths identified
+[DEBUG] [10062 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.data.web.config.SpringDataJacksonConfiguration': no URL paths identified
+[DEBUG] [10062 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'jacksonGeoModule': no URL paths identified
+[DEBUG] [10062 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration': no URL paths identified
+[DEBUG] [10062 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'repositories': no URL paths identified
+[DEBUG] [10062 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'repositoryRelProvider': no URL paths identified
+[DEBUG] [10063 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'persistentEntities': no URL paths identified
+[DEBUG] [10063 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'defaultConversionService': no URL paths identified
+[DEBUG] [10063 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'validatingRepositoryEventListener': no URL paths identified
+[DEBUG] [10063 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'jpaHelper': no URL paths identified
+[DEBUG] [10063 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'repositoryRestConfiguration': no URL paths identified
+[DEBUG] [10063 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'projectionDefinitionRegistrar': no URL paths identified
+[DEBUG] [10064 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'metadataConfiguration': no URL paths identified
+[DEBUG] [10064 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'baseUri': no URL paths identified
+[DEBUG] [10064 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'annotatedEventHandlerInvoker': no URL paths identified
+[DEBUG] [10064 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'domainObjectMerger': no URL paths identified
+[DEBUG] [10064 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'serverHttpRequestMethodArgumentResolver': no URL paths identified
+[DEBUG] [10064 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'repoRequestArgumentResolver': no URL paths identified
+[DEBUG] [10065 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'resourceMetadataHandlerMethodArgumentResolver': no URL paths identified
+[DEBUG] [10065 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'backendIdHandlerMethodArgumentResolver': no URL paths identified
+[DEBUG] [10065 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'eTagArgumentResolver': no URL paths identified
+[DEBUG] [10065 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'entityLinks': no URL paths identified
+[DEBUG] [10065 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'persistentEntityArgumentResolver': no URL paths identified
+[DEBUG] [10065 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'jsonSchemaConverter': no URL paths identified
+[DEBUG] [10066 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'resourceDescriptionMessageSourceAccessor': no URL paths identified
+[DEBUG] [10066 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'objectMapper': no URL paths identified
+[DEBUG] [10066 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'jacksonHttpMessageConverter': no URL paths identified
+[DEBUG] [10067 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'halJacksonHttpMessageConverter': no URL paths identified
+[DEBUG] [10067 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'halObjectMapper': no URL paths identified
+[DEBUG] [10067 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'uriListHttpMessageConverter': no URL paths identified
+[DEBUG] [10067 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'resourceProcessorInvoker': no URL paths identified
+[DEBUG] [10067 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'repositoryExporterHandlerAdapter': no URL paths identified
+[DEBUG] [10067 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'restHandlerMapping': no URL paths identified
+[DEBUG] [10068 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'resourceMappings': no URL paths identified
+[DEBUG] [10068 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'linkCollector': no URL paths identified
+[DEBUG] [10068 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'excerptProjector': no URL paths identified
+[DEBUG] [10068 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'repositoryRestExceptionHandler': no URL paths identified
+[DEBUG] [10068 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'repositoryInvokerFactory': no URL paths identified
+[DEBUG] [10069 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'defaultMessageConverters': no URL paths identified
+[DEBUG] [10069 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'alpsJsonHttpMessageConverter': no URL paths identified
+[DEBUG] [10069 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'pageableResolver': no URL paths identified
+[DEBUG] [10069 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'sortResolver': no URL paths identified
+[DEBUG] [10069 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'backendIdConverterRegistry': no URL paths identified
+[DEBUG] [10069 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'auditableBeanWrapperFactory': no URL paths identified
+[DEBUG] [10070 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'httpHeadersPreparer': no URL paths identified
+[DEBUG] [10072 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'selfLinkProvider': no URL paths identified
+[DEBUG] [10073 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'associationLinks': no URL paths identified
+[DEBUG] [10074 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'enumTranslator': no URL paths identified
+[DEBUG] [10074 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'alpsConverter': no URL paths identified
+[DEBUG] [10074 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'profileResourceProcessor': no URL paths identified
+[DEBUG] [10074 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'pagedResourcesAssembler': no URL paths identified
+[DEBUG] [10074 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'pagedResourcesAssemblerArgumentResolver': no URL paths identified
+[DEBUG] [10074 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'entityLinksPluginRegistry': no URL paths identified
+[DEBUG] [10074 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'controllerEntityLinks': no URL paths identified
+[DEBUG] [10075 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'jaxRsEntityLinks': no URL paths identified
+[DEBUG] [10075 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'delegatingEntityLinks': no URL paths identified
+[DEBUG] [10075 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name '_halObjectMapper': no URL paths identified
+[DEBUG] [10075 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.hateoas.config.HypermediaSupportBeanDefinitionRegistrar$DefaultObjectMapperCustomizer#0': no URL paths identified
+[DEBUG] [10075 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.hateoas.config.HypermediaSupportBeanDefinitionRegistrar$Jackson2ModuleRegisteringBeanPostProcessor#0': no URL paths identified
+[DEBUG] [10075 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name '_linkDiscovererRegistry': no URL paths identified
+[DEBUG] [10075 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.hateoas.LinkDiscoverers#0': no URL paths identified
+[DEBUG] [10075 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'defaultRelProvider': no URL paths identified
+[DEBUG] [10076 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'annotationRelProvider': no URL paths identified
+[DEBUG] [10076 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'relProviderPluginRegistry': no URL paths identified
+[DEBUG] [10076 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name '_relProvider': no URL paths identified
+[DEBUG] [10076 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.data.rest.RepositoryRestMvcAutoConfiguration': no URL paths identified
+[DEBUG] [10076 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'springBootRepositoryRestConfigurer': no URL paths identified
+[DEBUG] [10076 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'spring.data.rest-org.springframework.boot.autoconfigure.data.rest.RepositoryRestProperties': no URL paths identified
+[DEBUG] [10076 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.hateoas.HypermediaHttpMessageConverterConfiguration': no URL paths identified
+[DEBUG] [10077 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'halMessageConverterSupportedMediaTypeCustomizer': no URL paths identified
+[DEBUG] [10077 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration': no URL paths identified
+[DEBUG] [10077 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'spring.hateoas-org.springframework.boot.autoconfigure.hateoas.HateoasProperties': no URL paths identified
+[DEBUG] [10077 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.EndpointWebMvcManagementContextConfiguration': no URL paths identified
+[DEBUG] [10077 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'endpointHandlerMapping': no URL paths identified
+[DEBUG] [10077 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'mvcEndpoints': no URL paths identified
+[DEBUG] [10077 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'environmentMvcEndpoint': no URL paths identified
+[DEBUG] [10078 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'heapdumpMvcEndpoint': no URL paths identified
+[DEBUG] [10078 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'healthMvcEndpoint': no URL paths identified
+[DEBUG] [10078 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'loggersMvcEndpoint': no URL paths identified
+[DEBUG] [10078 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'metricsMvcEndpoint': no URL paths identified
+[DEBUG] [10078 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'auditEventMvcEndpoint': no URL paths identified
+[DEBUG] [10078 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'endpoints.health-org.springframework.boot.actuate.autoconfigure.HealthMvcEndpointProperties': no URL paths identified
+[DEBUG] [10078 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'endpoints.cors-org.springframework.boot.actuate.autoconfigure.EndpointCorsProperties': no URL paths identified
+[DEBUG] [10078 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice': no URL paths identified
+[DEBUG] [10079 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$DocsMvcEndpointConfiguration': no URL paths identified
+[DEBUG] [10079 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration': no URL paths identified
+[DEBUG] [10079 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'managementServletContext': no URL paths identified
+[DEBUG] [10079 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'halJsonMvcEndpoint': no URL paths identified
+[DEBUG] [10079 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'management-org.springframework.boot.actuate.autoconfigure.ManagementServerProperties': no URL paths identified
+[DEBUG] [10079 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$EndpointWebMvcConfiguration': no URL paths identified
+[DEBUG] [10079 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration': no URL paths identified
+[DEBUG] [10080 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'managementContextResolver': no URL paths identified
+[DEBUG] [10080 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$ApplicationWebSecurityConfigurerAdapter': no URL paths identified
+[DEBUG] [10080 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration': no URL paths identified
+[DEBUG] [10080 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'objectPostProcessor': no URL paths identified
+[DEBUG] [10080 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration': no URL paths identified
+[DEBUG] [10080 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'authenticationManagerBuilder': no URL paths identified
+[DEBUG] [10080 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'enableGlobalAuthenticationAutowiredConfigurer': no URL paths identified
+[DEBUG] [10080 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'initializeUserDetailsBeanManagerConfigurer': no URL paths identified
+[DEBUG] [10081 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'initializeAuthenticationProviderBeanManagerConfigurer': no URL paths identified
+[DEBUG] [10081 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': no URL paths identified
+[DEBUG] [10081 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'delegatingApplicationListener': no URL paths identified
+[DEBUG] [10081 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'webSecurityExpressionHandler': no URL paths identified
+[DEBUG] [10081 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'springSecurityFilterChain': no URL paths identified
+[DEBUG] [10081 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'privilegeEvaluator': no URL paths identified
+[DEBUG] [10081 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'autowiredWebSecurityConfigurersIgnoreParents': no URL paths identified
+[DEBUG] [10082 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration': no URL paths identified
+[DEBUG] [10082 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'requestDataValueProcessor': no URL paths identified
+[DEBUG] [10082 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration': no URL paths identified
+[DEBUG] [10083 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'ignoredPathsWebSecurityConfigurerAdapter': no URL paths identified
+[DEBUG] [10083 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'defaultIgnoredRequestsCustomizer': no URL paths identified
+[DEBUG] [10083 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.security.AuthenticationManagerConfiguration': no URL paths identified
+[DEBUG] [10083 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'authenticationManager': no URL paths identified
+[DEBUG] [10083 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'springBootAuthenticationConfigurerAdapter': no URL paths identified
+[DEBUG] [10083 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'authenticationManagerConfigurationListener': no URL paths identified
+[DEBUG] [10084 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.security.BootGlobalAuthenticationConfiguration': no URL paths identified
+[DEBUG] [10085 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'bootGlobalAuthenticationConfigurationAdapter': no URL paths identified
+[DEBUG] [10085 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration': no URL paths identified
+[DEBUG] [10086 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'authenticationEventPublisher': no URL paths identified
+[DEBUG] [10086 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'security-org.springframework.boot.autoconfigure.security.SecurityProperties': no URL paths identified
+[DEBUG] [10086 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$ManagementWebSecurityConfigurerAdapter': no URL paths identified
+[DEBUG] [10087 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$ManagementSecurityPropertiesConfiguration': no URL paths identified
+[DEBUG] [10087 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration': no URL paths identified
+[DEBUG] [10087 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'managementIgnoredRequestCustomizer': no URL paths identified
+[DEBUG] [10087 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration$MetricExportPropertiesConfiguration': no URL paths identified
+[DEBUG] [10087 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'spring.metrics.export-org.springframework.boot.actuate.metrics.export.MetricExportProperties': no URL paths identified
+[DEBUG] [10088 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration$StatsdConfiguration': no URL paths identified
+[DEBUG] [10088 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration': no URL paths identified
+[DEBUG] [10088 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'metricWritersMetricExporter': no URL paths identified
+[DEBUG] [10088 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.MetricFilterAutoConfiguration': no URL paths identified
+[DEBUG] [10088 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'metricsFilter': no URL paths identified
+[DEBUG] [10089 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'endpoints.metrics.filter-org.springframework.boot.actuate.autoconfigure.MetricFilterProperties': no URL paths identified
+[DEBUG] [10089 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.TraceRepositoryAutoConfiguration': no URL paths identified
+[DEBUG] [10089 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'traceRepository': no URL paths identified
+[DEBUG] [10089 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.actuate.autoconfigure.TraceWebFilterAutoConfiguration': no URL paths identified
+[DEBUG] [10089 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'webRequestLoggingFilter': no URL paths identified
+[DEBUG] [10089 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'management.trace-org.springframework.boot.actuate.trace.TraceProperties': no URL paths identified
+[DEBUG] [10090 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration': no URL paths identified
+[DEBUG] [10090 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'springApplicationAdminRegistrar': no URL paths identified
+[DEBUG] [10090 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$CglibAutoProxyConfiguration': no URL paths identified
+[DEBUG] [10090 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.aop.config.internalAutoProxyCreator': no URL paths identified
+[DEBUG] [10090 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration': no URL paths identified
+[DEBUG] [10090 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration': no URL paths identified
+[DEBUG] [10091 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration': no URL paths identified
+[DEBUG] [10091 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'persistenceExceptionTranslationPostProcessor': no URL paths identified
+[DEBUG] [10091 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration': no URL paths identified
+[DEBUG] [10091 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration': no URL paths identified
+[DEBUG] [10091 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$JdbcTemplateConfiguration': no URL paths identified
+[DEBUG] [10091 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'jdbcTemplate': no URL paths identified
+[DEBUG] [10092 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$NamedParameterJdbcTemplateConfiguration': no URL paths identified
+[DEBUG] [10092 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'namedParameterJdbcTemplate': no URL paths identified
+[DEBUG] [10092 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration': no URL paths identified
+[DEBUG] [10092 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'spring.jdbc-org.springframework.boot.autoconfigure.jdbc.JdbcProperties': no URL paths identified
+[DEBUG] [10092 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$ThymeleafJava8TimeDialect': no URL paths identified
+[DEBUG] [10092 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'java8TimeDialect': no URL paths identified
+[DEBUG] [10092 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$ThymeleafWebMvcConfiguration$ThymeleafViewResolverConfiguration': no URL paths identified
+[DEBUG] [10093 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'thymeleafViewResolver': no URL paths identified
+[DEBUG] [10093 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$ThymeleafWebMvcConfiguration': no URL paths identified
+[DEBUG] [10093 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$ThymeleafDefaultConfiguration': no URL paths identified
+[DEBUG] [10093 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'templateEngine': no URL paths identified
+[DEBUG] [10093 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration': no URL paths identified
+[DEBUG] [10093 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'defaultTemplateResolver': no URL paths identified
+[DEBUG] [10094 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration': no URL paths identified
+[DEBUG] [10094 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'spring.thymeleaf-org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties': no URL paths identified
+[DEBUG] [10094 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.security.SecurityFilterAutoConfiguration': no URL paths identified
+[DEBUG] [10094 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'securityFilterChainRegistration': no URL paths identified
+[DEBUG] [10094 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': no URL paths identified
+[DEBUG] [10094 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.transaction.config.internalTransactionAdvisor': no URL paths identified
+[DEBUG] [10094 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'transactionAttributeSource': no URL paths identified
+[DEBUG] [10095 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'transactionInterceptor': no URL paths identified
+[DEBUG] [10095 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.transaction.config.internalTransactionalEventListenerFactory': no URL paths identified
+[DEBUG] [10095 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration': no URL paths identified
+[DEBUG] [10095 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration': no URL paths identified
+[DEBUG] [10095 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration': no URL paths identified
+[DEBUG] [10095 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'transactionTemplate': no URL paths identified
+[DEBUG] [10095 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration': no URL paths identified
+[DEBUG] [10096 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'platformTransactionManagerCustomizers': no URL paths identified
+[DEBUG] [10096 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties': no URL paths identified
+[DEBUG] [10096 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration': no URL paths identified
+[DEBUG] [10096 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'restTemplateBuilder': no URL paths identified
+[DEBUG] [10096 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration': no URL paths identified
+[DEBUG] [10096 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'characterEncodingFilter': no URL paths identified
+[DEBUG] [10096 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'localeCharsetMappingsCustomizer': no URL paths identified
+[DEBUG] [10097 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration': no URL paths identified
+[DEBUG] [10097 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'multipartConfigElement': no URL paths identified
+[DEBUG] [10097 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'multipartResolver': no URL paths identified
+[DEBUG] [10097 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties': no URL paths identified
+[DEBUG] [10097 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.ws.config.annotation.DelegatingWsConfiguration': no URL paths identified
+[DEBUG] [10097 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'payloadRootAnnotationMethodEndpointMapping': no URL paths identified
+[DEBUG] [10097 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'soapActionAnnotationMethodEndpointMapping': no URL paths identified
+[DEBUG] [10098 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'annotationActionEndpointMapping': no URL paths identified
+[DEBUG] [10098 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'defaultMethodEndpointAdapter': no URL paths identified
+[DEBUG] [10098 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'soapFaultAnnotationExceptionResolver': no URL paths identified
+[DEBUG] [10098 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'simpleSoapExceptionResolver': no URL paths identified
+[DEBUG] [10098 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.webservices.WebServicesAutoConfiguration$WsConfiguration': no URL paths identified
+[DEBUG] [10098 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.boot.autoconfigure.webservices.WebServicesAutoConfiguration': no URL paths identified
+[DEBUG] [10098 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'messageDispatcherServlet': no URL paths identified
+[DEBUG] [10099 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'spring.webservices-org.springframework.boot.autoconfigure.webservices.WebServicesProperties': no URL paths identified
+[DEBUG] [10099 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.orm.jpa.SharedEntityManagerCreator#0': no URL paths identified
+[DEBUG] [10099 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'autoConfigurationReport': no URL paths identified
+[DEBUG] [10099 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'springApplicationArguments': no URL paths identified
+[DEBUG] [10099 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'springBootBanner': no URL paths identified
+[DEBUG] [10099 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'springBootLoggingSystem': no URL paths identified
+[DEBUG] [10099 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'environment': no URL paths identified
+[DEBUG] [10100 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'systemProperties': no URL paths identified
+[DEBUG] [10100 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'systemEnvironment': no URL paths identified
+[DEBUG] [10101 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+[DEBUG] [10101 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'messageSource': no URL paths identified
+[DEBUG] [10101 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'applicationEventMulticaster': no URL paths identified
+[DEBUG] [10101 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'servletContext': no URL paths identified
+[DEBUG] [10101 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'contextParameters': no URL paths identified
+[DEBUG] [10101 ms] [08-29-2017 15:18:27] [BeanNameUrlHandlerMapping (detectHandlers : 89)] -
+					Rejected bean name 'contextAttributes': no URL paths identified
+[INFO] [10122 ms] [08-29-2017 15:18:27] [SimpleUrlHandlerMapping (registerHandler : 370)] -
+					Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO] [10123 ms] [08-29-2017 15:18:27] [SimpleUrlHandlerMapping (registerHandler : 370)] -
+					Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[DEBUG] [10146 ms] [08-29-2017 15:18:27] [ExceptionHandlerExceptionResolver (initExceptionHandlerAdviceCache : 272)] -
+					Looking for exception mappings: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@485966cc: startup date [Tue Aug 29 15:18:18 EDT 2017]; root of context hierarchy
+[INFO] [10158 ms] [08-29-2017 15:18:27] [ExceptionHandlerExceptionResolver (initExceptionHandlerAdviceCache : 287)] -
+					Detected @ExceptionHandler methods in repositoryRestExceptionHandler
+[INFO] [10158 ms] [08-29-2017 15:18:27] [ExceptionHandlerExceptionResolver (initExceptionHandlerAdviceCache : 293)] -
+					Detected ResponseBodyAdvice implementation in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+[INFO] [10246 ms] [08-29-2017 15:18:27] [SimpleUrlHandlerMapping (registerHandler : 370)] -
+					Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[DEBUG] [11977 ms] [08-29-2017 15:18:29] [StandardServletEnvironment (addLast : 110)] -
+					Adding [Management Server] PropertySource with lowest search precedence
+[DEBUG] [12111 ms] [08-29-2017 15:18:29] [ResourceUrlProvider (detectResourceHandlers : 143)] -
+					Looking for resource handler mappings
+[DEBUG] [12113 ms] [08-29-2017 15:18:29] [ResourceUrlProvider (detectResourceHandlers : 155)] -
+					Found resource handler mapping: URL pattern="/**/favicon.ico", locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@69bc4024]
+[DEBUG] [12114 ms] [08-29-2017 15:18:29] [ResourceUrlProvider (detectResourceHandlers : 155)] -
+					Found resource handler mapping: URL pattern="/webjars/**", locations=[class path resource [META-INF/resources/webjars/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@3578a45b]
+[DEBUG] [12114 ms] [08-29-2017 15:18:29] [ResourceUrlProvider (detectResourceHandlers : 155)] -
+					Found resource handler mapping: URL pattern="/**", locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@24f177f5]
+[DEBUG] [12200 ms] [08-29-2017 15:18:29] [StandardServletEnvironment (addFirst : 98)] -
+					Adding [server.ports] PropertySource with highest search precedence
+[DEBUG] [79453 ms] [08-29-2017 15:19:36] [DispatcherServlet (init : 150)] -
+					Initializing servlet 'dispatcherServlet'
+[INFO] [79453 ms] [08-29-2017 15:19:36] [DispatcherServlet (initServletBean : 494)] -
+					FrameworkServlet 'dispatcherServlet': initialization started
+[DEBUG] [79453 ms] [08-29-2017 15:19:36] [DispatcherServlet (initMultipartResolver : 518)] -
+					Using MultipartResolver [org.springframework.web.multipart.support.StandardServletMultipartResolver@17053b5]
+[DEBUG] [79469 ms] [08-29-2017 15:19:36] [DispatcherServlet (initLocaleResolver : 547)] -
+					Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@14a65403]
+[DEBUG] [79469 ms] [08-29-2017 15:19:36] [DispatcherServlet (initThemeResolver : 569)] -
+					Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@387be479]
+[DEBUG] [79484 ms] [08-29-2017 15:19:36] [DispatcherServlet (initRequestToViewNameTranslator : 706)] -
+					Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3e81551d]
+[DEBUG] [79484 ms] [08-29-2017 15:19:36] [DispatcherServlet (initFlashMapManager : 767)] -
+					Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@e40ae57]
+[DEBUG] [79484 ms] [08-29-2017 15:19:36] [DispatcherServlet (initWebApplicationContext : 573)] -
+					Published WebApplicationContext of servlet 'dispatcherServlet' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcherServlet]
+[INFO] [79484 ms] [08-29-2017 15:19:36] [DispatcherServlet (initServletBean : 513)] -
+					FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+[DEBUG] [79484 ms] [08-29-2017 15:19:36] [DispatcherServlet (init : 175)] -
+					Servlet 'dispatcherServlet' configured successfully
+[DEBUG] [79738 ms] [08-29-2017 15:19:36] [DispatcherServlet (doService : 881)] -
+					DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+[DEBUG] [79738 ms] [08-29-2017 15:19:36] [RequestMappingHandlerMapping (getHandlerInternal : 313)] -
+					Looking up handler method for path /error
+[DEBUG] [79754 ms] [08-29-2017 15:19:36] [RequestMappingHandlerMapping (getHandlerInternal : 320)] -
+					Returning handler method [public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)]
+[DEBUG] [79754 ms] [08-29-2017 15:19:36] [DispatcherServlet (doDispatch : 969)] -
+					Last-Modified value for [/error] is: -1
+[DEBUG] [79885 ms] [08-29-2017 15:19:37] [ContentNegotiatingViewResolver (getMediaTypes : 272)] -
+					Requested media types are [text/html, text/html;q=0.8] based on Accept header types and producible media types [text/html])
+[DEBUG] [79917 ms] [08-29-2017 15:19:37] [ContentNegotiatingViewResolver (getBestView : 351)] -
+					Returning [org.thymeleaf.spring5.view.ThymeleafView@471ed3f4] based on requested media type 'text/html'
+[DEBUG] [79917 ms] [08-29-2017 15:19:37] [DispatcherServlet (render : 1309)] -
+					Rendering view [org.thymeleaf.spring5.view.ThymeleafView@471ed3f4] in DispatcherServlet with name 'dispatcherServlet'
+[DEBUG] [80133 ms] [08-29-2017 15:19:37] [DispatcherServlet (render : 1319)] -
+					Error rendering view [org.thymeleaf.spring5.view.ThymeleafView@471ed3f4] in DispatcherServlet with name 'dispatcherServlet'
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "error", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:870) ~[thymeleaf-3.0.7.RELEASE.jar:3.0.7.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.7.RELEASE.jar:3.0.7.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.7.RELEASE.jar:3.0.7.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.7.RELEASE.jar:3.0.7.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:355) ~[thymeleaf-spring5-3.0.7.RC1.jar:3.0.7.RC1]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:188) ~[thymeleaf-spring5-3.0.7.RC1.jar:3.0.7.RC1]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1315) [spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1059) [spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:998) [spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:915) [spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978) [spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870) [spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855) [spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:208) [spring-security-web-5.0.0.M3.jar:?]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) [spring-security-web-5.0.0.M3.jar:?]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) [spring-web-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) [spring-web-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:392) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:395) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:254) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_144]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_144]
+[DEBUG] [80143 ms] [08-29-2017 15:19:37] [DispatcherServlet (processRequest : 997)] -
+					Could not complete request
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "error", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:870) ~[thymeleaf-3.0.7.RELEASE.jar:3.0.7.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.7.RELEASE.jar:3.0.7.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.7.RELEASE.jar:3.0.7.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.7.RELEASE.jar:3.0.7.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:355) ~[thymeleaf-spring5-3.0.7.RC1.jar:3.0.7.RC1]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:188) ~[thymeleaf-spring5-3.0.7.RC1.jar:3.0.7.RC1]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1315) ~[spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1059) ~[spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:998) ~[spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:915) ~[spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978) [spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870) [spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855) [spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:208) [spring-security-web-5.0.0.M3.jar:?]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) [spring-security-web-5.0.0.M3.jar:?]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) [spring-web-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) [spring-web-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:392) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:395) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:254) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_144]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_144]
+[DEBUG] [85638 ms] [08-29-2017 15:19:42] [DispatcherServlet (doService : 881)] -
+					DispatcherServlet with name 'dispatcherServlet' processing GET request for [/error]
+[DEBUG] [85642 ms] [08-29-2017 15:19:42] [RequestMappingHandlerMapping (getHandlerInternal : 313)] -
+					Looking up handler method for path /error
+[DEBUG] [85643 ms] [08-29-2017 15:19:42] [RequestMappingHandlerMapping (getHandlerInternal : 320)] -
+					Returning handler method [public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)]
+[DEBUG] [85644 ms] [08-29-2017 15:19:42] [DispatcherServlet (doDispatch : 969)] -
+					Last-Modified value for [/error] is: -1
+[DEBUG] [85644 ms] [08-29-2017 15:19:42] [ContentNegotiatingViewResolver (getMediaTypes : 272)] -
+					Requested media types are [text/html, text/html;q=0.8] based on Accept header types and producible media types [text/html])
+[DEBUG] [85644 ms] [08-29-2017 15:19:42] [ContentNegotiatingViewResolver (getBestView : 351)] -
+					Returning [org.thymeleaf.spring5.view.ThymeleafView@538f6041] based on requested media type 'text/html'
+[DEBUG] [85644 ms] [08-29-2017 15:19:42] [DispatcherServlet (render : 1309)] -
+					Rendering view [org.thymeleaf.spring5.view.ThymeleafView@538f6041] in DispatcherServlet with name 'dispatcherServlet'
+[DEBUG] [85644 ms] [08-29-2017 15:19:42] [DispatcherServlet (render : 1319)] -
+					Error rendering view [org.thymeleaf.spring5.view.ThymeleafView@538f6041] in DispatcherServlet with name 'dispatcherServlet'
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "error", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:870) ~[thymeleaf-3.0.7.RELEASE.jar:3.0.7.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.7.RELEASE.jar:3.0.7.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.7.RELEASE.jar:3.0.7.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.7.RELEASE.jar:3.0.7.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:355) ~[thymeleaf-spring5-3.0.7.RC1.jar:3.0.7.RC1]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:188) ~[thymeleaf-spring5-3.0.7.RC1.jar:3.0.7.RC1]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1315) [spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1059) [spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:998) [spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:915) [spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978) [spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870) [spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855) [spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:208) [spring-security-web-5.0.0.M3.jar:?]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) [spring-security-web-5.0.0.M3.jar:?]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) [spring-web-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) [spring-web-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:392) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:395) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:254) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_144]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_144]
+[DEBUG] [85644 ms] [08-29-2017 15:19:42] [DispatcherServlet (processRequest : 997)] -
+					Could not complete request
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "error", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:870) ~[thymeleaf-3.0.7.RELEASE.jar:3.0.7.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.7.RELEASE.jar:3.0.7.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.7.RELEASE.jar:3.0.7.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.7.RELEASE.jar:3.0.7.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:355) ~[thymeleaf-spring5-3.0.7.RC1.jar:3.0.7.RC1]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:188) ~[thymeleaf-spring5-3.0.7.RC1.jar:3.0.7.RC1]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1315) ~[spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1059) ~[spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:998) ~[spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:915) ~[spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978) [spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870) [spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855) [spring-webmvc-5.0.0.RC3.jar:5.0.0.RC3]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:208) [spring-security-web-5.0.0.M3.jar:?]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) [spring-security-web-5.0.0.M3.jar:?]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) [spring-web-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) [spring-web-5.0.0.RC3.jar:5.0.0.RC3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:392) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:395) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:254) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_144]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_144]
+[DEBUG] [87706 ms] [08-29-2017 15:19:44] [DispatcherServlet (doService : 881)] -
+					DispatcherServlet with name 'dispatcherServlet' processing GET request for [/]
+[DEBUG] [87706 ms] [08-29-2017 15:19:44] [RequestMappingHandlerMapping (getHandlerInternal : 313)] -
+					Looking up handler method for path /
+[DEBUG] [87706 ms] [08-29-2017 15:19:44] [RequestMappingHandlerMapping (getHandlerInternal : 320)] -
+					Returning handler method [public java.lang.String com.revature.smp.HelloController.index()]
+[DEBUG] [87706 ms] [08-29-2017 15:19:44] [DispatcherServlet (doDispatch : 969)] -
+					Last-Modified value for [/] is: -1
+[DEBUG] [87722 ms] [08-29-2017 15:19:44] [RequestResponseBodyMethodProcessor (writeWithMessageConverters : 245)] -
+					Written [Greetings from Spring Boot!] as "text/html" using [org.springframework.http.converter.StringHttpMessageConverter@5908e6d6]
+[DEBUG] [87722 ms] [08-29-2017 15:19:44] [DispatcherServlet (processDispatchResult : 1066)] -
+					Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+[DEBUG] [87722 ms] [08-29-2017 15:19:44] [DispatcherServlet (processRequest : 1004)] -
+					Successfully completed request
+[DEBUG] [87822 ms] [08-29-2017 15:19:45] [DispatcherServlet (doService : 881)] -
+					DispatcherServlet with name 'dispatcherServlet' processing GET request for [/favicon.ico]
+[DEBUG] [87822 ms] [08-29-2017 15:19:45] [SimpleUrlHandlerMapping (lookupHandler : 199)] -
+					Matching patterns for request [/favicon.ico] are [/**/favicon.ico]
+[DEBUG] [87822 ms] [08-29-2017 15:19:45] [SimpleUrlHandlerMapping (lookupHandler : 233)] -
+					URI Template variables for request [/favicon.ico] are {}
+[DEBUG] [87822 ms] [08-29-2017 15:19:45] [SimpleUrlHandlerMapping (getHandlerInternal : 146)] -
+					Mapping [/favicon.ico] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@69bc4024]]] and 1 interceptor
+[DEBUG] [87822 ms] [08-29-2017 15:19:45] [DispatcherServlet (doDispatch : 969)] -
+					Last-Modified value for [/favicon.ico] is: -1
+[DEBUG] [87860 ms] [08-29-2017 15:19:45] [DispatcherServlet (processDispatchResult : 1066)] -
+					Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+[DEBUG] [87860 ms] [08-29-2017 15:19:45] [DispatcherServlet (processRequest : 1004)] -
+					Successfully completed request
