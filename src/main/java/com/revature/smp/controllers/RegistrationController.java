@@ -4,10 +4,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+import com.revature.smp.domain.UserRegistrationRequest;
+
+@RestController
 public class RegistrationController {
 	
 	/**
@@ -18,9 +22,10 @@ public class RegistrationController {
 	 * 		   501 - service unavailable (trouble connecting to database)
 	 */
 	@RequestMapping(value ="/register", method = RequestMethod.POST, consumes="application/json")
-	public String register(HttpServletRequest request, HttpServletResponse response) 
+	public String register(@RequestBody UserRegistrationRequest request) 
 	{
-		
+
+		System.out.println(request.toString());
 		return null;
 	}
 	

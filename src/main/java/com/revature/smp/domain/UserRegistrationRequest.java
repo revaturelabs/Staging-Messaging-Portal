@@ -2,6 +2,15 @@ package com.revature.smp.domain;
 
 public class UserRegistrationRequest {
 	
+	public UserRegistrationRequest() {
+		super();
+	}
+
+	@Override
+	public String toString() {
+		return "UserRegistrationRequest [firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
+	}
+
 	private String firstName;
 	private String lastName;
 	private String email;
