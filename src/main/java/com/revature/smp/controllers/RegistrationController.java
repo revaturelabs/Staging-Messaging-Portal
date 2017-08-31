@@ -20,6 +20,7 @@ public class RegistrationController {
 	@RequestMapping(value ="/register", method = RequestMethod.POST, consumes="application/json")
 	public String register(HttpServletRequest request, HttpServletResponse response) 
 	{
+		
 		return null;
 	}
 	
