@@ -2,8 +2,10 @@ package com.revature.smp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan(basePackages = "com.revature.smp.*")
 public class BootTestApplication {
 	
 	public static void main(String[] args) {

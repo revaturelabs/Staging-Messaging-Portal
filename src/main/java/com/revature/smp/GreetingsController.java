@@ -7,11 +7,19 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class GreetingsController {
-	@RequestMapping("/greetings")
-	public String greeting(
-			@RequestParam(value = "name", required = false, defaultValue = "World") String name,
-			Model model) {
-		model.addAttribute("name", name);
-		return "greeting";
+//	@RequestMapping("/greetings")
+//	public String greeting(
+//			@RequestParam(value = "name", required = false, defaultValue = "World") String name,
+//			Model model) {
+//		model.addAttribute("name", name);
+//		return "forward:greeting.html";
+//	}
+	
+	@RequestMapping("/")
+	public String thingy(){
+		return "redirect:thing";
+		
 	}
 }
+
+
