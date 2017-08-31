@@ -7,4 +7,4 @@ Adding basic Boot project for pipeline testing (8-24)(@Godu92)
 
 First pull from Skeleton (8-28)(@dataricc)
 
-Registration branch pull
+Created feature branch for posting messages [ric-postmsg] (8/28)(@dataricc)
