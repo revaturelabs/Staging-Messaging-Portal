@@ -8,8 +8,8 @@
 			<PatternLayout
 				pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n" />
 		</Console>
-		<RollingFile name="trace-log" fileName="${log-path}/asmt-trace.log"
-			filePattern="${log-path}/asmt-trace-%d{yyyy-MM-dd}.log">
+		<RollingFile name="trace-log" fileName="${log-path}/smp-trace.log"
+			filePattern="${log-path}/smp-trace-%d{yyyy-MM-dd}.log">
 			<PatternLayout>
 				<pattern>[%p] [%r ms] [%d{MM-dd-yyyy HH:mm:ss}] [%c{1} (%M : %L)] -
 					%m%n</pattern>
@@ -19,8 +19,8 @@
 					modulate="true" />
 			</Policies>
 		</RollingFile>
-		<RollingFile name="error-log" fileName="${log-path}/asmt-error.log"
-			filePattern="${log-path}/asmt-error-%d{yyyy-MM-dd}.log">
+		<RollingFile name="error-log" fileName="${log-path}/smp-error.log"
+			filePattern="${log-path}/smp-error-%d{yyyy-MM-dd}.log">
 			<PatternLayout>
 				<pattern>[%p] [%r ms] [%d{MM-dd-yyyy HH:mm:ss}] [%c{1} (%M : %L)] -
 					%m%n</pattern>
