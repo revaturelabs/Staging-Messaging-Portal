@@ -1,11 +1,59 @@
 package com.revature.smp.service;
 
+import java.util.List;
+
 import javax.transaction.Transactional;
+
+import com.revature.smp.beans.User;
 
 @org.springframework.stereotype.Service
 @Transactional
 public class UserServiceImpl implements UserService {
-//	private static final String PATTERN = "dd-MMM-yy";
+
+	@Override
+	public User findUserByEmail(String email) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User findUserByUserId(int userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<User> findUsersByRole(String role) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<User> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean createUser(User user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean updateUser(User user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deactivateUser(User user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	// USE THIS AS A REFERENCE IF NECESSARY!!!!
+	//	private static final String PATTERN = "dd-MMM-yy";
 //
 //	@Autowired
 //	Logging log;
