@@ -12,12 +12,11 @@ import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.stereotype.Component;
 
 /**
- * The Class AOP.
+ * The Class LoggingAspect, used mainly for logging
  */
 @Component
 @Aspect
-public class LoggingAspect
-{	
+public class LoggingAspect {
 	/**
 	 * Trace logging, surrounds the given point cut with error logging.
 	 *
@@ -29,11 +28,10 @@ public class LoggingAspect
 		
 		// Setup for grabbing method information
 		MethodSignature sign = (MethodSignature) pjp.getSignature();
-		String[] paramNames = sign.getParameterNames();
 		Class[] excepType = sign.getExceptionTypes();
 		
 		List<String> except = new ArrayList<>();
-		for (Class c : excepType) {
+		for (Class<?> c : excepType) {
 			except.add(c.getSimpleName());
 		}
 		
