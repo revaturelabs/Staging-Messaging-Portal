@@ -1,6 +1,9 @@
 ### Maven ###
 target/
 
+### Non useful files ###
+*.log
+
 ### Eclipse plugin file ###
 spartanizer.xml
 
