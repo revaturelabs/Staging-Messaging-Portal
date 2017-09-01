@@ -15,7 +15,7 @@ import com.revature.smp.services.registration.AssociateRegistrationService;
 @SpringBootApplication
 @ComponentScan("com.revature.smp.*")
 @EnableScheduling
-@EnableJpaRepositories("com.revature.smp.dao")
+@EnableJpaRepositories("com.revature.smp.repositories")
 public class SmpApplication {
 	
 	public static void main(String[] args) 
@@ -35,22 +35,5 @@ public class SmpApplication {
 	{
 		return builder.build();
 	}
-	
-	
-	// @Bean
-	// public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
-	// return args -> {
-	//
-	// System.out.println(
-	// "Let's inspect the beans provided by Spring Boot:");
-	//
-	// String[] beanNames = ctx.getBeanDefinitionNames();
-	// Arrays.sort(beanNames);
-	// for (String beanName : beanNames) {
-	// System.out.println(beanName);
-	// }
-	//
-	// };
-	// }
 
 }
