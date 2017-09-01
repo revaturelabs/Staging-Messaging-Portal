@@ -17,7 +17,7 @@ public class Message{
 	private int messageBlobId;
 	
 	@Column(name="MESSAGE_BLOB")
-	private String messageBlob;
+	private byte[] messageBlob;
 	
 	@Column(name="MESSAGE_ROOM_ID")
 	private int messageRoomId;
@@ -30,11 +30,11 @@ public class Message{
 		this.messageBlobId = messageBlobId;
 	}
 
-	public String getMessageBlob() {
+	public byte[] getMessageBlob() {
 		return messageBlob;
 	}
 
-	public void setMessageBlob(String messageBlob) {
+	public void setMessageBlob(byte[] messageBlob) {
 		this.messageBlob = messageBlob;
 	}
 
