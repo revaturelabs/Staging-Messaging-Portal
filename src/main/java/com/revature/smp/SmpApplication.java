@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 
 
 @SpringBootApplication
-@ComponentScan("com.revature.smp.*")
+@ComponentScan("com.revature.*")
 @EnableScheduling
 @EnableJpaRepositories("com.revature.smp.dao")
 public class SmpApplication {
@@ -28,10 +28,12 @@ public class SmpApplication {
 	 *            the builder
 	 * @return the rest template
 	 */
+	/*
 	@Bean
 	public RestTemplate restTemplate(RestTemplateBuilder builder)
 	{
 		return builder.build();
 	}
+	*/
 
 }
