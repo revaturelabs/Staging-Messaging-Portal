@@ -1,18 +1,34 @@
 package com.revature.smp.controllers;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import java.sql.Date;
 
-import org.springframework.stereotype.Controller;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.revature.smp.beans.Location;
+import com.revature.smp.beans.Role;
+import com.revature.smp.beans.Status;
+import com.revature.smp.beans.User;
 import com.revature.smp.domain.UserRegistrationRequest;
+import com.revature.smp.services.registration.AssociateRegistrationService;
+import com.revature.smp.services.registration.RegistrationManagerService;
 
 @RestController
 public class RegistrationController {
+	
+	public static final String RESTON = "Reston";
+	public static final String FLORIDA = "Florida";
+	public static final String NEW_YORK = "New York";
+	
+	
+	@Autowired
+	AssociateRegistrationService registrationService;
+	
+	@Autowired
+	RegistrationManagerService managerService;
 	
 	/**
 	 * 
@@ -21,12 +37,41 @@ public class RegistrationController {
 	 * 		   409 - user already exists with requested email
 	 * 		   501 - service unavailable (trouble connecting to database)
 	 */
-	@RequestMapping(value ="/register", method = RequestMethod.POST, consumes="application/json")
+	@RequestMapping(value ="/register-user", method = RequestMethod.POST, consumes="application/json")
 	public String register(@RequestBody UserRegistrationRequest request) 
 	{
+		User userRegistration = new User();
+		userRegistration.setFirstName(request.getFirstName());
+		userRegistration.setLastName(request.getLastName());
+		userRegistration.setEmail(request.getEmail());
+		userRegistration.setActive("0");
+		userRegistration.setCreated(new Date(0));
+		userRegistration.setLocation(new Location(3, "Florida"));
+		userRegistration.setLogged("0");
+		userRegistration.setRole(new Role(2, "Associate"));
+		userRegistration.setStatus(new Status(3, "Baller"));;
+		userRegistration.setUserId(1);
+		userRegistration.setUsername(request.getFirstName() + "." + request.getLastName());
+		userRegistration.setPassword("another1");
+		userRegistration.setUseTemp("0");
+		
+		try {
+			registrationService.registerAssociate(userRegistration);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		System.out.println(request.toString());
 		return null;
 	}
+	
+	@RequestMapping(value="/all-pending-users", method = RequestMethod.GET)
+	public String getAllPendingUsers() {
+		System.out.println(managerService.getRegisteringUsers());
+		return null;
+	}
+	
 	
 /*	@RequestMapping("/approve-registration")
 	
