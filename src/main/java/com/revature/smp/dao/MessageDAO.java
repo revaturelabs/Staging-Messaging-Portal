@@ -17,7 +17,7 @@ public interface MessageDAO extends JpaRepository<Message,Integer>{
 	
 	default Message getMostRecent(int messageRoomId) {
 		Page<Message> p = findByMessageRoomIdOrderByMessageBlobIdDesc(messageRoomId, new PageRequest(0,1));
-		if(p.getSize()>0) {
+		if(p.hasContent()) {
 			return p.getContent().get(0);
 		}else {
 			return null;
@@ -27,7 +27,7 @@ public interface MessageDAO extends JpaRepository<Message,Integer>{
 	default Message getPrevious(int messageRoomId, int messageBlobId) {
 		Page<Message> p = findByMessageRoomIdAndMessageBlobIdLessThanOrderByMessageBlobIdDesc
 				(messageRoomId,messageBlobId,new PageRequest(0,1));
-		if(p.getSize()>0) {
+		if(p.hasContent()) {
 			return p.getContent().get(0);
 		}else {
 			return null;
