@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Entity
 @Table(name="MESSAGE")
-public class Message{
+public class MessageBlob{
 	
 	@Id
 	@Column(name="MESSAGE_BLOB_ID")

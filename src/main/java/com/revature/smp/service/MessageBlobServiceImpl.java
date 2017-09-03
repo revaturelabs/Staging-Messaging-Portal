@@ -2,26 +2,26 @@ package com.revature.smp.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.revature.smp.beans.Message;
-import com.revature.smp.dao.MessageDAO;
+import com.revature.smp.beans.MessageBlob;
+import com.revature.smp.dao.MessageBlobDAO;
 
 import javax.transaction.Transactional;
 
 @org.springframework.stereotype.Service
 @Transactional
-public class MessageServiceImpl implements MessageService {
+public class MessageBlobServiceImpl implements MessageBlobService {
 	
 	@Autowired
-	MessageDAO mdao;
+	MessageBlobDAO mdao;
 	
 
 	@Override
-	public Message getMostRecentBlob(int messageRoomId) {
+	public MessageBlob getMostRecentBlob(int messageRoomId) {
 		return mdao.getMostRecent(messageRoomId);
 	}
 
 	@Override
-	public Message getPreviousBlob(int messageRoomId,int messageBlobId) {
+	public MessageBlob getPreviousBlob(int messageRoomId,int messageBlobId) {
 		return mdao.getPrevious(messageRoomId, messageBlobId);
 	}
 
