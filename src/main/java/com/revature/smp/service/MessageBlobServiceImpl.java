@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.revature.smp.beans.MessageBlob;
 import com.revature.smp.dao.MessageBlobDAO;
 
+import java.util.List;
+
 import javax.transaction.Transactional;
 
 @org.springframework.stereotype.Service
@@ -16,12 +18,12 @@ public class MessageBlobServiceImpl implements MessageBlobService {
 	
 
 	@Override
-	public MessageBlob getMostRecentBlob(int messageRoomId) {
+	public List<MessageBlob> getMostRecentBlob(int messageRoomId) {
 		return mdao.getMostRecent(messageRoomId);
 	}
 
 	@Override
-	public MessageBlob getPreviousBlob(int messageRoomId,int messageBlobId) {
+	public List<MessageBlob> getPreviousBlob(int messageRoomId,int messageBlobId) {
 		return mdao.getPrevious(messageRoomId, messageBlobId);
 	}
 

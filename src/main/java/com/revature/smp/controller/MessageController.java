@@ -2,7 +2,10 @@ package com.revature.smp.controller;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -29,15 +32,17 @@ public class MessageController {
 	MessageBlobService ms;
 	
     @RequestMapping(value="/getmostrecent/{room}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<MessageBlob> getMostRecent(@PathVariable Integer room) {
-        MessageBlob m = ms.getMostRecentBlob(room);
-        return new ResponseEntity<MessageBlob>(m, HttpStatus.OK);
+    public ResponseEntity<List<MessageBlob>> getMostRecent(@PathVariable Integer room) {
+        List<MessageBlob> m = ms.getMostRecentBlob(room);
+        
+        return new ResponseEntity<List<MessageBlob>>(m, HttpStatus.OK);
     }
     
-    @RequestMapping(value="/getprevious/{room},{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<MessageBlob> getPrevious(@PathVariable Integer room, @PathVariable Integer id){
-    	MessageBlob m = ms.getPreviousBlob(room, id);
-    	return new ResponseEntity<MessageBlob>(m,HttpStatus.OK);
+    @RequestMapping(value="/getprevious/{room}/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<MessageBlob>> getPrevious(@PathVariable Integer room, @PathVariable Integer id){
+    	List<MessageBlob> m = ms.getPreviousBlob(room, id);
+    	
+    	return new ResponseEntity<List<MessageBlob>>(m,HttpStatus.OK);
     }
 	
 	//@Autowired

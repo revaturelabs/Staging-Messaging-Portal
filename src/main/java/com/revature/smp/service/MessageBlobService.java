@@ -1,8 +1,10 @@
 package com.revature.smp.service;
 
+import java.util.List;
+
 import com.revature.smp.beans.MessageBlob;
 
 public interface MessageBlobService {
-	MessageBlob getMostRecentBlob(int messageRoomId);
-	MessageBlob getPreviousBlob(int messageRoomId, int messageBlobId);
+	List<MessageBlob> getMostRecentBlob(int messageRoomId);
+	List<MessageBlob> getPreviousBlob(int messageRoomId, int messageBlobId);
 }

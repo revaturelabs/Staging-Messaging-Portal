@@ -12,11 +12,12 @@ import com.revature.smp.beans.Country;
 
 @RestController
 public class HelloController {
-	
+	/*
 	@RequestMapping("/")
 	public String index() {
 		return "Greetings from Spring Boot!";
 	}
+	*/
 	
 	@RequestMapping(value = "/countries", method = RequestMethod.GET, headers = "Accept=application/json")
 	public List<Country> getCountries() {
