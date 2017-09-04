@@ -22,6 +22,26 @@ public class MessageBlob{
 	@Column(name="MESSAGE_ROOM_ID")
 	private int messageRoomId;
 
+	public MessageBlob() {
+		super();
+	}
+	
+	public MessageBlob(int messageBlobId,  int messageRoomId) {
+		super();
+		this.messageBlobId = messageBlobId;
+		this.messageBlob = "W10=".getBytes(); //[] in base64
+		this.messageRoomId = messageRoomId;
+	}
+	
+	public MessageBlob(int messageBlobId, byte[] messageBlob, int messageRoomId) {
+		super();
+		this.messageBlobId = messageBlobId;
+		this.messageBlob = messageBlob;
+		this.messageRoomId = messageRoomId;
+	}
+	
+	
+
 	public int getMessageBlobId() {
 		return messageBlobId;
 	}

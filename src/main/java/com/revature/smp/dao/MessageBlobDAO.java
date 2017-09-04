@@ -16,20 +16,23 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface MessageBlobDAO extends JpaRepository<MessageBlob,Integer>{
 	MessageBlob findByMessageBlobId(int messageBlobId);
 	Page<MessageBlob> findByMessageRoomIdOrderByMessageBlobIdDesc(int messageRoomId, Pageable p);
-	Page<MessageBlob> findByMessageRoomIdAndMessageBlobIdLessThanOrderByMessageBlobIdDesc(int messageRoomId,int messageBlobId, Pageable p);
+	Page<MessageBlob> findByMessageRoomIdAndMessageBlobIdLessThanOrderByMessageBlobIdAsc(int messageRoomId,int messageBlobId, Pageable p);
+	List<MessageBlob> findByMessageRoomIdAndMessageBlobIdGreaterThanEqualOrderByMessageBlobIdAsc(int messageRoomId,int messageBlobId);
 	
 	default List<MessageBlob> getMostRecent(int messageRoomId) {
 		Page<MessageBlob> p = findByMessageRoomIdOrderByMessageBlobIdDesc(messageRoomId, new PageRequest(0,1));
-		//if(p.hasContent()) {
-			return p.getContent();
-		//}else {
-			//return new LinkedList<>();
-		//}
+		return p.getContent();
 	}
 	
 	default List<MessageBlob> getPrevious(int messageRoomId, int messageBlobId) {
-		Page<MessageBlob> p = findByMessageRoomIdAndMessageBlobIdLessThanOrderByMessageBlobIdDesc
+		Page<MessageBlob> p = findByMessageRoomIdAndMessageBlobIdLessThanOrderByMessageBlobIdAsc
 				(messageRoomId,messageBlobId,new PageRequest(0,1));
 		return p.getContent();
+	}
+	
+	default List<MessageBlob> getUpdate(int messageRoomId, int messageBlobId){
+		List<MessageBlob> l = findByMessageRoomIdAndMessageBlobIdGreaterThanEqualOrderByMessageBlobIdAsc
+				(messageRoomId,messageBlobId);
+		return l;
 	}
 }
