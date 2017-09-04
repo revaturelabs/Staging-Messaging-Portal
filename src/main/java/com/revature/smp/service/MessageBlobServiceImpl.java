@@ -38,22 +38,22 @@ public class MessageBlobServiceImpl implements MessageBlobService {
 	}
 
 	@Override
-	public void postMessage(int messageRoomId, String user, String message){
+	public void postMessage(int messageRoomId, String user, String text){
 		ObjectMapper om = new ObjectMapper();
 		List<MessageBlob> mr = getMostRecent(messageRoomId);
 		MessageBlob b = null;
 		if(mr.size()>0) {
 			b = mr.get(0);
 		}else {
-			b = new MessageBlob((int) mdao.count(),messageRoomId);
+			b = new MessageBlob((int) mdao.count()+1,messageRoomId);
 		}
 		try {
 			Message[] m = om.readValue(b.getMessageBlob(),Message[].class);
 			if(m.length >= 25) {
-				b = new MessageBlob((int) mdao.count(),messageRoomId);
+				b = new MessageBlob((int) mdao.count()+1,messageRoomId);
 				m = om.readValue(b.getMessageBlob(),Message[].class);
 			}
-			Message newm = new Message(user, System.currentTimeMillis(), message);
+			Message newm = new Message(user, System.currentTimeMillis(), text);
 			
 			List<Message> lm = new LinkedList<>();
 			for(Message ms : m) {
