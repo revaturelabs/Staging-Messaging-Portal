@@ -16,7 +16,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface MessageBlobDAO extends JpaRepository<MessageBlob,Integer>{
 	MessageBlob findByMessageBlobId(int messageBlobId);
 	Page<MessageBlob> findByMessageRoomIdOrderByMessageBlobIdDesc(int messageRoomId, Pageable p);
-	Page<MessageBlob> findByMessageRoomIdAndMessageBlobIdLessThanOrderByMessageBlobIdAsc(int messageRoomId,int messageBlobId, Pageable p);
+	Page<MessageBlob> findByMessageRoomIdAndMessageBlobIdLessThanOrderByMessageBlobIdDesc(int messageRoomId,int messageBlobId, Pageable p);
 	List<MessageBlob> findByMessageRoomIdAndMessageBlobIdGreaterThanEqualOrderByMessageBlobIdAsc(int messageRoomId,int messageBlobId);
 	
 	default List<MessageBlob> getMostRecent(int messageRoomId) {
@@ -25,7 +25,7 @@ public interface MessageBlobDAO extends JpaRepository<MessageBlob,Integer>{
 	}
 	
 	default List<MessageBlob> getPrevious(int messageRoomId, int messageBlobId) {
-		Page<MessageBlob> p = findByMessageRoomIdAndMessageBlobIdLessThanOrderByMessageBlobIdAsc
+		Page<MessageBlob> p = findByMessageRoomIdAndMessageBlobIdLessThanOrderByMessageBlobIdDesc
 				(messageRoomId,messageBlobId,new PageRequest(0,1));
 		return p.getContent();
 	}

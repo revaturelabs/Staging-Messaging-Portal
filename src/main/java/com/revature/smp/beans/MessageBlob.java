@@ -29,7 +29,7 @@ public class MessageBlob{
 	public MessageBlob(int messageBlobId,  int messageRoomId) {
 		super();
 		this.messageBlobId = messageBlobId;
-		this.messageBlob = "W10=".getBytes(); //[] in base64
+		this.messageBlob = "[]".getBytes();
 		this.messageRoomId = messageRoomId;
 	}
 	

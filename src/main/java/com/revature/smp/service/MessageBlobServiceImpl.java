@@ -65,7 +65,9 @@ public class MessageBlobServiceImpl implements MessageBlobService {
 			b.setMessageBlob(j);
 			
 			mdao.save(b);
-		} catch (IOException e) {}
+		} catch (IOException e) {
+			System.err.println(e);
+		}
 			
 		
 	}
