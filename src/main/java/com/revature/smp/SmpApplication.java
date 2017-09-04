@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.client.RestTemplate;
 
 
@@ -14,6 +15,7 @@ import org.springframework.web.client.RestTemplate;
 @ComponentScan("com.revature.*")
 @EnableScheduling
 @EnableJpaRepositories("com.revature.smp.dao")
+@EnableTransactionManagement
 public class SmpApplication {
 	
 	public static void main(String[] args) 

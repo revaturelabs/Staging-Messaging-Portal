@@ -1,6 +1,8 @@
 package com.revature.smp.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.smp.beans.Message;
@@ -12,8 +14,6 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Base64;
 import java.util.LinkedList;
-
-import javax.transaction.Transactional;
 
 @org.springframework.stereotype.Service
 @Transactional
@@ -38,7 +38,9 @@ public class MessageBlobServiceImpl implements MessageBlobService {
 	}
 
 	@Override
+	@Transactional(isolation = Isolation.SERIALIZABLE)
 	public void postMessage(int messageRoomId, String user, String text){
+		
 		ObjectMapper om = new ObjectMapper();
 		List<MessageBlob> mr = getMostRecent(messageRoomId);
 		MessageBlob b = null;
@@ -63,6 +65,7 @@ public class MessageBlobServiceImpl implements MessageBlobService {
 			
 			byte[] j = om.writeValueAsBytes(lm);
 			b.setMessageBlob(j);
+			
 			
 			mdao.save(b);
 		} catch (IOException e) {

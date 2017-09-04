@@ -51,7 +51,13 @@ public class MessageController {
 
 	@RequestMapping(value = "/post/{room}", method = RequestMethod.POST)
 	public Map<String, Object> quickSaveAssessment(@PathVariable Integer room,@RequestBody Message message){
-		ms.postMessage(room, message.getUser(), message.getText());
+		boolean success = false;
+		while(!success) {
+			try {
+				ms.postMessage(room, message.getUser(), message.getText());
+				success = true;
+			}catch(Exception E) {}
+		}
 		Map<String, Object> responseMap = new HashMap<String, Object>();
 		responseMap.put("status", "200");
 		return responseMap;
