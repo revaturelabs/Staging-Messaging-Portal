@@ -11,24 +11,22 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Entity
-@Table(name="LOCATION")
-public class Location implements Serializable{
-
+@Table(name = "LOCATION")
+public class Location implements Serializable {
+	
 	private static final long serialVersionUID = 6033234014682351342L;
 	
 	@Id
-	@Column(name="LOCATION_ID")
+	@Column(name = "LOCATION_ID")
 	private int locationId;
 	
-	@Column(name="LOCATION")
+	@Column(name = "LOCATION")
 	private String location;
 	
 	public Location() {
-		super();
 	}
 	
 	public Location(int locationId, String location) {
-		super();
 		this.locationId = locationId;
 		this.location = location;
 	}
@@ -51,7 +49,11 @@ public class Location implements Serializable{
 	
 	@Override
 	public String toString() {
-		return "Location [locationId=" + locationId + ", location=" + location + "]";
+		return "Location [locationId="
+				+ locationId
+				+ ", location="
+				+ location
+				+ "]";
 	}
 	
 }
