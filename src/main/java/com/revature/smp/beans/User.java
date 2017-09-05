@@ -75,7 +75,6 @@ public class User implements Serializable {
 	private Date created;
 	
 	public User() {
-		super();
 	}
 	
 	public int getUserId() {

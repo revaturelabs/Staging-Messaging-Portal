@@ -28,7 +28,7 @@ public class LoggingAspect {
 		
 		// Setup for grabbing method information
 		MethodSignature sign = (MethodSignature) pjp.getSignature();
-		Class[] excepType = sign.getExceptionTypes();
+		Class<?>[] excepType = sign.getExceptionTypes();
 		
 		List<String> except = new ArrayList<>();
 		for (Class<?> c : excepType) {
