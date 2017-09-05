@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.revature.smp.beans.User;
-import com.revature.smp.domain.UserRegistrationRequest;
 import com.revature.smp.repositories.UserRepository;
 
 @Service

@@ -1,4 +1,4 @@
-package com.reavture.smp;
+package com.revature.smp;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

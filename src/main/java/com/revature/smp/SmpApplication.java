@@ -13,7 +13,7 @@ import com.revature.smp.services.registration.AssociateRegistrationService;
 
 
 @SpringBootApplication
-@ComponentScan("com.revature.smp.*")
+@ComponentScan("com.revature.*")
 @EnableScheduling
 @EnableJpaRepositories("com.revature.smp.repositories")
 public class SmpApplication {

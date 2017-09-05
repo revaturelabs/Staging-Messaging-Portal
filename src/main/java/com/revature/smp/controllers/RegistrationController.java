@@ -2,6 +2,8 @@ package com.revature.smp.controllers;
 
 import java.sql.Date;
 
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,9 +21,12 @@ import com.revature.smp.services.registration.RegistrationManagerService;
 @RestController
 public class RegistrationController {
 	
+	
+	
 	public static final String RESTON = "Reston";
 	public static final String FLORIDA = "Florida";
 	public static final String NEW_YORK = "New York";
+	public static final String REGISTER_USER_URL = "/register-user";
 	
 	
 	@Autowired
@@ -32,13 +37,13 @@ public class RegistrationController {
 	
 	/**
 	 * 
-	 * @param request
+	 * @param UserRegistrationRequest object created from consuming JSON
 	 * @return 201 - successfully created new user
 	 * 		   409 - user already exists with requested email
 	 * 		   501 - service unavailable (trouble connecting to database)
 	 */
-	@RequestMapping(value ="/register-user", method = RequestMethod.POST, consumes="application/json")
-	public String register(@RequestBody UserRegistrationRequest request) 
+	@RequestMapping(value = REGISTER_USER_URL, method = RequestMethod.POST, consumes="application/json")
+	public void register(@RequestBody UserRegistrationRequest request, HttpServletResponse response) 
 	{
 
 		User userRegistration = new User();
@@ -64,7 +69,7 @@ public class RegistrationController {
 		}
 		
 		System.out.println(request.toString());
-		return null;
+		response.setStatus(HttpServletResponse.SC_OK);
 	}
 	
 	@RequestMapping(value="/all-pending-users", method = RequestMethod.GET)
