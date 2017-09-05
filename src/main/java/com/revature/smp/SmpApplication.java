@@ -10,12 +10,20 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.client.RestTemplate;
 
 
+/**
+ * The Class SmpApplication.
+ */
 @SpringBootApplication
 @ComponentScan("com.revature.*")
 @EnableScheduling
 @EnableJpaRepositories("com.revature.smp.dao")
 public class SmpApplication {
 	
+	/**
+	 * The main method, runs Spring Boot
+	 *
+	 * @param args the arguments
+	 */
 	public static void main(String[] args) 
 	{
 		SpringApplication.run(SmpApplication.class, args);
