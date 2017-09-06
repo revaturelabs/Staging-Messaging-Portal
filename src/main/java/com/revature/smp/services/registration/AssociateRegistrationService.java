@@ -19,8 +19,21 @@ public class AssociateRegistrationService {
 	 * @throws Exception
 	 */
 	public void registerAssociate(User userRequest) throws Exception{
+		// TODO - username may need to be updated if duplicate already exists in DB
+		userRequest.setUsername(this.generateUniqueUsername(userRequest));
+		
+		// Once username is determined, persist user to DB
+		userRequest.setPassword(this.generateFirstTimePassword());
 		userRepo.save(userRequest);
+		
+		// TODO - email user with registration instructions
 		return;
+	}
+	
+	public static String generateUniqueUsername(User user) {
+		// TODO - create username based on first name and last name, ensure duplicate
+		// does not exist, if username does exist, apply numeric code to ensure uniqueness
+		return null;
 	}
 	
 	public static String generateFirstTimePassword() {
@@ -31,7 +44,7 @@ public class AssociateRegistrationService {
 	}
 	
 	public void emailAssociateAccountSetup() {
-		//todo
+		//TODO
 	}
 
 }

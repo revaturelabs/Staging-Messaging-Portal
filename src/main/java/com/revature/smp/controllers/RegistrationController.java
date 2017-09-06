@@ -21,9 +21,6 @@ import com.revature.smp.services.registration.RegistrationManagerService;
 @RestController
 public class RegistrationController {
 	
-	public static final String RESTON = "Reston";
-	public static final String FLORIDA = "Florida";
-	public static final String NEW_YORK = "New York";
 	public static final String REGISTER_USER_URL = "/register-user";
 	
 	@Autowired
