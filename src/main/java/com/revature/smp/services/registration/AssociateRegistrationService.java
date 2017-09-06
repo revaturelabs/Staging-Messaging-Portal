@@ -30,13 +30,26 @@ public class AssociateRegistrationService {
 		return;
 	}
 	
-	public static String generateUniqueUsername(User user) {
-		// TODO - create username based on first name and last name, ensure duplicate
-		// does not exist, if username does exist, apply numeric code to ensure uniqueness
-		return null;
+	/**
+	 * 
+	 * @param user
+	 * @return username based on first name and last name, ensure duplicate does 
+	 * not exist, if username does exist, apply numeric code to ensure uniqueness
+	 */
+	public String generateUniqueUsername(User user) {
+		String fullName = user.getFirstName()+"."+user.getLastName();
+		String uniqueUsername = fullName;
+		int i = 1;
+		
+		while( userRepo.findByUsername(uniqueUsername) != null) {
+			uniqueUsername = fullName + i;
+			i++;
+		}
+		
+		return uniqueUsername;
 	}
 	
-	public static String generateFirstTimePassword() {
+	public String generateFirstTimePassword() {
 		RandomStringGenerator generator = new RandomStringGenerator.Builder()
 			     .withinRange('!', '~').build();
 		String oneTimePassword = generator.generate(12);

@@ -1,6 +1,7 @@
 package com.revature.smp.beans;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
@@ -99,6 +100,10 @@ public class User implements Serializable{
 		this.location = new Location(locationCode, locationMap.get(locationCode));
 		this.role = new Role(2, "Associate");
 		this.status = new Status(1, "Staging");
+		this.active = "0";
+		this.logged = "0";
+		this.useTemp = "1";
+		this.created = new Date();
 	}
 
 	public int getUserId() {

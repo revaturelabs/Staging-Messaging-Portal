@@ -6,10 +6,13 @@ public class UserRegistrationRequest {
 		super();
 	}
 
+
 	@Override
 	public String toString() {
-		return "UserRegistrationRequest [firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
+		return "UserRegistrationRequest [firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
+				+ ", locationId=" + locationId + "]";
 	}
+
 
 	private String firstName;
 	private String lastName;
