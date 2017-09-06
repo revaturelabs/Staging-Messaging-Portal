@@ -14,11 +14,13 @@ public class UserRegistrationRequest {
 	private String firstName;
 	private String lastName;
 	private String email;
+	private int locationId;
 	
-	public UserRegistrationRequest(String firstName, String lastName, String email) {
+	public UserRegistrationRequest(String firstName, String lastName, String email, int locationId) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
+		this.setLocationId(locationId);
 	}
 
 	public String getFirstName() {
@@ -43,6 +45,14 @@ public class UserRegistrationRequest {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public int getLocationId() {
+		return locationId;
+	}
+
+	public void setLocationId(int locationId) {
+		this.locationId = locationId;
 	}
 
 }

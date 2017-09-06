@@ -21,13 +21,10 @@ import com.revature.smp.services.registration.RegistrationManagerService;
 @RestController
 public class RegistrationController {
 	
-	
-	
 	public static final String RESTON = "Reston";
 	public static final String FLORIDA = "Florida";
 	public static final String NEW_YORK = "New York";
 	public static final String REGISTER_USER_URL = "/register-user";
-	
 	
 	@Autowired
 	AssociateRegistrationService registrationService;
@@ -46,20 +43,8 @@ public class RegistrationController {
 	public void register(@RequestBody UserRegistrationRequest request, HttpServletResponse response) 
 	{
 
-		User userRegistration = new User();
-		userRegistration.setFirstName(request.getFirstName());
-		userRegistration.setLastName(request.getLastName());
-		userRegistration.setEmail(request.getEmail());
-		userRegistration.setActive("0");
-		userRegistration.setCreated(new Date(0));
-		userRegistration.setLocation(new Location(3, "Florida"));
-		userRegistration.setLogged("0");
-		userRegistration.setRole(new Role(2, "Associate"));
-		userRegistration.setStatus(new Status(3, "Baller"));;
-		userRegistration.setUserId(1);
-		userRegistration.setUsername(request.getFirstName() + "." + request.getLastName());
-		userRegistration.setPassword("another1");
-		userRegistration.setUseTemp("0");
+		User userRegistration = new User(request.getFirstName(), request.getLastName(),
+				request.getEmail(), request.getLocationId());
 		
 		try {
 			registrationService.registerAssociate(userRegistration);

@@ -1,5 +1,6 @@
 package com.revature.smp.services.registration;
 
+import org.apache.commons.text.RandomStringGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,6 +21,17 @@ public class AssociateRegistrationService {
 	public void registerAssociate(User userRequest) throws Exception{
 		userRepo.save(userRequest);
 		return;
+	}
+	
+	public static String generateFirstTimePassword() {
+		RandomStringGenerator generator = new RandomStringGenerator.Builder()
+			     .withinRange('!', '~').build();
+		String oneTimePassword = generator.generate(12);
+		return oneTimePassword;
+	}
+	
+	public void emailAssociateAccountSetup() {
+		//todo
 	}
 
 }

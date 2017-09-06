@@ -1,7 +1,10 @@
 package com.revature.smp.beans;
 
 import java.io.Serializable;
+import java.util.Collections;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -23,6 +26,15 @@ import org.springframework.stereotype.Component;
 public class User implements Serializable{
 
 	private static final long serialVersionUID = 6104022944061620088L;
+	private static final Map<Integer, String> locationMap = createMap();
+	
+	private static Map<Integer, String> createMap(){
+		Map<Integer, String> locationMap = new HashMap();
+        locationMap.put(1, "Virginia");
+        locationMap.put(2, "New York");
+        locationMap.put(3, "Florida");
+        return Collections.unmodifiableMap(locationMap);
+	}
 	
 	@Id
 	@GeneratedValue(generator = "SMP_USER_SEQ", strategy = GenerationType.SEQUENCE)
@@ -77,6 +89,16 @@ public class User implements Serializable{
 	
 	public User() {
 		super();
+	}
+	
+	public User(String firstName, String lastName, String email, int locationCode) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.location = new Location(locationCode, locationMap.get(locationCode));
+		this.role = new Role(2, "Associate");
+		this.status = new Status(1, "Staging");
 	}
 
 	public int getUserId() {
