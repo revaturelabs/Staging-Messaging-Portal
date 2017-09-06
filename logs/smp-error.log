@@ -1,12 +1,10 @@
-[WARN] [44708 ms] [09-05-2017 09:56:13] [PageNotFound (noHandlerFound : 1195)] -
-					No mapping found for HTTP request with URI [/msg] in DispatcherServlet with name 'dispatcherServlet'
-[WARN] [135614 ms] [09-05-2017 09:57:44] [PageNotFound (noHandlerFound : 1195)] -
-					No mapping found for HTTP request with URI [/getupdate/1/1] in DispatcherServlet with name 'dispatcherServlet'
-[WARN] [261311 ms] [09-05-2017 09:59:50] [PageNotFound (noHandlerFound : 1195)] -
+[WARN] [41969 ms] [09-06-2017 10:18:08] [PageNotFound (noHandlerFound : 1195)] -
 					No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'dispatcherServlet'
-[WARN] [548610 ms] [09-05-2017 10:04:37] [PageNotFound (noHandlerFound : 1195)] -
-					No mapping found for HTTP request with URI [/useras] in DispatcherServlet with name 'dispatcherServlet'
-[WARN] [1440884 ms] [09-05-2017 10:19:29] [PageNotFound (noHandlerFound : 1195)] -
-					No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'dispatcherServlet'
-[WARN] [1449163 ms] [09-05-2017 10:19:37] [PageNotFound (noHandlerFound : 1195)] -
-					No mapping found for HTTP request with URI [/users] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [122046 ms] [09-06-2017 10:19:28] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/getprevious/1/1] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [149010 ms] [09-06-2017 10:19:55] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/getprevious/] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [188699 ms] [09-06-2017 10:20:35] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/getprevious/0/0] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [517951 ms] [09-06-2017 10:26:04] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/getmostrecent/1] in DispatcherServlet with name 'dispatcherServlet'
