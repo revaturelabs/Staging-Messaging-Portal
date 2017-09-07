@@ -22,46 +22,45 @@ import com.revature.smp.service.MessageBlobService;
 @RequestMapping("/msg")
 public class MessageController {
 	
-	@Autowired
-	MessageBlobService ms;
+	// @Autowired
+	// UserService userSvc;
 	
-	@RequestMapping(value = "/getmostrecent/{room}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	@Autowired
+	MessageBlobService msgBlobSvc;
+	
+	@RequestMapping(value="/fetch-update/{room}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<List<MessageBlob>> getMostRecent(
 			@PathVariable Integer room) {
-		return new ResponseEntity<List<MessageBlob>>(ms.getMostRecent(room),
-				HttpStatus.OK);
+		return new ResponseEntity<List<MessageBlob>>(msgBlobSvc.getMostRecent(room), HttpStatus.OK);
 	}
 	
-	@RequestMapping(value = "/getprevious/{room}/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<List<MessageBlob>> getPrevious(
-			@PathVariable Integer room, @PathVariable Integer id) {
-		return new ResponseEntity<List<MessageBlob>>(ms.getPrevious(room, id),
-				HttpStatus.OK);
-	}
-	
-	@RequestMapping(value = "/getupdate/{room}/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(value="/fetch-update/{room}/{id}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<List<MessageBlob>> getUpdate(
 			@PathVariable Integer room, @PathVariable Integer id) {
-		return new ResponseEntity<List<MessageBlob>>(ms.getUpdate(room, id),
-				HttpStatus.OK);
+		return new ResponseEntity<List<MessageBlob>>(msgBlobSvc.getUpdate(room, id), HttpStatus.OK);
 	}
 	
-	// @Autowired
-	// UserDAO UsersService;
+	@RequestMapping(value="/fetch-previous/{room}/{id}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<List<MessageBlob>> getPrevious(
+			@PathVariable Integer room, @PathVariable Integer id) {
+		return new ResponseEntity<List<MessageBlob>>(msgBlobSvc.getPrevious(room, id), HttpStatus.OK);
+	}
 	
-	@RequestMapping(value = "/post/{room}", method = RequestMethod.POST)
-	public Map<String, Object> quickSaveAssessment(@PathVariable Integer room,
-			@RequestBody Message message) {
+	@RequestMapping(value="/post/{room}", method=RequestMethod.POST)
+	public Map<String, Object> postMessage(@PathVariable Integer room, @RequestBody Message message) 
+	{
 		boolean success = false;
-		while (!success) {
+		while (!success) 
+		{
 			try {
-				ms.postMessage(room, message.getUser(), message.getText());
+				msgBlobSvc.postMessage(room, message.getUser(), message.getText());
 				success = true;
-			} catch (Exception E) {
+			} catch (Exception e) {
+				
 			}
 		}
 		Map<String, Object> responseMap = new HashMap<String, Object>();
-		responseMap.put("status", "200");
+		responseMap.put("response", HttpStatus.OK);
 		return responseMap;
 	}
 	
