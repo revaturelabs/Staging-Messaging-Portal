@@ -9,8 +9,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.client.RestTemplate;
 
-import com.revature.smp.services.registration.AssociateRegistrationService;
-
 
 @SpringBootApplication
 @ComponentScan("com.revature.*")

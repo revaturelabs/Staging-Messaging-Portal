@@ -1,7 +1,5 @@
 package com.revature.smp;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 import com.revature.smp.beans.User;

@@ -1,7 +1,5 @@
 package com.revature.smp.controllers;
 
-import java.sql.Date;
-
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,9 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.revature.smp.beans.Location;
-import com.revature.smp.beans.Role;
-import com.revature.smp.beans.Status;
 import com.revature.smp.beans.User;
 import com.revature.smp.domain.UserRegistrationRequest;
 import com.revature.smp.services.registration.AssociateRegistrationService;
@@ -50,7 +45,7 @@ public class RegistrationController {
 			e.printStackTrace();
 		}
 		
-		System.out.println(request.toString());
+		////System.out.println(request.toString());
 		response.setStatus(HttpServletResponse.SC_OK);
 	}
 	

@@ -1,7 +1,6 @@
 package com.revature.smp.beans;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
@@ -30,7 +29,7 @@ public class User implements Serializable{
 	private static final Map<Integer, String> locationMap = createMap();
 	
 	private static Map<Integer, String> createMap(){
-		Map<Integer, String> locationMap = new HashMap();
+		Map<Integer, String> locationMap = new HashMap<Integer, String>();
         locationMap.put(1, "Virginia");
         locationMap.put(2, "New York");
         locationMap.put(3, "Florida");
