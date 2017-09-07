@@ -3,6 +3,7 @@ package com.revature.smp.beans;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
@@ -10,31 +11,32 @@ import org.springframework.stereotype.Component;
 @Component
 @Entity
 @Table(name = "MESSAGE")
-public class MessageBlob {
+public class MessageClob {
 	
 	@Id
-	@Column(name = "MESSAGE_BLOB_ID")
+	@Column(name = "MESSAGE_CLOB_ID")
 	private int messageBlobId;
 	
-	@Column(name = "MESSAGE_BLOB")
-	private byte[] messageBlob;
+	@Column(name = "MESSAGE_CLOB")
+	@Lob
+	private String messageClob;
 	
 	@Column(name = "MESSAGE_ROOM_ID")
 	private int messageRoomId;
 	
-	public MessageBlob() {
+	public MessageClob() {
 	}
 	
-	public MessageBlob(int messageBlobId, int messageRoomId) {
+	public MessageClob(int messageBlobId, int messageRoomId) {
 		this.messageBlobId = messageBlobId;
-		this.messageBlob = "[]".getBytes();
+		this.messageClob = messageClob;
 		this.messageRoomId = messageRoomId;
 	}
 	
-	public MessageBlob(int messageBlobId, byte[] messageBlob,
+	public MessageClob(int messageBlobId, String messageClob,
 			int messageRoomId) {
 		this.messageBlobId = messageBlobId;
-		this.messageBlob = messageBlob;
+		this.messageClob = messageClob;
 		this.messageRoomId = messageRoomId;
 	}
 	
@@ -42,16 +44,16 @@ public class MessageBlob {
 		return messageBlobId;
 	}
 	
-	public void setMessageBlobId(int messageBlobId) {
-		this.messageBlobId = messageBlobId;
+	public void setMessageBlobId(int messageClobId) {
+		this.messageBlobId = messageClobId;
 	}
 	
-	public byte[] getMessageBlob() {
-		return messageBlob;
+	public String getMessageBlob() {
+		return messageClob;
 	}
 	
-	public void setMessageBlob(byte[] messageBlob) {
-		this.messageBlob = messageBlob;
+	public void setMessageBlob(String messageClob) {
+		this.messageClob = messageClob;
 	}
 	
 	public int getMessageRoomId() {
@@ -67,7 +69,7 @@ public class MessageBlob {
 		return "Message [messageBlobId="
 				+ messageBlobId
 				+ ", messageBlob="
-				+ messageBlob
+				+ messageClob
 				+ ", messageRoomId="
 				+ messageRoomId
 				+ "]";

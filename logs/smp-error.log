@@ -1,10 +1,2 @@
-[WARN] [41969 ms] [09-06-2017 10:18:08] [PageNotFound (noHandlerFound : 1195)] -
+[WARN] [18670 ms] [09-07-2017 15:29:08] [PageNotFound (noHandlerFound : 1195)] -
 					No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'dispatcherServlet'
-[WARN] [122046 ms] [09-06-2017 10:19:28] [PageNotFound (noHandlerFound : 1195)] -
-					No mapping found for HTTP request with URI [/getprevious/1/1] in DispatcherServlet with name 'dispatcherServlet'
-[WARN] [149010 ms] [09-06-2017 10:19:55] [PageNotFound (noHandlerFound : 1195)] -
-					No mapping found for HTTP request with URI [/getprevious/] in DispatcherServlet with name 'dispatcherServlet'
-[WARN] [188699 ms] [09-06-2017 10:20:35] [PageNotFound (noHandlerFound : 1195)] -
-					No mapping found for HTTP request with URI [/getprevious/0/0] in DispatcherServlet with name 'dispatcherServlet'
-[WARN] [517951 ms] [09-06-2017 10:26:04] [PageNotFound (noHandlerFound : 1195)] -
-					No mapping found for HTTP request with URI [/getmostrecent/1] in DispatcherServlet with name 'dispatcherServlet'

@@ -8,35 +8,35 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.revature.smp.beans.MessageBlob;
+import com.revature.smp.beans.MessageClob;
 
 @Repository
-public interface MessageBlobDAO extends JpaRepository<MessageBlob, Integer> {
-	MessageBlob findByMessageBlobId(int messageBlobId);
+public interface MessageBlobDAO extends JpaRepository<MessageClob, Integer> {
+	MessageClob findByMessageBlobId(int messageBlobId);
 	
-	Page<MessageBlob> findByMessageRoomIdOrderByMessageBlobIdDesc(
+	Page<MessageClob> findByMessageRoomIdOrderByMessageBlobIdDesc(
 			int messageRoomId, Pageable p);
 	
-	Page<MessageBlob> findByMessageRoomIdAndMessageBlobIdLessThanOrderByMessageBlobIdDesc(
+	Page<MessageClob> findByMessageRoomIdAndMessageBlobIdLessThanOrderByMessageBlobIdDesc(
 			int messageRoomId, int messageBlobId, Pageable p);
 	
-	List<MessageBlob> findByMessageRoomIdAndMessageBlobIdGreaterThanEqualOrderByMessageBlobIdAsc(
+	List<MessageClob> findByMessageRoomIdAndMessageBlobIdGreaterThanEqualOrderByMessageBlobIdAsc(
 			int messageRoomId, int messageBlobId);
 	
-	default List<MessageBlob> getMostRecent(int messageRoomId) {
+	default List<MessageClob> getMostRecent(int messageRoomId) {
 		return findByMessageRoomIdOrderByMessageBlobIdDesc(messageRoomId,
 				new PageRequest(0, 1)).getContent();
 	}
 	
-	default List<MessageBlob> getPrevious(int messageRoomId,
+	default List<MessageClob> getPrevious(int messageRoomId,
 			int messageBlobId) {
 		return findByMessageRoomIdAndMessageBlobIdLessThanOrderByMessageBlobIdDesc(
 				messageRoomId, messageBlobId, new PageRequest(0, 1))
 						.getContent();
 	}
 	
-	default List<MessageBlob> getUpdate(int messageRoomId, int messageBlobId) {
-		List<MessageBlob> l =
+	default List<MessageClob> getUpdate(int messageRoomId, int messageBlobId) {
+		List<MessageClob> l =
 				findByMessageRoomIdAndMessageBlobIdGreaterThanEqualOrderByMessageBlobIdAsc(
 						messageRoomId, messageBlobId);
 		return l;

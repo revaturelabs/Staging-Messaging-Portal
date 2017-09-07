@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.revature.smp.beans.MessageBlob;
+import com.revature.smp.beans.MessageClob;
 import com.revature.smp.beans.Message;
 import com.revature.smp.service.MessageBlobService;
 
@@ -26,23 +26,23 @@ public class MessageController {
 	MessageBlobService ms;
 	
 	@RequestMapping(value = "/getmostrecent/{room}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<List<MessageBlob>> getMostRecent(
+	public ResponseEntity<List<MessageClob>> getMostRecent(
 			@PathVariable Integer room) {
-		return new ResponseEntity<List<MessageBlob>>(ms.getMostRecent(room),
+		return new ResponseEntity<List<MessageClob>>(ms.getMostRecent(room),
 				HttpStatus.OK);
 	}
 	
 	@RequestMapping(value = "/getprevious/{room}/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<List<MessageBlob>> getPrevious(
+	public ResponseEntity<List<MessageClob>> getPrevious(
 			@PathVariable Integer room, @PathVariable Integer id) {
-		return new ResponseEntity<List<MessageBlob>>(ms.getPrevious(room, id),
+		return new ResponseEntity<List<MessageClob>>(ms.getPrevious(room, id),
 				HttpStatus.OK);
 	}
 	
 	@RequestMapping(value = "/getupdate/{room}/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<List<MessageBlob>> getUpdate(
+	public ResponseEntity<List<MessageClob>> getUpdate(
 			@PathVariable Integer room, @PathVariable Integer id) {
-		return new ResponseEntity<List<MessageBlob>>(ms.getUpdate(room, id),
+		return new ResponseEntity<List<MessageClob>>(ms.getUpdate(room, id),
 				HttpStatus.OK);
 	}
 	
