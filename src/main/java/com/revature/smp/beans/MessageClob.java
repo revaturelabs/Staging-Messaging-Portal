@@ -10,68 +10,59 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Entity
-@Table(name = "MESSAGE")
+@Table(name="MESSAGE")
 public class MessageClob {
 	
 	@Id
-	@Column(name = "MESSAGE_CLOB_ID")
-	private int messageClobId;
+	@Column(name="MESSAGE_CACHE_ID")
+	private int messageCacheId;
 	
-	@Column(name = "MESSAGE_CLOB")
+	@Column(name="MESSAGE_CLOB")
 	@Lob
 	private String messageClob;
 	
-	@Column(name = "MESSAGE_ROOM_ID")
-	private int messageRoomId;
+	@Column(name="CREATED")
+	private long created;
 	
 	public MessageClob() {
+		
 	}
-	
-	public MessageClob(int messageClobId, int messageRoomId) {
-		this.messageClobId = messageClobId;
+
+	public MessageClob(int messageCacheId, String messageClob, long created) 
+	{
+		super();
+		this.messageCacheId = messageCacheId;
 		this.messageClob = messageClob;
-		this.messageRoomId = messageRoomId;
+		this.created = created;
 	}
-	
-	public MessageClob(int messageClobId, String messageClob,
-			int messageRoomId) {
-		this.messageClobId = messageClobId;
-		this.messageClob = messageClob;
-		this.messageRoomId = messageRoomId;
+
+	public int getMessageCacheId() {
+		return messageCacheId;
 	}
-	
-	public int getMessageClobId() {
-		return messageClobId;
+
+	public void setMessageCacheId(int messageCacheId) {
+		this.messageCacheId = messageCacheId;
 	}
-	
-	public void setMessageClobId(int messageClobId) {
-		this.messageClobId = messageClobId;
-	}
-	
+
 	public String getMessageClob() {
 		return messageClob;
 	}
-	
+
 	public void setMessageClob(String messageClob) {
 		this.messageClob = messageClob;
 	}
-	
-	public int getMessageRoomId() {
-		return messageRoomId;
+
+	public long getCreated() {
+		return created;
 	}
-	
-	public void setMessageRoomId(int messageRoomId) {
-		this.messageRoomId = messageRoomId;
+
+	public void setCreated(long created) {
+		this.created = created;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "Message [messageClobId="
-				+ messageClobId
-				+ ", messageClob="
-				+ messageClob
-				+ ", messageRoomId="
-				+ messageRoomId
+		return "MessageClob [messageCacheId=" + messageCacheId + ", messageClob=" + messageClob + ", created=" + created
 				+ "]";
 	}
 	
