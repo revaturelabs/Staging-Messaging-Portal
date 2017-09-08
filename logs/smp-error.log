@@ -1,0 +1,2 @@
+[WARN] [18670 ms] [09-07-2017 15:29:08] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'dispatcherServlet'

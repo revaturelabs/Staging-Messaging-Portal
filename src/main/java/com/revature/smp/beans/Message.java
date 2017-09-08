@@ -6,11 +6,9 @@ public class Message {
 	private String text;
 	
 	public Message() {
-		super();
 	}
 	
 	public Message(String user, long time, String text) {
-		super();
 		this.user = user;
 		this.time = time;
 		this.text = text;
@@ -19,21 +17,25 @@ public class Message {
 	public String getUser() {
 		return user;
 	}
+	
 	public void setUser(String user) {
 		this.user = user;
 	}
+	
 	public long getTime() {
 		return time;
 	}
+	
 	public void setTime(long time) {
 		this.time = time;
 	}
+	
 	public String getText() {
 		return text;
 	}
+	
 	public void setText(String text) {
 		this.text = text;
 	}
-	
 	
 }

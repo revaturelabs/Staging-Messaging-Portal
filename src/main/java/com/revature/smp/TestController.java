@@ -1,6 +1,5 @@
 package com.revature.smp;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -14,16 +13,16 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class TestController {
-
-    @RequestMapping(value="/getproduct/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Integer> getProduct(@PathVariable Integer id) {
-        Integer p = id;
-
-        return new ResponseEntity<Integer>(p, HttpStatus.OK);
-    }
-
-    @RequestMapping(value="/junk",method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<String> junk(){
-        return new ResponseEntity<String>("help plz",HttpStatus.OK);
-    }
+	
+	@RequestMapping(value = "/getproduct/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Integer> getProduct(@PathVariable Integer id) {
+		Integer p = id;
+		
+		return new ResponseEntity<Integer>(p, HttpStatus.OK);
+	}
+	
+	@RequestMapping(value = "/junk", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<String> junk() {
+		return new ResponseEntity<String>("help plz", HttpStatus.OK);
+	}
 }
