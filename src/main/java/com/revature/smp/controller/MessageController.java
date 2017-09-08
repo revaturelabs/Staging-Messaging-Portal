@@ -16,14 +16,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.revature.smp.beans.MessageClob;
 import com.revature.smp.beans.Message;
-import com.revature.smp.service.MessageBlobService;
+import com.revature.smp.service.MessageClobService;
 
 @RestController
 @RequestMapping("/msg")
 public class MessageController {
 	
 	@Autowired
-	MessageBlobService ms;
+	MessageClobService ms;
 	
 	@RequestMapping(value = "/getmostrecent/{room}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<List<MessageClob>> getMostRecent(
