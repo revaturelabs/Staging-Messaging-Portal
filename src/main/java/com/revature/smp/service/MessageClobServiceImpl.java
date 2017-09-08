@@ -8,12 +8,11 @@ import java.util.List;
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.datasource.DataSourceUtils;
+import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.revature.smp.beans.ApplicationContextProvider;
 import com.revature.smp.beans.MessageClob;
 import com.revature.smp.dao.MessageClobDAO;
 
@@ -23,6 +22,9 @@ public class MessageClobServiceImpl implements MessageClobService {
 	
 	@Autowired
 	MessageClobDAO mdao;
+	
+	@Autowired
+	private ApplicationContext context;
 	
 	@Override
 	public List<MessageClob> getMostRecent(int messageRoomId) {
@@ -43,48 +45,18 @@ public class MessageClobServiceImpl implements MessageClobService {
 	@Override
 	@Transactional(isolation = Isolation.SERIALIZABLE)
 	public void postMessage(int messageRoomId, String user, String text) {
-		DataSource ds = (DataSource) ApplicationContextProvider
-				.getApplicationContext().getBean("dataSource");
-		// Connection d = DataSourceUtils.getConnection(ds);
+		DataSource ds = (DataSource) context.getBean("dataSource");
 		Connection c;
+		String message = user + " : " + text;
 		try {
 			c = ds.getConnection();
 			Clob clob = c.createClob();
-			clob.setString(messageRoomId, user + " : " + text);
-			System.out.println(clob);
+			clob.setString(messageRoomId, message);
+			System.out.println(clob.getSubString(1, message.length()));
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		// ObjectMapper om = new ObjectMapper();
-		// List<MessageClob> mr = getMostRecent(messageRoomId);
-		// MessageClob b = null;
-		// if (!mr.isEmpty()) {
-		// b = mr.get(0);
-		// } else {
-		// b = new MessageClob((int) mdao.count() + 1, messageRoomId);
-		// }
-		// try {
-		// Message[] m = om.readValue(b.getMessageClob(), Message[].class);
-		// if (m.length >= 25) {
-		// b = new MessageClob((int) mdao.count() + 1, messageRoomId);
-		// m = om.readValue(b.getMessageClob(), Message[].class);
-		// }
-		// Message newm = new Message(user, System.currentTimeMillis(), text);
-		//
-		// List<Message> lm = new LinkedList<>();
-		// for (Message ms : m) {
-		// lm.add(ms);
-		// }
-		// lm.add(newm);
-		//
-		// // b.setMessageClob(om.writeValueAsBytes(lm));
-		//
-		// mdao.save(b);
-		// } catch (IOException e) {
-		// System.err.println(e);
-		// }
 		
 	}
 }

@@ -54,11 +54,10 @@ public class MessageController {
 			@RequestBody Message message) {
 		boolean success = false;
 		while (!success) {
-			try {
-				ms.postMessage(room, message.getUser(), message.getText());
-				success = true;
-			} catch (Exception E) {
-			}
+			
+			ms.postMessage(room, message.getUser(), message.getText());
+			success = true;
+			
 		}
 		Map<String, Object> responseMap = new HashMap<String, Object>();
 		responseMap.put("status", "200");
