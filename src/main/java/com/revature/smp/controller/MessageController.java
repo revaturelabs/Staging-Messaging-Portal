@@ -14,54 +14,72 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.revature.smp.beans.MessageBlob;
 import com.revature.smp.beans.Message;
-import com.revature.smp.service.MessageBlobService;
+import com.revature.smp.beans.MessageClob;
+import com.revature.smp.service.MessageService;
 
 @RestController
 @RequestMapping("/msg")
 public class MessageController {
 	
-	@Autowired
-	MessageBlobService ms;
-	
-	@RequestMapping(value = "/getmostrecent/{room}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<List<MessageBlob>> getMostRecent(
-			@PathVariable Integer room) {
-		return new ResponseEntity<List<MessageBlob>>(ms.getMostRecent(room),
-				HttpStatus.OK);
-	}
-	
-	@RequestMapping(value = "/getprevious/{room}/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<List<MessageBlob>> getPrevious(
-			@PathVariable Integer room, @PathVariable Integer id) {
-		return new ResponseEntity<List<MessageBlob>>(ms.getPrevious(room, id),
-				HttpStatus.OK);
-	}
-	
-	@RequestMapping(value = "/getupdate/{room}/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<List<MessageBlob>> getUpdate(
-			@PathVariable Integer room, @PathVariable Integer id) {
-		return new ResponseEntity<List<MessageBlob>>(ms.getUpdate(room, id),
-				HttpStatus.OK);
-	}
-	
 	// @Autowired
-	// UserDAO UsersService;
+	// UserService userSvc;
 	
-	@RequestMapping(value = "/post/{room}", method = RequestMethod.POST)
-	public Map<String, Object> quickSaveAssessment(@PathVariable Integer room,
-			@RequestBody Message message) {
+	@Autowired
+	MessageService msgSvc;
+	
+	@RequestMapping(value="/fetch-update/{room}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<List<MessageClob>> getMostRecent(@PathVariable Integer room) {
+		return new ResponseEntity<List<MessageClob>>(msgSvc.getMostRecent(room), HttpStatus.OK);
+	}
+	
+	@RequestMapping(value="/fetch-update/{room}/{id}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<List<MessageClob>> getUpdate(
+			@PathVariable Integer room, @PathVariable Integer id) {
+		return new ResponseEntity<List<MessageClob>>(msgSvc.getUpdate(room, id), HttpStatus.OK);
+	}
+	
+	@RequestMapping(value="/fetch-previous/{room}/{id}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<List<MessageClob>> getPrevious(
+			@PathVariable Integer room, @PathVariable Integer id) {
+		return new ResponseEntity<List<MessageClob>>(msgSvc.getPrevious(room, id), HttpStatus.OK);
+	}
+	
+	@RequestMapping(value="/post/{room}", method=RequestMethod.POST)
+	public Map<String, Object> postMessage(@PathVariable Integer room, @RequestBody Message message) 
+	{
 		boolean success = false;
-		while (!success) {
+		while (!success) 
+		{
 			try {
-				ms.postMessage(room, message.getUser(), message.getText());
+				msgSvc.postMessage(room, message.getUsername(), message.getText());
 				success = true;
-			} catch (Exception E) {
+			} catch (Exception e) {
+				
 			}
 		}
+		
 		Map<String, Object> responseMap = new HashMap<String, Object>();
-		responseMap.put("status", "200");
+		responseMap.put("response", HttpStatus.OK);
+		return responseMap;
+	}
+	
+	@RequestMapping(value="/cache/{room}", method=RequestMethod.POST)
+	public Map<String, Object> postCache(@PathVariable Integer room, @RequestBody Message message)
+	{
+		boolean success = false;
+		while (!success) 
+		{
+			try {
+				msgSvc.cacheMessages(room, message.getUsername(), message.getText());
+				success = true;
+			} catch (Exception e) {
+				
+			}
+		}
+		
+		Map<String, Object> responseMap = new HashMap<String, Object>();
+		responseMap.put("response", HttpStatus.OK);
 		return responseMap;
 	}
 	
