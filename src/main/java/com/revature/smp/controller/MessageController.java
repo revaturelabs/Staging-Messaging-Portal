@@ -1,5 +1,6 @@
 package com.revature.smp.controller;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -29,8 +30,11 @@ public class MessageController {
 	MessageBlobService msgBlobSvc;
 	
 	@RequestMapping(value="/fetch-update/{room}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<List<MessageBlob>> getMostRecent(
-			@PathVariable Integer room) {
+	public ResponseEntity<List<MessageBlob>> getMostRecent(@PathVariable Integer room) {
+		
+		/* fake message list test */
+		ResponseEntity<List<Message>> messages = new ResponseEntity<List<Message>>(null);
+		
 		return new ResponseEntity<List<MessageBlob>>(msgBlobSvc.getMostRecent(room), HttpStatus.OK);
 	}
 	
@@ -59,6 +63,7 @@ public class MessageController {
 				
 			}
 		}
+		
 		Map<String, Object> responseMap = new HashMap<String, Object>();
 		responseMap.put("response", HttpStatus.OK);
 		return responseMap;
