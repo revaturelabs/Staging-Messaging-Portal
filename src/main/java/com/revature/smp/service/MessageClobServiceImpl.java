@@ -50,7 +50,7 @@ public class MessageClobServiceImpl implements MessageClobService {
 		try {
 			c = ds.getConnection();
 			Clob clob = c.createClob();
-			clob.setString(1, "Test string");
+			clob.setString(messageRoomId, user + " : " + text);
 			System.out.println(clob);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
