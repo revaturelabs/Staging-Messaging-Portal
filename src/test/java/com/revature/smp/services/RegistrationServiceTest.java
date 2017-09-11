@@ -1,7 +1,6 @@
 package com.revature.smp.services;
 
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import com.revature.smp.services.registration.AssociateRegistrationService;
 
