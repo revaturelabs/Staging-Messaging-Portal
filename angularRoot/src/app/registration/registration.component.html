@@ -1,0 +1,33 @@
+<div class="container">
+    <h1>Registration Form</h1>
+    <form #registrationForm="ngForm" (ngSubmit)="onSubmit(registrationForm)" >
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" required
+        [(ngModel)]="firstName" name="firstName">
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" required
+        [(ngModel)]="lastName" name="lastName">
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="text" class="form-control" id="email" required
+        [(ngModel)]="email" name="email">
+      </div>
+      
+      <div class="form-group">
+		  <label for="location">Location</label>
+		  <select class="form-control" id="location" required
+		  [(ngModel)]="location" name="location">
+		    <option *ngFor="let location of locations" [value]="location">{{location}}</option>
+		  </select>
+	  </div>
+
+      <button type="submit" class="btn btn-success">Submit</button>
+
+    </form>
+</div>
