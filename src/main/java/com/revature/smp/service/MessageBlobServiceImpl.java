@@ -41,34 +41,7 @@ public class MessageBlobServiceImpl implements MessageBlobService {
 	@Transactional(isolation = Isolation.SERIALIZABLE)
 	public void postMessage(int messageRoomId, String user, String text) {
 		
-		ObjectMapper om = new ObjectMapper();
-		List<MessageClob> mr = getMostRecent(messageRoomId);
-		MessageClob b = null;
-		if (!mr.isEmpty()) {
-			b = mr.get(0);
-		} else {
-			b = new MessageClob((int) mdao.count() + 1, messageRoomId);
-		}
-		try {
-			Message[] m = om.readValue(b.getMessageBlob(), Message[].class);
-			if (m.length >= 25) {
-				b = new MessageClob((int) mdao.count() + 1, messageRoomId);
-				m = om.readValue(b.getMessageBlob(), Message[].class);
-			}
-			Message newm = new Message(user, System.currentTimeMillis(), text);
-			
-			List<Message> lm = new LinkedList<>();
-			for (Message ms : m) {
-				lm.add(ms);
-			}
-			lm.add(newm);
-			
-			// b.setMessageBlob(om.writeValueAsBytes(lm));
-			
-			mdao.save(b);
-		} catch (IOException e) {
-			System.err.println(e);
-		}
+		
 		
 	}
 }
