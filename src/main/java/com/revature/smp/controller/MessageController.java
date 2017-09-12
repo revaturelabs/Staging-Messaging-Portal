@@ -52,7 +52,7 @@ public class MessageController {
 		while (!success) 
 		{
 			try {
-				msgSvc.postMessage(room, message.getUsername(), message.getText());
+				msgSvc.postMessage(message);
 				success = true;
 			} catch (Exception e) {
 				
