@@ -8,10 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-<<<<<<< HEAD
 import org.springframework.orm.jpa.JpaSystemException;
-=======
->>>>>>> 897f7a01b8e5ca6a696f13e2545f0dc458ff7076
+
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -61,7 +59,7 @@ public class MessageController {
 			try {
 				ms.postMessage(room, message.getUser(), message.getText());
 				success = true;
-			} catch (Exception E) {
+			} catch (JpaSystemException E) {
 			}
 		}
 		Map<String, Object> responseMap = new HashMap<String, Object>();

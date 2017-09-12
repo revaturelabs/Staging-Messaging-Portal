@@ -12,33 +12,33 @@ import com.revature.smp.beans.MessageClob;
 
 @Repository
 public interface MessageBlobDAO extends JpaRepository<MessageClob, Integer> {
-	MessageClob findByMessageBlobId(int messageBlobId);
+	MessageClob findByMessageClobId(int messageClobId);
 	
-	Page<MessageClob> findByMessageRoomIdOrderByMessageBlobIdDesc(
+	Page<MessageClob> findByMessageRoomIdOrderByMessageClobIdDesc(
 			int messageRoomId, Pageable p);
 	
-	Page<MessageClob> findByMessageRoomIdAndMessageBlobIdLessThanOrderByMessageBlobIdDesc(
-			int messageRoomId, int messageBlobId, Pageable p);
+	Page<MessageClob> findByMessageRoomIdAndMessageClobIdLessThanOrderByMessageClobIdDesc(
+			int messageRoomId, int messageClobId, Pageable p);
 	
-	List<MessageClob> findByMessageRoomIdAndMessageBlobIdGreaterThanEqualOrderByMessageBlobIdAsc(
-			int messageRoomId, int messageBlobId);
+	List<MessageClob> findByMessageRoomIdAndMessageClobIdGreaterThanEqualOrderByMessageClobIdAsc(
+			int messageRoomId, int messageClobId);
 	
 	default List<MessageClob> getMostRecent(int messageRoomId) {
-		return findByMessageRoomIdOrderByMessageBlobIdDesc(messageRoomId,
+		return findByMessageRoomIdOrderByMessageClobIdDesc(messageRoomId,
 				new PageRequest(0, 1)).getContent();
 	}
 	
 	default List<MessageClob> getPrevious(int messageRoomId,
-			int messageBlobId) {
-		return findByMessageRoomIdAndMessageBlobIdLessThanOrderByMessageBlobIdDesc(
-				messageRoomId, messageBlobId, new PageRequest(0, 1))
+			int messageClobId) {
+		return findByMessageRoomIdAndMessageClobIdLessThanOrderByMessageClobIdDesc(
+				messageRoomId, messageClobId, new PageRequest(0, 1))
 						.getContent();
 	}
 	
-	default List<MessageClob> getUpdate(int messageRoomId, int messageBlobId) {
+	default List<MessageClob> getUpdate(int messageRoomId, int messageClobId) {
 		List<MessageClob> l =
-				findByMessageRoomIdAndMessageBlobIdGreaterThanEqualOrderByMessageBlobIdAsc(
-						messageRoomId, messageBlobId);
+				findByMessageRoomIdAndMessageClobIdGreaterThanEqualOrderByMessageClobIdAsc(
+						messageRoomId, messageClobId);
 		return l;
 	}
 }

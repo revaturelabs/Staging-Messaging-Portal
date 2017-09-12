@@ -14,10 +14,10 @@ import org.springframework.stereotype.Component;
 public class MessageClob {
 	
 	@Id
-	@Column(name = "MESSAGE_CLOB_ID")
-	private int messageBlobId;
+	@Column(name = "MESSAGE_CLOC_ID")
+	private int messageClobId;
 	
-	@Column(name = "MESSAGE_CLOB")
+	@Column(name = "MESSAGE_CLOC")
 	@Lob
 	private String messageClob;
 	
@@ -27,32 +27,32 @@ public class MessageClob {
 	public MessageClob() {
 	}
 	
-	public MessageClob(int messageBlobId, int messageRoomId) {
-		this.messageBlobId = messageBlobId;
+	public MessageClob(int messageClobId, int messageRoomId) {
+		this.messageClobId = messageClobId;
 		this.messageClob = messageClob;
 		this.messageRoomId = messageRoomId;
 	}
 	
-	public MessageClob(int messageBlobId, String messageClob,
+	public MessageClob(int messageClobId, String messageClob,
 			int messageRoomId) {
-		this.messageBlobId = messageBlobId;
+		this.messageClobId = messageClobId;
 		this.messageClob = messageClob;
 		this.messageRoomId = messageRoomId;
 	}
 	
-	public int getMessageBlobId() {
-		return messageBlobId;
+	public int getMessageClobId() {
+		return messageClobId;
 	}
 	
-	public void setMessageBlobId(int messageClobId) {
-		this.messageBlobId = messageClobId;
+	public void setMessageClobId(int messageClobId) {
+		this.messageClobId = messageClobId;
 	}
 	
-	public String getMessageBlob() {
+	public String getMessageClob() {
 		return messageClob;
 	}
 	
-	public void setMessageBlob(String messageClob) {
+	public void setMessageClob(String messageClob) {
 		this.messageClob = messageClob;
 	}
 	
@@ -66,9 +66,9 @@ public class MessageClob {
 	
 	@Override
 	public String toString() {
-		return "Message [messageBlobId="
-				+ messageBlobId
-				+ ", messageBlob="
+		return "Message [messageClobId="
+				+ messageClobId
+				+ ", messageClob="
 				+ messageClob
 				+ ", messageRoomId="
 				+ messageRoomId
