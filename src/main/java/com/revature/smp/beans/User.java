@@ -54,10 +54,10 @@ public class User implements Serializable{
 	@Column(name="PASSWD")
 	private String password;
 	
-	@Column(name="FIRST_NAME")
+	@Column(name="FIRSTNAME")
 	private String firstName;
 	
-	@Column(name="LAST_NAME")
+	@Column(name="LASTNAME")
 	private String lastName;
 	
 	@Column(name="EMAIL")

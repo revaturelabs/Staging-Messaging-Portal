@@ -1,17 +1,10 @@
 # Staging-Messaging-Portal
 
-Testing for Jenkins pull (8-23)(@Godu92)
+Registration branch:
 
-Adding basic Boot project for pipeline testing (8-24)(@Godu92)
+- The angularRoot directory contains the Angular application which hosts the
+front end GUI of the application
 
-
-First pull from Skeleton (8-28)(@dataricc)
-
-
-
-Registration branch pull
-=======
-Created feature branch for posting messages [ric-postmsg] (8/28)(@dataricc)
-=======
-Created feature branch for posting messages [ric-postmsg] (8/28)(@dataricc)
-
+- The remaining source code defines the spring boot application which contains
+ all database connectivity code and other utility microservices involved in the
+ registration feature
