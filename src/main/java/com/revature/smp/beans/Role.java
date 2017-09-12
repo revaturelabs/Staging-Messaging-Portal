@@ -17,10 +17,10 @@ public class Role implements Serializable {
 	private static final long serialVersionUID = 6033234014682351342L;
 	
 	@Id
-	@Column(name = "ROLE_ID")
+	@Column(name = "role_id")
 	private int roleId;
 	
-	@Column(name = "USER_ROLE_NAME")
+	@Column(name = "role_name")
 	private String roleName;
 	
 	public Role() {

@@ -11,25 +11,25 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Entity
-@Table(name="MESSAGE")
+@Table(name="MESSAGE_TABLE")
 public class Message implements Serializable {
 	
 	private static final long serialVersionUID = -8788118511720310200L;
 	
 	@Id
-	@Column(name="MESSAGE_ID")
+	@Column(name="message_id")
 	private int messageId;
 	
-	@Column(name="MESSAGE_ROOM_ID")
+	@Column(name="room_id")
 	private int roomId;
 	
-	@Column(name="MESSAGE_USERNAME")
+	@Column(name="username")
 	private String username;
 	
-	@Column(name="MESSAGE_TIME")
+	@Column(name="message_time")
 	private long time;
 	
-	@Column(name="MESSAGE_TEXT")
+	@Column(name="message_text")
 	private String text;
 	
 	public Message() {
