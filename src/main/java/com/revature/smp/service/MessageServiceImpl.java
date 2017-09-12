@@ -1,11 +1,6 @@
 package com.revature.smp.service;
 
-import java.sql.Clob;
-import java.sql.Connection;
-import java.sql.SQLException;
 import java.util.List;
-
-import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -14,7 +9,8 @@ import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.revature.smp.beans.Message;
-import com.revature.smp.beans.MessageClob;
+import com.revature.smp.beans.MessageCache;
+import com.revature.smp.dao.MessageCacheDAO;
 import com.revature.smp.dao.MessageDAO;
 
 @Service
@@ -22,50 +18,29 @@ import com.revature.smp.dao.MessageDAO;
 public class MessageServiceImpl implements MessageService {
 	
 	@Autowired
-	MessageDAO mdao;
+	MessageDAO msgDao;
+	
+	@Autowired
+	MessageCacheDAO cacheDao;
 	
 	@Autowired
 	private ApplicationContext context;
 	
 	@Override
-	public List<MessageClob> getMostRecent(int messageRoomId) {
-		List<MessageClob> cs1 = mdao.getMostRecent(messageRoomId);
-		return cs1;
+	public List<MessageCache> getPrevious(int roomId) {
+		return cacheDao.getPrevious(roomId);
 	}
 	
 	@Override
-	public List<MessageClob> getPrevious(int messageRoomId, int messageClobId) {
-		return mdao.getPrevious(messageRoomId, messageClobId);
-	}
-	
-	@Override
-	public List<MessageClob> getUpdate(int messageRoomId, int messageClobId) {
-		return mdao.getUpdate(messageRoomId, messageClobId);
+	public List<Message> getUpdate(int roomId) {
+		return msgDao.getUpdate(roomId);
 	}
 	
 	@Override
 	@Transactional(isolation = Isolation.SERIALIZABLE)
-	public void postMessage(int messageRoomId, Message message)
+	public boolean postMessage(int roomId, Message message)
 	{
-		mdao.saveMessageByMessageRoomId(messageRoomId, message);
+		return msgDao.saveMessageByRoomId(roomId, message);
 	}
 
-	@Override
-	@Transactional(isolation = Isolation.SERIALIZABLE)
-	public void cacheMessages(int messageRoomId, String user, String text) 
-	{
-		DataSource ds = (DataSource) context.getBean("dataSource");
-		Connection c;
-		String message = user + " : " + text;
-		try {
-			c = ds.getConnection();
-			Clob clob = c.createClob();
-			clob.setString(messageRoomId, message);
-			System.out.println(clob.getSubString(1, message.length()));
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
-	
 }

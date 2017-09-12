@@ -2,45 +2,19 @@ package com.revature.smp.dao;
 
 import java.util.List;
 
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import com.revature.smp.beans.Message;
-import com.revature.smp.beans.MessageClob;
 
 @Repository
-public interface MessageDAO extends JpaRepository<MessageClob, Integer> {
+public interface MessageDAO extends JpaRepository<Message, Integer> {
 	
-	MessageClob findByMessageClobId(int messageClobId);
+	List<Message> findByRoomIdOrderByTime(int roomId);
 	
-	Page<MessageClob> findByMessageRoomIdOrderByMessageClobIdDesc(
-			 Pageable p);
-	
-	Page<MessageClob> findByMessageRoomIdAndMessageClobIdLessThanOrderByMessageClobIdDesc(
-			 int messageClobId, Pageable p);
-	
-	List<MessageClob> findByMessageRoomIdAndMessageClobIdGreaterThanEqualOrderByMessageClobIdAsc(
-			 int messageClobId);
-	
-	default List<MessageClob> getMostRecent(int messageRoomId) {
-		return findByMessageRoomIdOrderByMessageClobIdDesc(messageRoomId,
-				new PageRequest(0, 1)).getContent();
+	default List<Message> getUpdate(int roomId) {
+		return findByRoomIdOrderByTime(roomId);
 	}
 	
-	default List<MessageClob> getPrevious(int messageRoomId, int messageClobId) {
-		return findByMessageRoomIdAndMessageClobIdLessThanOrderByMessageClobIdDesc(
-				messageRoomId, messageClobId, new PageRequest(0, 1)).getContent();
-	}
-	
-	default List<MessageClob> getUpdate(int messageRoomId, int messageClobId) {
-		List<MessageClob> l =
-				findByMessageRoomIdAndMessageClobIdGreaterThanEqualOrderByMessageClobIdAsc(
-						messageRoomId, messageClobId);
-		return l;
-	}
-	
-	void saveMessageByMessageRoomId(int messageRoomId, Message message);
+	boolean saveMessageByRoomId(int roomId, Message message);
 }

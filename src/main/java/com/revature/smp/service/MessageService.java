@@ -3,16 +3,14 @@ package com.revature.smp.service;
 import java.util.List;
 
 import com.revature.smp.beans.Message;
-import com.revature.smp.beans.MessageClob;
+import com.revature.smp.beans.MessageCache;
 
 public interface MessageService {
-	List<MessageClob> getMostRecent(int messageRoomId);
 	
-	List<MessageClob> getPrevious(int messageRoomId, int messageClobId);
+	List<MessageCache> getPrevious(int roomId);
 	
-	List<MessageClob> getUpdate(int messageRoomId, int messageClobId);
+	List<Message> getUpdate(int roomId);
 	
-	void postMessage(int messageRoomId, Message message);
+	boolean postMessage(int roomId, Message message);
 	
-	void cacheMessages(int messageRoomId, String user, String text);
 }

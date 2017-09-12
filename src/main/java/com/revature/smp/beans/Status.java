@@ -11,16 +11,16 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Entity
-@Table(name = "STATUS")
+@Table(name = "USER_STATUS")
 public class Status implements Serializable {
 	
 	private static final long serialVersionUID = 6033234014682351342L;
 	
 	@Id
-	@Column(name = "STATUS_ID")
+	@Column(name = "status_id")
 	private int statusId;
 	
-	@Column(name = "STATUS")
+	@Column(name = "status_name")
 	private String status;
 	
 	public Status() {

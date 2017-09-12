@@ -23,7 +23,7 @@ import org.springframework.stereotype.Component;
 public class User implements Serializable {
 	
 	private static final long serialVersionUID = 6104022944061620088L;
-	
+
 	@Id
 	@GeneratedValue(generator = "SMP_USER_SEQ", strategy = GenerationType.SEQUENCE)
 	@GenericGenerator(name = "SMP_USER_SEQ", strategy = "org.hibernate.id.enhanced.SequenceStyleGenerator", parameters = {
@@ -31,47 +31,46 @@ public class User implements Serializable {
 			@Parameter(name = "optimizer", value = "hilo"),
 			@Parameter(name = "initial_value", value = "1"),
 			@Parameter(name = "increment_size", value = "1") })
-	
-	@Column(name = "USER_ID")
+	@Column(name = "user_id")
 	private int userId;
 	
-	@Column(name = "USERNAME")
+	@Column(name = "username")
 	private String username;
 	
-	@Column(name = "PASSWD")
+	@Column(name = "passwd")
 	private String password;
 	
-	@Column(name = "FIRST_NAME")
+	@Column(name = "firstname")
 	private String firstName;
 	
-	@Column(name = "LAST_NAME")
+	@Column(name = "lastname")
 	private String lastName;
 	
-	@Column(name = "EMAIL")
+	@Column(name = "email")
 	private String email;
 	
 	@ManyToOne(fetch = FetchType.EAGER, targetEntity = Location.class)
-	@JoinColumn(name = "LOCATION_ID")
+	@JoinColumn(name = "location_id")
 	private Location location;
 	
 	@ManyToOne(fetch = FetchType.EAGER, targetEntity = Status.class)
-	@JoinColumn(name = "STATUS_ID")
+	@JoinColumn(name = "status_id")
 	private Status status;
 	
 	@ManyToOne(fetch = FetchType.EAGER, targetEntity = Role.class)
-	@JoinColumn(name = "ROLE_ID")
+	@JoinColumn(name = "role_id")
 	private Role role;
 	
-	@Column(name = "LOGGED")
+	@Column(name = "logged")
 	private String logged;
 	
-	@Column(name = "USE_TEMP")
+	@Column(name = "use_temp")
 	private String useTemp;
 	
-	@Column(name = "ACTIVE")
+	@Column(name = "active")
 	private String active;
 	
-	@Column(name = "CREATED")
+	@Column(name = "created")
 	private Date created;
 	
 	public User() {
@@ -183,32 +182,19 @@ public class User implements Serializable {
 	
 	@Override
 	public String toString() {
-		return "User [userId="
-				+ userId
-				+ ", username="
-				+ username
-				+ ", password="
-				+ password
-				+ ", firstName="
-				+ firstName
-				+ ", lastName="
-				+ lastName
-				+ ", email="
-				+ email
-				+ ", location="
-				+ location
-				+ ", status="
-				+ status
-				+ ", role="
-				+ role
-				+ ", logged="
-				+ logged
-				+ ", useTemp="
-				+ useTemp
-				+ ", active="
-				+ active
-				+ ", created="
-				+ created
+		return "User [userId=" + userId 
+				+ ", username=" + username
+				+ ", password=" + password
+				+ ", firstName=" + firstName
+				+ ", lastName=" + lastName
+				+ ", email=" + email 
+				+ ", location=" + location 
+				+ ", status=" + status
+				+ ", role=" + role
+				+ ", logged=" + logged
+				+ ", useTemp=" + useTemp
+				+ ", active=" + active
+				+ ", created=" + created
 				+ "]";
 	}
 	
