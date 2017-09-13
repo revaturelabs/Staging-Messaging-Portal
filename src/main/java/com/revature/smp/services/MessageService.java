@@ -11,6 +11,6 @@ public interface MessageService {
 	
 	List<Message> getUpdate(int roomId);
 	
-	boolean postMessage(int roomId, Message message);
+	boolean postMessage(Message message);
 	
 }
