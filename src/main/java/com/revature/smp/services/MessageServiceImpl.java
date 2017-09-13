@@ -1,4 +1,4 @@
-package com.revature.smp.service;
+package com.revature.smp.services;
 
 import java.util.List;
 

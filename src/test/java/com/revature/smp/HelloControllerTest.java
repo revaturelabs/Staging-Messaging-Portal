@@ -1,4 +1,4 @@
-package com.reavture.smp;
+/*package com.revature.smp;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -28,4 +28,4 @@ public class HelloControllerTest {
 				.andExpect(content()
 						.string(equalTo("Greetings from Spring Boot!")));
 	}
-}
+}*/

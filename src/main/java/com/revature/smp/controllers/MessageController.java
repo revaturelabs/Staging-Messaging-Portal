@@ -1,4 +1,4 @@
-package com.revature.smp.controller;
+package com.revature.smp.controllers;
 
 import java.util.HashMap;
 import java.util.List;
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.revature.smp.beans.Message;
 import com.revature.smp.beans.MessageCache;
-import com.revature.smp.service.MessageService;
+import com.revature.smp.services.MessageService;
 
 @RestController
 @RequestMapping("/msg")
@@ -41,7 +41,7 @@ public class MessageController {
 		return new ResponseEntity<List<MessageCache>>(msgSvc.getPrevious(roomId), HttpStatus.OK);
 	}
 	
-	@RequestMapping(value="/post/{roomId}", method=RequestMethod.POST)
+/*	@RequestMapping(value="/post/{roomId}", method=RequestMethod.POST)
 	public Map<String, Object> postMessage(@PathVariable Integer roomId, @RequestBody Message message) 
 	{
 		boolean success = false;
@@ -62,6 +62,6 @@ public class MessageController {
 			responseMap.put("response", HttpStatus.I_AM_A_TEAPOT);
 		
 		return responseMap;
-	}
+	}*/
 	
 }
