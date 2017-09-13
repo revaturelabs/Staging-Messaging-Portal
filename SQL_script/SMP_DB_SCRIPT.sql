@@ -6,6 +6,7 @@
    Author: Richard C. Smith
    Company: Revature LLC
    Date of creation: 2017/08/27
+   Version: 2017.09.13:01
    License: Copyright 2017 Revature
 *******************************************************************************/
 
@@ -197,12 +198,13 @@ CREATE OR REPLACE PACKAGE BODY message_pkg
     err_cache_fail EXCEPTION;
     
     CURSOR msg_cur
-    IS
-    SELECT *
-    FROM MESSAGE_TABLE
-    WHERE MESSAGE_TABLE.room_id = in_room_id;
+      IS
+      SELECT *
+      FROM MESSAGE_TABLE
+      WHERE MESSAGE_TABLE.room_id = in_room_id;
   
   BEGIN
+    SAVEPOINT before_process;
     OPEN msg_cur;  
     LOOP  
       FETCH msg_cur INTO this_message_id, this_room_id, this_username,
@@ -212,15 +214,18 @@ CREATE OR REPLACE PACKAGE BODY message_pkg
       msg_record := this_message_id + '#*&' + this_room_id + '#*&' + this_username 
         + '#*&' + this_message_text + '#*&' + this_message_time + '%@$';
         
-      msg_arr := CONCAT(msg_arr, msg_record); 
-        
+      msg_arr := CONCAT(msg_arr, msg_record);
+      
+      DELETE FROM MESSAGE_TABLE WHERE MESSAGE_TABLE.message_id = this_message_id;
     END LOOP;  
-    CLOSE msg_cur;  
+    CLOSE msg_cur;
     
+    --store records as clob into message cache table
     INSERT INTO MESSAGE_CACHE(cache_id, room_id, message_clob, created )
       VALUES(SEQ_CACHE.NEXTVAL, in_room_id, TO_CLOB(msg_arr), SYSTIMESTAMP);
     
     IF SQL%NOTFOUND THEN
+      ROLLBACK TO SAVEPOINT before_process;
       RAISE err_cache_fail;
     END IF;
   
