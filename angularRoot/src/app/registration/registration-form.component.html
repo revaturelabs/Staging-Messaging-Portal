@@ -1,6 +1,6 @@
 <div class="container" align="center">
     <h1>Registration Form</h1>
-    <form #registrationForm="ngForm" (ngSubmit)="onSubmit(registrationForm)" >
+    <form ngNativeValidate #registrationForm="ngForm" (ngSubmit)="onSubmit(registrationForm)" >
       <div class="form-group">
         <input type="text" placeholder="First name" class="form-control" id="firstName" required
         [(ngModel)]="firstName" name="firstName">
