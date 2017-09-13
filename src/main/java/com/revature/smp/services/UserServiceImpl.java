@@ -1,4 +1,4 @@
-package com.revature.smp.service;
+package com.revature.smp.services;
 
 import java.util.List;
 
@@ -18,7 +18,7 @@ public class UserServiceImpl implements UserService {
 	/**
 	 * (non-Javadoc)
 	 * 
-	 * @see com.revature.smp.service.UserService#findUserByEmail(java.lang.String)
+	 * @see com.revature.smp.services.UserService#findUserByEmail(java.lang.String)
 	 */
 	@Override
 	public User findUserByEmail(String email) {
@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService {
 	/**
 	 * (non-Javadoc)
 	 * 
-	 * @see com.revature.smp.service.UserService#findUserByUserId(int)
+	 * @see com.revature.smp.services.UserService#findUserByUserId(int)
 	 */
 	@Override
 	public User findUserByUserId(int userId) {
@@ -40,7 +40,7 @@ public class UserServiceImpl implements UserService {
 	/**
 	 * (non-Javadoc)
 	 * 
-	 * @see com.revature.smp.service.UserService#findUsersByRole(java.lang.String)
+	 * @see com.revature.smp.services.UserService#findUsersByRole(java.lang.String)
 	 */
 	@Override
 	public List<User> findUsersByRole(String role) {
@@ -51,7 +51,7 @@ public class UserServiceImpl implements UserService {
 	/**
 	 * (non-Javadoc)
 	 * 
-	 * @see com.revature.smp.service.UserService#findAll()
+	 * @see com.revature.smp.services.UserService#findAll()
 	 */
 	@Override
 	public List<User> findAll() {
@@ -62,7 +62,7 @@ public class UserServiceImpl implements UserService {
 	/**
 	 * (non-Javadoc)
 	 * 
-	 * @see com.revature.smp.service.UserService#createUser(com.revature.smp.beans.User)
+	 * @see com.revature.smp.services.UserService#createUser(com.revature.smp.beans.User)
 	 */
 	@Override
 	public boolean createUser(User user) {
@@ -73,7 +73,7 @@ public class UserServiceImpl implements UserService {
 	/**
 	 * (non-Javadoc)
 	 * 
-	 * @see com.revature.smp.service.UserService#updateUser(com.revature.smp.beans.User)
+	 * @see com.revature.smp.services.UserService#updateUser(com.revature.smp.beans.User)
 	 */
 	@Override
 	public boolean updateUser(User user) {
@@ -84,7 +84,7 @@ public class UserServiceImpl implements UserService {
 	/**
 	 * (non-Javadoc)
 	 * 
-	 * @see com.revature.smp.service.UserService#deactivateUser(com.revature.smp.beans.User)
+	 * @see com.revature.smp.services.UserService#deactivateUser(com.revature.smp.beans.User)
 	 */
 	@Override
 	public boolean deactivateUser(User user) {

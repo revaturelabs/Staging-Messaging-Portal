@@ -136,11 +136,20 @@
 			<version>2.2.2</version>
 		</dependency>
 		
+		<!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
 		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc</artifactId>
-			<version>7.0.0</version>
+		    <groupId>org.mockito</groupId>
+		    <artifactId>mockito-core</artifactId>
+		    <version>2.9.0</version>
+		    <scope>test</scope>
 		</dependency>
+		
+		<dependency>
+		  <groupId>org.apache.commons</groupId>
+		  <artifactId>commons-text</artifactId>
+		  <version>1.1</version>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
