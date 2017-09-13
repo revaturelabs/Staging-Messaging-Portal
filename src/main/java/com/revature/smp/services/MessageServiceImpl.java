@@ -37,10 +37,9 @@ public class MessageServiceImpl implements MessageService {
 	}
 	
 	@Override
-	@Transactional(isolation = Isolation.SERIALIZABLE)
-	public boolean postMessage(int roomId, Message message)
+	public boolean postMessage(Message message)
 	{
-		return msgDao.saveMessageByRoomId(roomId, message);
+		return (msgDao.save(message) != null) ? true : false;
 	}
 
 }

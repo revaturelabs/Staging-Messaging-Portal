@@ -16,5 +16,4 @@ public interface MessageDAO extends JpaRepository<Message, Integer> {
 		return findByRoomIdOrderByTime(roomId);
 	}
 	
-	boolean saveMessageByRoomId(int roomId, Message message);
 }

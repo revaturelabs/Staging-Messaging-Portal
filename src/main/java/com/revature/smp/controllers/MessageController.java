@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.glassfish.jersey.server.spi.ResponseErrorMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -41,14 +40,14 @@ public class MessageController {
 		return new ResponseEntity<List<MessageCache>>(msgSvc.getPrevious(roomId), HttpStatus.OK);
 	}
 	
-/*	@RequestMapping(value="/post/{roomId}", method=RequestMethod.POST)
+	@RequestMapping(value="/post", method=RequestMethod.POST)
 	public Map<String, Object> postMessage(@PathVariable Integer roomId, @RequestBody Message message) 
 	{
 		boolean success = false;
 		while (!success) 
 		{
 			try {
-				success = msgSvc.postMessage(roomId, message);
+				success = msgSvc.postMessage(message);
 			} catch (Exception e) {
 				
 			}
@@ -62,6 +61,6 @@ public class MessageController {
 			responseMap.put("response", HttpStatus.I_AM_A_TEAPOT);
 		
 		return responseMap;
-	}*/
+	}
 	
 }
