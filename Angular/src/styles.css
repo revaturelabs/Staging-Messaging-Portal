@@ -205,7 +205,7 @@ a {
 	border-radius: 6px;
 }
 
-.btn-primary {
+.btn,.btn-primary {
 	color: white !important;
 	border-color: white !important;
 	background-color: #F26925 !important;
