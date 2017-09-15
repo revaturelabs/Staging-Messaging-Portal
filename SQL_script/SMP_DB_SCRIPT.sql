@@ -258,6 +258,24 @@ END; --END PACKAGE BODY
 /
 
 /*******************************************************************************
+   Insert static records for LOCATION, ROLE, STATUS via single INSERT ALL
+*******************************************************************************/
+INSERT ALL
+  --insert locations
+  INTO USER_LOCATION (location_id, location_name) VALUES (1, 'Virginia')
+  INTO USER_LOCATION (location_id, location_name) VALUES (2, 'New York')
+  INTO USER_LOCATION (location_id, location_name) VALUES (3, 'Florida')
+  --insert roles  
+  INTO USER_ROLE (role_id, role_name) VALUES (1, 'manager')
+  INTO USER_ROLE (role_id, role_name) VALUES (2, 'associate')
+  INTO USER_ROLE (role_id, role_name) VALUES (3, 'admin')
+  --insert status
+  INTO USER_STATUS (status_id, status_name) VALUES (1, 'staging')
+  INTO USER_STATUS (status_id, status_name) VALUES (2, 'bench')
+  INTO USER_STATUS (status_id, status_name) VALUES (3, 'project')
+SELECT * FROM dual;
+
+/*******************************************************************************
    Commit Changes and Exit
 *******************************************************************************/
 COMMIT;

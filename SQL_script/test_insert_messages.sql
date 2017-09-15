@@ -13,3 +13,7 @@
 /*******************************************************************************
    Insert single message records into MESSAGE_TABLE
 *******************************************************************************/
+INSERT INTO suppliers
+(supplier_id, supplier_name)
+VALUES
+(5000, 'Apple');
