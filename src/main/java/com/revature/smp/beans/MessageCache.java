@@ -4,8 +4,11 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
@@ -19,6 +22,8 @@ public class MessageCache implements Serializable {
 
 	@Id
 	@Column(name="cache_id")
+	@SequenceGenerator(name="SEQ_CACHE", sequenceName="SEQ_CACHE", allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="SEQ_CACHE")
 	private int cacheId;
 	
 	@Column(name="room_id")
