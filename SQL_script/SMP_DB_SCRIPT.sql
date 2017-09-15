@@ -128,12 +128,26 @@ ALTER TABLE MESSAGE_CACHE ADD CONSTRAINT FK_CACHE_ROOM
 /*******************************************************************************
    Drop Sequences
 *******************************************************************************/
+DROP SEQUENCE SEQ_USER;
+DROP SEQUENCE SEQ_MESSAGE;
 DROP SEQUENCE SEQ_CACHE;
 DROP SEQUENCE SEQ_LOGS;
 
 /*******************************************************************************
    Create Sequences
 *******************************************************************************/
+CREATE SEQUENCE SEQ_USER
+  MINVALUE 1
+  START WITH 1
+  INCREMENT BY 1
+  CACHE 15;
+  
+CREATE SEQUENCE SEQ_MESSAGE
+  MINVALUE 1
+  START WITH 1
+  INCREMENT BY 1
+  CACHE 15;
+
 CREATE SEQUENCE SEQ_CACHE
   MINVALUE 1
   START WITH 1
