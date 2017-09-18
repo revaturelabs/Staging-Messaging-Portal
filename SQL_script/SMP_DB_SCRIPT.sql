@@ -35,12 +35,12 @@ CREATE TABLE USER_TABLE
   lastname VARCHAR2(20),
   email VARCHAR2(50),
   location_id NUMBER(38,0),
-  status_id NUMBER(38,0),
-  role_id NUMBER(38,0),
-  logged VARCHAR2(1),
-  active VARCHAR2(1),
-  use_temp VARCHAR2(1),
-  created DATE,
+  status_id NUMBER(38,0) DEFAULT 1,
+  role_id NUMBER(1,0) DEFAULT 2,
+  loggedin VARCHAR2(1) DEFAULT 'n',
+  active VARCHAR2(1) DEFAULT 'n',
+  use_temp VARCHAR2(1) DEFAULT 'y',
+  created DATE DEFAULT SYSTIMESTAMP,
   CONSTRAINT PK_USER_ID PRIMARY KEY (user_id)
 );
 
@@ -78,7 +78,7 @@ CREATE TABLE MESSAGE_TABLE
   room_id NUMBER(38,0),
   username VARCHAR2(20),
   message_text VARCHAR2(1000),
-  message_time NUMBER(15,0),
+  message_time DATE,
   CONSTRAINT PK_MESSAGE_ID PRIMARY KEY (message_id)
 );
 
@@ -129,6 +129,7 @@ ALTER TABLE MESSAGE_CACHE ADD CONSTRAINT FK_CACHE_ROOM
    Drop Sequences
 *******************************************************************************/
 DROP SEQUENCE SEQ_USER;
+DROP SEQUENCE SEQ_MSGROOM;
 DROP SEQUENCE SEQ_MESSAGE;
 DROP SEQUENCE SEQ_CACHE;
 DROP SEQUENCE SEQ_LOGS;
@@ -137,6 +138,12 @@ DROP SEQUENCE SEQ_LOGS;
    Create Sequences
 *******************************************************************************/
 CREATE SEQUENCE SEQ_USER
+  MINVALUE 1
+  START WITH 1
+  INCREMENT BY 1
+  CACHE 15;
+
+CREATE SEQUENCE SEQ_MSGROOM
   MINVALUE 1
   START WITH 1
   INCREMENT BY 1
@@ -163,19 +170,40 @@ CREATE SEQUENCE SEQ_LOGS
 /*******************************************************************************
    Create Triggers
 *******************************************************************************/
-CREATE OR REPLACE TRIGGER TRIG_CACHE
-AFTER INSERT ON MESSAGE_TABLE
-FOR EACH ROW
-DECLARE
-  msg_cnt NUMBER;
-  err_user_exists EXCEPTION;
-BEGIN
-  SELECT COUNT(*) INTO msg_cnt FROM MESSAGE_TABLE 
-    WHERE MESSAGE_TABLE.room_id = :new.room_id;
+CREATE OR REPLACE TRIGGER TRIG_USER_UPDATE_ACTIVE
+  AFTER UPDATE ON USER_TABLE
+  FOR EACH ROW
+  DECLARE
+    room_cnt NUMBER;
+  BEGIN
+    IF LOWER(:old.active)='n' AND LOWER(:new.active='y') THEN
+      SELECT COUNT(*) INTO room_cnt FROM MESSAGE_ROOM
+        WHERE MESSAGE_ROOM.room_name = :new.username;
+        
+      IF room_cnt > 0 THEN
+        
+      END IF;
+    END IF;
     
-  IF( msg_cnt >= 25 ) THEN  
-    message_pkg.create_message_cache_v1(:new.room_id);
-  END IF;
+    EXCEPTION 
+      WHEN NO_DATA_FOUND THEN
+        ;
+END;
+/
+
+CREATE OR REPLACE TRIGGER TRIG_CACHE
+  AFTER INSERT ON MESSAGE_TABLE
+  FOR EACH ROW
+  DECLARE
+    msg_cnt NUMBER;
+    err_user_exists EXCEPTION;
+  BEGIN
+    SELECT COUNT(*) INTO msg_cnt FROM MESSAGE_TABLE 
+      WHERE MESSAGE_TABLE.room_id = :new.room_id;
+    
+    IF( msg_cnt >= 25 ) THEN  
+      message_pkg.create_message_cache_v1(:new.room_id);
+    END IF;
 END;
 /  
 
@@ -186,18 +214,42 @@ END;
 CREATE OR REPLACE PACKAGE message_pkg
   IS
   --FUNCTION SIGNATURES
+  FUNCTION get_public_roomid RETURN NUMBER;
   
   --PROCEDURE SIGNATURES
   PROCEDURE create_message_cache_v1(in_room_id IN NUMBER);
-
 END message_pkg;
 /
 
+CREATE OR REPLACE PACKAGE log_pkg
+  IS
+  --FUNCTION SIGNATURES
+  
+  --PROCEDURE SIGNATURES
+  PROCEDURE log_dbms_file_v1(in_dirpath IN VARCHAR2, 
+    in_filename IN VARCHAR2);
+END log_pkg;
+/
+  
 --MESSAGE PACKAGE BODY
 CREATE OR REPLACE PACKAGE BODY message_pkg
   IS
   -- FUNCTION BODIES ------------------------------
-
+  FUNCTION get_public_roomid RETURN NUMBER 
+  IS
+    public_roomid NUMBER;
+  BEGIN 
+    SELECT MESSAGE_ROOM.room_id
+      INTO public_roomid
+      FROM MESSAGE_ROOM
+      WHERE LOWER(MESSAGE_ROOM.room_name) = 'public';
+      
+    RETURN public_roomid;
+    
+    EXCEPTION 
+      WHEN NO_DATA_FOUND THEN RETURN 0;
+  END;
+  
   -- PROCEDURE BODIES ------------------------------
   PROCEDURE create_message_cache_v1(in_room_id IN NUMBER)
   IS
@@ -230,7 +282,9 @@ CREATE OR REPLACE PACKAGE BODY message_pkg
         
       msg_arr := CONCAT(msg_arr, msg_record);
       
-      DELETE FROM MESSAGE_TABLE WHERE MESSAGE_TABLE.message_id = this_message_id;
+      --Commenting out this step so for the first iterations of the project
+      --we will only be using MESSAGE_TABLE and logic to pull messages
+      --DELETE FROM MESSAGE_TABLE WHERE MESSAGE_TABLE.message_id = this_message_id;
     END LOOP;  
     CLOSE msg_cur;
     
@@ -254,9 +308,24 @@ CREATE OR REPLACE PACKAGE BODY message_pkg
     
   END create_message_cache_v1;
 
-END; --END PACKAGE BODY
+END; --END message_pkg PACKAGE BODY
 /
 
+--LOG PACKAGE BODY
+--CREATE OR REPLACE PACKAGE BODY log_pkg
+--  IS
+  -- FUNCTION BODIES ------------------------------
+
+  -- PROCEDURE BODIES ------------------------------
+--  PROCEDURE log_dbms_file_v1(in_dirpath IN VARCHAR2, 
+--    in_filename IN VARCHAR2)
+--  IS
+   
+--  BEGIN
+
+--  END log_dbms_file_v1;
+--END; --END log_pkg PACKAGE BODY
+--/
 /*******************************************************************************
    Insert static records for LOCATION, ROLE, STATUS via single INSERT ALL
 *******************************************************************************/
@@ -274,6 +343,22 @@ INSERT ALL
   INTO USER_STATUS (status_id, status_name) VALUES (2, 'bench')
   INTO USER_STATUS (status_id, status_name) VALUES (3, 'project')
 SELECT * FROM dual;
+
+INSERT INTO MESSAGE_ROOM (room_id, room_name)
+  VALUES (SEQ_MSGROOM.NEXTVAL, 'public');
+  
+INSERT INTO MESSAGE_TABLE (SEQ_MESSAGE.NEXTVAL, get_public_roomid(),
+  'Revature', 'Welcome to the Public Staging Board!', SYSTIMESTAMP);
+
+INSERT INTO USER_TABLE (user_id, username, passwd, firstname, lastname,
+    email, location_id, status_id, role_id)
+  VALUES (SEQ_USER.NEXTVAL, 'revadmin', 'revadmin', 'Felice', 'Sumargo',
+    'palmer.calogrias@revature.com', 1, 1, 3);
+    
+INSERT INTO USER_TABLE (user_id, username, passwd, firstname, lastname,
+    email, location_id, status_id, role_id)
+  VALUES (SEQ_USER.NEXTVAL, 'stanleym', 'stanleym', 'Stanley', 'Medikonda',
+    'stanleym@revature.com', 1, 1, 1);
 
 /*******************************************************************************
    Commit Changes and Exit
