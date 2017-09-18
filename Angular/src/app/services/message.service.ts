@@ -3,8 +3,8 @@ import { Headers, Http, RequestOptions } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
-import { Message } from './message';
-import { MessageBlob } from './messageBlob';
+import { Message } from '../classes/message';
+import { MessageBlob } from '../classes/messageBlob';
 
 @Injectable()
 export class MessageService {

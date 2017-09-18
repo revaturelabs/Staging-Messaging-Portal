@@ -1,0 +1,23 @@
+<div class="container">
+  <div>
+    <img src="https://3g4d13k75x47q7v53surz1gi-wpengine.netdna-ssl.com/wp-content/themes/revature/imgs/logo.png" class="imageCenter" />
+  </div>
+  <form (submit)= "loginUser($event)">
+    <div class="input">
+      <input type="text" placeholder="Username"> 
+    </div>
+    <div class="input">
+      <input type="password" placeholder="Password">
+    </div>
+    <div class="input">
+      <input class="btn-primary" type="submit" value="Login">
+    </div>
+  </form>
+  <div class="panel-heading">
+      <a routerLink="/passwordrecover" routerLinkActive = "active">Forgot your password?</a>
+  </div>
+  <div class="panel-heading">
+      <a routerLink="/register" routerLinkActive="active">Register</a>
+  </div>
+</div>
+

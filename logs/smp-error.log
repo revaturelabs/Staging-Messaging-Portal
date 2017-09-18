@@ -1,4 +1,3 @@
-[WARN] [58413 ms] [09-12-2017 12:09:02] [PageNotFound (noHandlerFound : 1195)] -
-					No mapping found for HTTP request with URI [/api/hi] in DispatcherServlet with name 'dispatcherServlet'
-[WARN] [72068 ms] [09-12-2017 12:09:15] [PageNotFound (noHandlerFound : 1195)] -
-					No mapping found for HTTP request with URI [/user] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [18670 ms] [09-07-2017 15:29:08] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'dispatcherServlet'
+
