@@ -1,4 +1,4 @@
-package com.revature.smp.dao;
+package com.revature.smp.repo;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.revature.smp.beans.Message;
 
 @Repository
-public interface MessageDAO extends JpaRepository<Message, Integer> {
+public interface MessageRepository extends JpaRepository<Message, Integer> {
 	
 	List<Message> findByRoomIdOrderByTime(int roomId);
 	

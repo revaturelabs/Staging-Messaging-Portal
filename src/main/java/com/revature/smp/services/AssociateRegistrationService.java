@@ -1,11 +1,11 @@
-package com.revature.smp.services.registration;
+package com.revature.smp.services;
 
 import org.apache.commons.text.RandomStringGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.revature.smp.beans.User;
-import com.revature.smp.dao.UserRepository;
+import com.revature.smp.repo.UserRepository;
 
 @Service
 public class AssociateRegistrationService {

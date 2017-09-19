@@ -10,18 +10,18 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.revature.smp.beans.Message;
 import com.revature.smp.beans.MessageCache;
-import com.revature.smp.dao.MessageCacheDAO;
-import com.revature.smp.dao.MessageDAO;
+import com.revature.smp.repo.MessageCacheRepository;
+import com.revature.smp.repo.MessageRepository;
 
 @Service
 @Transactional
 public class MessageServiceImpl implements MessageService {
 	
 	@Autowired
-	MessageDAO msgDao;
+	MessageRepository msgDao;
 	
 	@Autowired
-	MessageCacheDAO cacheDao;
+	MessageCacheRepository cacheDao;
 	
 	@Autowired
 	private ApplicationContext context;
