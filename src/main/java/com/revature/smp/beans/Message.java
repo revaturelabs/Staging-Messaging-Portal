@@ -1,6 +1,7 @@
 package com.revature.smp.beans;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -32,7 +33,7 @@ public class Message implements Serializable {
 	private String username;
 	
 	@Column(name="message_time")
-	private long time;
+	private Date time;
 	
 	@Column(name="message_text")
 	private String text;
@@ -41,7 +42,7 @@ public class Message implements Serializable {
 		
 	}
 
-	public Message(int messageId, int roomId, String username, long time, String text) 
+	public Message(int messageId, int roomId, String username, Date time, String text) 
 	{
 		super();
 		this.messageId = messageId;
@@ -75,11 +76,11 @@ public class Message implements Serializable {
 		this.username = username;
 	}
 
-	public long getTime() {
+	public Date getTime() {
 		return time;
 	}
 
-	public void setTime(long time) {
+	public void setTime(Date time) {
 		this.time = time;
 	}
 

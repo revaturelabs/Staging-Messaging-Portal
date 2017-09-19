@@ -7,10 +7,10 @@ import com.revature.smp.beans.MessageCache;
 
 public interface MessageService {
 	
+	public boolean postMessage(Message message);
+	
 	List<MessageCache> getPrevious(int roomId);
 	
 	List<Message> getUpdate(int roomId);
-	
-	boolean postMessage(Message message);
 	
 }

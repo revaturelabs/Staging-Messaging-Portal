@@ -1,4 +1,4 @@
-package com.revature.smp.dao;
+package com.revature.smp.repo;
 
 import java.util.List;
 

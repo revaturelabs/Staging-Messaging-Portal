@@ -1,4 +1,4 @@
-package com.revature.smp.services.registration;
+package com.revature.smp.services;
 
 import com.revature.smp.beans.User;
 

@@ -1,4 +1,4 @@
-package com.revature.smp.dao;
+package com.revature.smp.repo;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.revature.smp.beans.MessageCache;
 
-public interface MessageCacheDAO extends JpaRepository<MessageCache, Integer> {
+public interface MessageCacheRepository extends JpaRepository<MessageCache, Integer> {
 
 	List<MessageCache> findByRoomIdOrderByCreatedDesc(int roomId);
 	

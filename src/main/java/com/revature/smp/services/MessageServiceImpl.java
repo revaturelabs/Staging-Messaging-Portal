@@ -10,36 +10,36 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.revature.smp.beans.Message;
 import com.revature.smp.beans.MessageCache;
-import com.revature.smp.dao.MessageCacheDAO;
-import com.revature.smp.dao.MessageDAO;
+import com.revature.smp.repo.MessageCacheRepository;
+import com.revature.smp.repo.MessageRepository;
 
 @Service
 @Transactional
 public class MessageServiceImpl implements MessageService {
 	
 	@Autowired
-	MessageDAO msgDao;
+	MessageRepository msgRepo;
 	
 	@Autowired
-	MessageCacheDAO cacheDao;
+	MessageCacheRepository cacheRepo;
 	
 	@Autowired
 	private ApplicationContext context;
 	
 	@Override
+	public boolean postMessage(Message message)
+	{
+		return (msgRepo.save(message) != null) ? true : false;
+	}
+	
+	@Override
 	public List<MessageCache> getPrevious(int roomId) {
-		return cacheDao.getPrevious(roomId);
+		return cacheRepo.getPrevious(roomId);
 	}
 	
 	@Override
 	public List<Message> getUpdate(int roomId) {
-		return msgDao.getUpdate(roomId);
-	}
-	
-	@Override
-	public boolean postMessage(Message message)
-	{
-		return (msgDao.save(message) != null) ? true : false;
+		return msgRepo.getUpdate(roomId);
 	}
 
 }

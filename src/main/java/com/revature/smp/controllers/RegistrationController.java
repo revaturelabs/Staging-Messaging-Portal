@@ -10,8 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.revature.smp.beans.User;
 import com.revature.smp.domain.UserRegistrationRequest;
-import com.revature.smp.services.registration.AssociateRegistrationService;
-import com.revature.smp.services.registration.RegistrationManagerService;
+import com.revature.smp.services.RegistrationService;
 
 @RestController
 @RequestMapping(value = "/api")
@@ -20,10 +19,7 @@ public class RegistrationController {
 	public static final String REGISTER_USER_URL = "/register-user";
 	
 	@Autowired
-	AssociateRegistrationService registrationService;
-	
-	@Autowired
-	RegistrationManagerService managerService;
+	RegistrationService registrationService;
 	
 	/**
 	 * 
@@ -52,7 +48,7 @@ public class RegistrationController {
 	
 	@RequestMapping(value="/all-pending-users", method = RequestMethod.GET)
 	public String getAllPendingUsers() {
-		System.out.println(managerService.getRegisteringUsers());
+		System.out.println(registrationService.getRegisteringUsers());
 		return null;
 	}
 	
