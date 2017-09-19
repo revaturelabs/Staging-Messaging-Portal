@@ -1,0 +1,20 @@
+[WARN] [226576 ms] [09-19-2017 11:32:15] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [43496 ms] [09-19-2017 11:50:52] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [332483 ms] [09-19-2017 11:55:41] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/hello] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [338512 ms] [09-19-2017 11:55:47] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/greetings] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [472106 ms] [09-19-2017 11:58:01] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/logo] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [704142 ms] [09-19-2017 12:01:53] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/logo] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [8753016 ms] [09-19-2017 14:16:02] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/logo/] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [8754777 ms] [09-19-2017 14:16:04] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/logo/] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [374492 ms] [09-19-2017 14:24:07] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/loggingin] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [536312 ms] [09-19-2017 15:20:06] [PageNotFound (handleHttpRequestMethodNotSupported : 187)] -
+					Request method 'GET' not supported
