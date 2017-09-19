@@ -9,11 +9,7 @@ import com.revature.smp.beans.Message;
 
 @Repository
 public interface MessageRepository extends JpaRepository<Message, Integer> {
-	
-	List<Message> findByRoomIdOrderByTime(int roomId);
-	
-	default List<Message> getUpdate(int roomId) {
-		return findByRoomIdOrderByTime(roomId);
-	}
-	
+
+	List<Message> findByRoomId(int roomId);
+
 }
