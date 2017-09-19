@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.revature.smp.beans.User;
 import com.revature.smp.domain.UserRegistrationRequest;
 import com.revature.smp.services.AssociateRegistrationService;
+import com.revature.smp.services.JavaMailSenderService;
 import com.revature.smp.services.RegistrationManagerService;
 
 @RestController
@@ -18,12 +19,16 @@ import com.revature.smp.services.RegistrationManagerService;
 public class RegistrationController {
 	
 	public static final String REGISTER_USER_URL = "/register-user";
+	private static final String MANAGER_EMAIL = "stanleym@yopmail.com";
 	
 	@Autowired
 	AssociateRegistrationService registrationService;
 	
 	@Autowired
 	RegistrationManagerService managerService;
+	
+	@Autowired
+	JavaMailSenderService mail;
 	
 	/**
 	 * 
@@ -35,12 +40,18 @@ public class RegistrationController {
 	@RequestMapping(value = REGISTER_USER_URL, method = RequestMethod.POST, consumes="application/json")
 	public void register(@RequestBody UserRegistrationRequest request, HttpServletResponse response) 
 	{
-
 		User userRegistration = new User(request.getFirstName(), request.getLastName(),
 				request.getEmail(), request.getLocationId());
 		
 		try {
 			registrationService.registerAssociate(userRegistration);
+			
+			// TODO Check if staging manager is currently logged in before sending mail
+			mail.sendSimpleMessage(MANAGER_EMAIL,
+					"New User Registered for Staging Messaging Portal",
+					userRegistration.getFirstName() + " " + userRegistration.getLastName() + " "
+							+ "has registered for the Staging Messaging Portal. Please review the"
+							+ " information that they have submitted.");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
