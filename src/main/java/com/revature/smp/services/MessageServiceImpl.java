@@ -5,11 +5,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.revature.smp.beans.Message;
-import com.revature.smp.beans.MessageCache;
 import com.revature.smp.repo.MessageCacheRepository;
 import com.revature.smp.repo.MessageRepository;
 
@@ -31,15 +29,10 @@ public class MessageServiceImpl implements MessageService {
 	{
 		return (msgRepo.save(message) != null) ? true : false;
 	}
-	
+
 	@Override
-	public List<MessageCache> getPrevious(int roomId) {
-		return cacheRepo.getPrevious(roomId);
-	}
-	
-	@Override
-	public List<Message> getUpdate(int roomId) {
-		return msgRepo.getUpdate(roomId);
+	public List<Message> getMessagesByRoomId(int roomId) {
+		return msgRepo.findByRoomId(roomId);
 	}
 
 }
