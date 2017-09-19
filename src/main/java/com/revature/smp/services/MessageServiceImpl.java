@@ -18,28 +18,28 @@ import com.revature.smp.repo.MessageRepository;
 public class MessageServiceImpl implements MessageService {
 	
 	@Autowired
-	MessageRepository msgDao;
+	MessageRepository msgRepo;
 	
 	@Autowired
-	MessageCacheRepository cacheDao;
+	MessageCacheRepository cacheRepo;
 	
 	@Autowired
 	private ApplicationContext context;
 	
 	@Override
+	public boolean postMessage(Message message)
+	{
+		return (msgRepo.save(message) != null) ? true : false;
+	}
+	
+	@Override
 	public List<MessageCache> getPrevious(int roomId) {
-		return cacheDao.getPrevious(roomId);
+		return cacheRepo.getPrevious(roomId);
 	}
 	
 	@Override
 	public List<Message> getUpdate(int roomId) {
-		return msgDao.getUpdate(roomId);
-	}
-	
-	@Override
-	public boolean postMessage(Message message)
-	{
-		return (msgDao.save(message) != null) ? true : false;
+		return msgRepo.getUpdate(roomId);
 	}
 
 }
