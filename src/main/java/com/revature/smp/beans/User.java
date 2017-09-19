@@ -69,7 +69,7 @@ public class User implements Serializable {
 	@JoinColumn(name = "role_id")
 	private Role role;
 	
-	@Column(name = "logged")
+	@Column(name = "loggedin")
 	private String logged;
 	
 	@Column(name = "use_temp")
@@ -92,9 +92,9 @@ public class User implements Serializable {
 		this.location = new Location(locationCode, locationMap.get(locationCode));
 		this.role = new Role(2, "Associate");
 		this.status = new Status(1, "Staging");
-		this.active = "0";
-		this.logged = "0";
-		this.useTemp = "1";
+		this.active = "n";
+		this.logged = "n";
+		this.useTemp = "y";
 		this.created = new Date();
 	}
 	
