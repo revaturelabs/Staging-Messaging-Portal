@@ -13,7 +13,7 @@
 /*******************************************************************************
    Drop Tables - Before Creation
 *******************************************************************************/
-DROP TABLE USER_MESSAGE_JUNC;
+DROP TABLE USER_MSGROOM_JUNC;
 DROP TABLE USER_TABLE;
 DROP TABLE MESSAGE_TABLE;
 DROP TABLE MESSAGE_CACHE;
@@ -91,11 +91,11 @@ CREATE TABLE MESSAGE_CACHE
   CONSTRAINT PK_CACHE_ID PRIMARY KEY (cache_id)
 );
 
-CREATE TABLE USER_MESSAGE_JUNC
+CREATE TABLE USER_MSGROOM_JUNC
 (
   user_id NUMBER(38,0),
   room_id NUMBER(38,0),
-  CONSTRAINT CK_USERMESSAGE_ID PRIMARY KEY (user_id, room_id)
+  CONSTRAINT CK_USERMSGROOM_ID PRIMARY KEY (user_id, room_id)
 );
 
 CREATE TABLE LOGS
@@ -176,18 +176,14 @@ CREATE OR REPLACE TRIGGER TRIG_USER_UPDATE_ACTIVE
   DECLARE
     room_cnt NUMBER;
   BEGIN
-    IF LOWER(:old.active)='n' AND LOWER(:new.active='y') THEN
+    IF LOWER(:old.active)='n' AND LOWER(:new.active)='y' THEN
       SELECT COUNT(*) INTO room_cnt FROM MESSAGE_ROOM
-        WHERE MESSAGE_ROOM.room_name = :new.username;
+        WHERE MESSAGE_ROOM.room_name = CONCAT('priv_',:new.username);
         
-      IF room_cnt > 0 THEN
-        
+      IF room_cnt < 1 THEN
+        msg_pkg.create_private_room(:new.user_id, :new.username);
       END IF;
     END IF;
-    
-    EXCEPTION 
-      WHEN NO_DATA_FOUND THEN
-        ;
 END;
 /
 
@@ -202,7 +198,7 @@ CREATE OR REPLACE TRIGGER TRIG_CACHE
       WHERE MESSAGE_TABLE.room_id = :new.room_id;
     
     IF( msg_cnt >= 25 ) THEN  
-      message_pkg.create_message_cache_v1(:new.room_id);
+      msg_pkg.create_message_cache_v1(:new.room_id);
     END IF;
 END;
 /  
@@ -211,14 +207,15 @@ END;
    PACKAGES
 *******************************************************************************/
 --MESSAGE LOGIC PACKAGE DECLARATION
-CREATE OR REPLACE PACKAGE message_pkg
+CREATE OR REPLACE PACKAGE msg_pkg
   IS
   --FUNCTION SIGNATURES
   FUNCTION get_public_roomid RETURN NUMBER;
   
   --PROCEDURE SIGNATURES
+  PROCEDURE create_private_room(in_user_id IN NUMBER, in_username IN VARCHAR2);
   PROCEDURE create_message_cache_v1(in_room_id IN NUMBER);
-END message_pkg;
+END msg_pkg;
 /
 
 CREATE OR REPLACE PACKAGE log_pkg
@@ -232,17 +229,15 @@ END log_pkg;
 /
   
 --MESSAGE PACKAGE BODY
-CREATE OR REPLACE PACKAGE BODY message_pkg
+CREATE OR REPLACE PACKAGE BODY msg_pkg
   IS
   -- FUNCTION BODIES ------------------------------
   FUNCTION get_public_roomid RETURN NUMBER 
   IS
     public_roomid NUMBER;
   BEGIN 
-    SELECT MESSAGE_ROOM.room_id
-      INTO public_roomid
-      FROM MESSAGE_ROOM
-      WHERE LOWER(MESSAGE_ROOM.room_name) = 'public';
+    SELECT MESSAGE_ROOM.room_id INTO public_roomid FROM MESSAGE_ROOM
+      WHERE MESSAGE_ROOM.room_name = 'public';
       
     RETURN public_roomid;
     
@@ -251,6 +246,29 @@ CREATE OR REPLACE PACKAGE BODY message_pkg
   END;
   
   -- PROCEDURE BODIES ------------------------------
+  PROCEDURE create_private_room(in_user_id IN NUMBER, in_username IN VARCHAR2)
+  IS
+    this_room_id NUMBER;
+    this_room_name VARCHAR2(50);
+  BEGIN
+    this_room_name := CONCAT('priv_',in_username);
+  
+    INSERT INTO MESSAGE_ROOM (room_id, room_name)
+      VALUES (SEQ_MSGROOM.NEXTVAL, this_room_name);
+      
+    SELECT MESSAGE_ROOM.room_id INTO this_room_id FROM MESSAGE_ROOM
+      WHERE MESSAGE_ROOM.room_name = this_room_name;
+    
+    INSERT INTO USER_MSGROOM_JUNC(user_id, room_id) 
+      VALUES(in_user_id, this_room_id);
+  
+    EXCEPTION
+      WHEN NO_DATA_FOUND THEN
+        INSERT INTO LOGS(log_id, log_type, log_text, created) 
+          VALUES(SEQ_LOGS.NEXTVAL, 'err', 'ERROR FINDING ROOM ID', SYSTIMESTAMP);
+  
+  END create_private_room;
+  
   PROCEDURE create_message_cache_v1(in_room_id IN NUMBER)
   IS
     this_message_id MESSAGE_TABLE.message_id%type;  
@@ -300,11 +318,11 @@ CREATE OR REPLACE PACKAGE BODY message_pkg
     EXCEPTION
       WHEN err_cache_fail THEN
         INSERT INTO LOGS(log_id, log_type, log_text, created) 
-          VALUES(SEQ_CACHE.NEXTVAL, 'err', 'CREATE CACHE FAILED', SYSTIMESTAMP);
+          VALUES(SEQ_LOGS.NEXTVAL, 'err', 'CREATE CACHE FAILED', SYSTIMESTAMP);
       
       WHEN OTHERS THEN
         INSERT INTO LOGS(log_id, log_type, log_text, created) 
-          VALUES(SEQ_CACHE.NEXTVAL, 'err', 'OTHER CACHE FAILURE', SYSTIMESTAMP);
+          VALUES(SEQ_LOGS.NEXTVAL, 'err', 'OTHER CACHE FAILURE', SYSTIMESTAMP);
     
   END create_message_cache_v1;
 
@@ -347,8 +365,10 @@ SELECT * FROM dual;
 INSERT INTO MESSAGE_ROOM (room_id, room_name)
   VALUES (SEQ_MSGROOM.NEXTVAL, 'public');
   
-INSERT INTO MESSAGE_TABLE (SEQ_MESSAGE.NEXTVAL, get_public_roomid(),
-  'Revature', 'Welcome to the Public Staging Board!', SYSTIMESTAMP);
+INSERT INTO MESSAGE_TABLE (message_id, room_id, username,
+    message_text, message_time)
+  VALUES(SEQ_MESSAGE.NEXTVAL, msg_pkg.get_public_roomid(),
+    'Revature', 'Welcome to the Public Staging Board!', SYSTIMESTAMP);
 
 INSERT INTO USER_TABLE (user_id, username, passwd, firstname, lastname,
     email, location_id, status_id, role_id)
