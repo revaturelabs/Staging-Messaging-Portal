@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.revature.smp.beans.User;
 import com.revature.smp.domain.UserRegistrationRequest;
-import com.revature.smp.services.registration.AssociateRegistrationService;
-import com.revature.smp.services.registration.RegistrationManagerService;
+import com.revature.smp.services.AssociateRegistrationService;
+import com.revature.smp.services.RegistrationManagerService;
 
 @RestController
 @RequestMapping(value = "/api")

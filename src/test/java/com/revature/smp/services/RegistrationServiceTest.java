@@ -2,8 +2,6 @@ package com.revature.smp.services;
 
 import org.junit.Test;
 
-import com.revature.smp.services.registration.AssociateRegistrationService;
-
 public class RegistrationServiceTest {
 	
 
