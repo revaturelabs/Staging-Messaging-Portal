@@ -14,6 +14,7 @@ import com.revature.smp.services.registration.AssociateRegistrationService;
 import com.revature.smp.services.registration.RegistrationManagerService;
 
 @RestController
+@RequestMapping(value = "/api")
 public class RegistrationController {
 	
 	public static final String REGISTER_USER_URL = "/register-user";
