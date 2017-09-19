@@ -2,12 +2,12 @@ package com.revature.smp.services;
 
 import org.junit.Test;
 
-public class RegistrationServiceTest {
+public class RegistrationServiceImplTest {
 	
 
 	@Test
 	public void testPasswordgeneration() {
-		AssociateRegistrationService service = new AssociateRegistrationService();
+		RegistrationServiceImpl service = new RegistrationServiceImpl();
 		System.out.println(service.generateFirstTimePassword());
 	}
 
