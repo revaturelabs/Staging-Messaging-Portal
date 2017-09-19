@@ -16,7 +16,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @ComponentScan("com.revature.*")
 @EnableScheduling
-@EnableJpaRepositories("com.revature.smp.dao")
+@EnableJpaRepositories("com.revature.smp.repo")
 public class SmpApplication {
 	
 	/**

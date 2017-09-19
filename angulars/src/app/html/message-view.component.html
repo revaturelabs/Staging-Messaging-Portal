@@ -1,0 +1,19 @@
+<div>
+    <h2>Room #{{roomId}}</h2>
+    <div style = "height:60vh; width:80%; margin:auto; overflow-x:hidden; overflow-y:scroll; word-wrap: break-word">
+    <button (click)="loadMore()" *ngIf="hadstuff">Load Older Messages</button>
+    <div *ngFor="let blob of blobs">
+    <div *ngFor="let message of blob.messages" style="text-align:left">
+        <div><b>{{message.user}}</b> - {{message.time | date : "h:mm:ss a M/d/yy"}}</div> 
+        <div style = "width:80%; margin:auto">{{message.text}}</div>
+    </div>
+    </div>
+    </div>
+
+    <div><button (click)="getUpdate()">Load New Messages</button></div>
+    <div>
+    <input [(ngModel)]="outmessage.user" placeholder = "name">
+    <input [(ngModel)]="outmessage.text" placeholder = "text">
+    <button class = "btn" (click)="post()">Send</button>
+    </div>
+</div>
