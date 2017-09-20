@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 @Controller
 public class GreetingsController {
-	
 	/**
 	 * Greeting endpoint, returns greeting.html
 	 *
@@ -26,5 +25,8 @@ public class GreetingsController {
 			Model model) {
 		model.addAttribute("name", name);
 		return "greeting";
+
 	}
 }
+
+
