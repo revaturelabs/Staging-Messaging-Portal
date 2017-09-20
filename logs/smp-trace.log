@@ -924,3 +924,39 @@
 					Adding [systemEnvironment] PropertySource with lowest search precedence
 [DEBUG] [904 ms] [09-20-2017 10:41:21] [StandardServletEnvironment (<init> : 125)] -
 					Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+[DEBUG] [876 ms] [09-20-2017 10:43:39] [StandardServletEnvironment (addFirst : 98)] -
+					Adding [configurationProperties] PropertySource with highest search precedence
+[DEBUG] [896 ms] [09-20-2017 10:43:39] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletConfigInitParams] PropertySource with lowest search precedence
+[DEBUG] [897 ms] [09-20-2017 10:43:39] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletContextInitParams] PropertySource with lowest search precedence
+[DEBUG] [897 ms] [09-20-2017 10:43:39] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG] [897 ms] [09-20-2017 10:43:39] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG] [897 ms] [09-20-2017 10:43:39] [StandardServletEnvironment (<init> : 125)] -
+					Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+[DEBUG] [856 ms] [09-20-2017 10:44:41] [StandardServletEnvironment (addFirst : 98)] -
+					Adding [configurationProperties] PropertySource with highest search precedence
+[DEBUG] [881 ms] [09-20-2017 10:44:41] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletConfigInitParams] PropertySource with lowest search precedence
+[DEBUG] [881 ms] [09-20-2017 10:44:41] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletContextInitParams] PropertySource with lowest search precedence
+[DEBUG] [882 ms] [09-20-2017 10:44:41] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG] [882 ms] [09-20-2017 10:44:41] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG] [882 ms] [09-20-2017 10:44:41] [StandardServletEnvironment (<init> : 125)] -
+					Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+[DEBUG] [821 ms] [09-20-2017 10:45:25] [StandardServletEnvironment (addFirst : 98)] -
+					Adding [configurationProperties] PropertySource with highest search precedence
+[DEBUG] [841 ms] [09-20-2017 10:45:25] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletConfigInitParams] PropertySource with lowest search precedence
+[DEBUG] [842 ms] [09-20-2017 10:45:25] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletContextInitParams] PropertySource with lowest search precedence
+[DEBUG] [842 ms] [09-20-2017 10:45:25] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG] [842 ms] [09-20-2017 10:45:25] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG] [842 ms] [09-20-2017 10:45:25] [StandardServletEnvironment (<init> : 125)] -
+					Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
