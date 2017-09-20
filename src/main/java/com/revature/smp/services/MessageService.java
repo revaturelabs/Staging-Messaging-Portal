@@ -10,4 +10,6 @@ public interface MessageService {
 	
 	List<Message> getMessagesByRoomId(int roomId);
 	
+	List<Message> getMessagesByRoomName(String roomName);
+	
 }

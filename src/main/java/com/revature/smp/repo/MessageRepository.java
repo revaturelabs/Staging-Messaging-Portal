@@ -10,6 +10,8 @@ import com.revature.smp.beans.Message;
 @Repository
 public interface MessageRepository extends JpaRepository<Message, Integer> {
 
-	List<Message> findByRoomId(int roomId);
+	//@Query("SELECT t.title FROM Todo t where t.id = :id") 
+    //Optional<String> findTitleById(@Param("id") Long id);
+	//List<Message> findById(int roomId);
 
 }
