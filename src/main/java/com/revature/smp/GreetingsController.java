@@ -10,23 +10,12 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 @Controller
 public class GreetingsController {
-	/**
-	 * Greeting endpoint, returns greeting.html
-	 *
-	 * @param name
-	 *            the name
-	 * @param model
-	 *            the model
-	 * @return the string
-	 */
-	@RequestMapping("/greetings")
-	public String greeting(
-			@RequestParam(value = "name", required = false, defaultValue = "World") String name,
+
+	@RequestMapping("/api/greetings")
+	public String greeting(@RequestParam(value = "name", required = false, defaultValue = "World") String name,
 			Model model) {
 		model.addAttribute("name", name);
 		return "greeting";
 
 	}
 }
-
-

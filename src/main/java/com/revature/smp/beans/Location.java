@@ -11,16 +11,16 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Entity
-@Table(name = "LOCATION")
+@Table(name = "USER_LOCATION")
 public class Location implements Serializable {
 	
 	private static final long serialVersionUID = 6033234014682351342L;
 	
 	@Id
-	@Column(name = "LOCATION_ID")
+	@Column(name = "location_id")
 	private int locationId;
 	
-	@Column(name = "LOCATION")
+	@Column(name = "location_name")
 	private String location;
 	
 	public Location() {

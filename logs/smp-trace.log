@@ -912,3 +912,15 @@
 					Found resource handler mapping: URL pattern="/static/**", locations=[class path resource [static/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@1ee3cadc]
 [DEBUG] [11011 ms] [09-20-2017 10:06:01] [StandardServletEnvironment (addFirst : 98)] -
 					Adding [server.ports] PropertySource with highest search precedence
+[DEBUG] [883 ms] [09-20-2017 10:41:21] [StandardServletEnvironment (addFirst : 98)] -
+					Adding [configurationProperties] PropertySource with highest search precedence
+[DEBUG] [903 ms] [09-20-2017 10:41:21] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletConfigInitParams] PropertySource with lowest search precedence
+[DEBUG] [903 ms] [09-20-2017 10:41:21] [StandardServletEnvironment (addLast : 110)] -
+					Adding [servletContextInitParams] PropertySource with lowest search precedence
+[DEBUG] [904 ms] [09-20-2017 10:41:21] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG] [904 ms] [09-20-2017 10:41:21] [StandardServletEnvironment (addLast : 110)] -
+					Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG] [904 ms] [09-20-2017 10:41:21] [StandardServletEnvironment (<init> : 125)] -
+					Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]

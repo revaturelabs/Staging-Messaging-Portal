@@ -1,7 +1,10 @@
 package com.revature.smp.beans;
 
 import java.io.Serializable;
+import java.util.Collections;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,10 +14,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.Parameter;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -24,57 +26,95 @@ public class User implements Serializable {
 	
 	private static final long serialVersionUID = 6104022944061620088L;
 	
-	@Id
-	@GeneratedValue(generator = "SMP_USER_SEQ", strategy = GenerationType.SEQUENCE)
-	@GenericGenerator(name = "SMP_USER_SEQ", strategy = "org.hibernate.id.enhanced.SequenceStyleGenerator", parameters = {
-			@Parameter(name = "sequence_name", value = "SMP_USER_SEQ"),
-			@Parameter(name = "optimizer", value = "hilo"),
-			@Parameter(name = "initial_value", value = "1"),
-			@Parameter(name = "increment_size", value = "1") })
+	private static final Map<Integer, String> locationMap = createMap();
 	
-	@Column(name = "USER_ID")
+	private static Map<Integer, String> createMap(){
+		Map<Integer, String> locationMap = new HashMap<Integer, String>();
+        locationMap.put(1, "Virginia");
+        locationMap.put(2, "New York");
+        locationMap.put(3, "Florida");
+        return Collections.unmodifiableMap(locationMap);
+	}
+
+	@Id
+	@SequenceGenerator(name="SEQ_USR", sequenceName="SEQ_USER", allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="SEQ_USR")
+	@Column(name = "user_id")
 	private int userId;
 	
-	@Column(name = "USERNAME")
+	@Column(name = "username")
 	private String username;
 	
-	@Column(name = "PASSWD")
+	@Column(name = "passwd")
 	private String password;
 	
-	@Column(name = "FIRST_NAME")
+	@Column(name = "firstname")
 	private String firstName;
 	
-	@Column(name = "LAST_NAME")
+	@Column(name = "lastname")
 	private String lastName;
 	
-	@Column(name = "EMAIL")
+	@Column(name = "email")
 	private String email;
 	
 	@ManyToOne(fetch = FetchType.EAGER, targetEntity = Location.class)
-	@JoinColumn(name = "LOCATION_ID")
+	@JoinColumn(name = "location_id")
 	private Location location;
 	
 	@ManyToOne(fetch = FetchType.EAGER, targetEntity = Status.class)
-	@JoinColumn(name = "STATUS_ID")
+	@JoinColumn(name = "status_id")
 	private Status status;
 	
 	@ManyToOne(fetch = FetchType.EAGER, targetEntity = Role.class)
-	@JoinColumn(name = "ROLE_ID")
+	@JoinColumn(name = "role_id")
 	private Role role;
 	
-	@Column(name = "LOGGED")
+	@Column(name = "loggedin")
 	private String logged;
 	
-	@Column(name = "USE_TEMP")
+	@Column(name = "use_temp")
 	private String useTemp;
 	
-	@Column(name = "ACTIVE")
+	@Column(name = "active")
 	private String active;
 	
-	@Column(name = "CREATED")
+	@Column(name = "created")
 	private Date created;
 	
 	public User() {
+	}
+	
+	public User(int userId, String username, String password, String firstName, String lastName, String email,
+			Location location, Status status, Role role, String logged, String useTemp, String active, Date created) 
+	{
+		super();
+		this.userId = userId;
+		this.username = username;
+		this.password = password;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.location = location;
+		this.status = status;
+		this.role = role;
+		this.logged = logged;
+		this.useTemp = useTemp;
+		this.active = active;
+		this.created = created;
+	}
+
+	public User(String firstName, String lastName, String email, int locationCode) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.location = new Location(locationCode, locationMap.get(locationCode));
+		this.role = new Role(2, "Associate");
+		this.status = new Status(1, "Staging");
+		this.active = "n";
+		this.logged = "n";
+		this.useTemp = "y";
+		this.created = new Date();
 	}
 	
 	public int getUserId() {
@@ -183,33 +223,19 @@ public class User implements Serializable {
 	
 	@Override
 	public String toString() {
-		return "User [userId="
-				+ userId
-				+ ", username="
-				+ username
-				+ ", password="
-				+ password
-				+ ", firstName="
-				+ firstName
-				+ ", lastName="
-				+ lastName
-				+ ", email="
-				+ email
-				+ ", location="
-				+ location
-				+ ", status="
-				+ status
-				+ ", role="
-				+ role
-				+ ", logged="
-				+ logged
-				+ ", useTemp="
-				+ useTemp
-				+ ", active="
-				+ active
-				+ ", created="
-				+ created
+		return "User [userId=" + userId 
+				+ ", username=" + username
+				+ ", password=" + password
+				+ ", firstName=" + firstName
+				+ ", lastName=" + lastName
+				+ ", email=" + email 
+				+ ", location=" + location 
+				+ ", status=" + status
+				+ ", role=" + role
+				+ ", logged=" + logged
+				+ ", useTemp=" + useTemp
+				+ ", active=" + active
+				+ ", created=" + created
 				+ "]";
 	}
-	
 }
