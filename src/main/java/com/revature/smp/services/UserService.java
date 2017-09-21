@@ -12,4 +12,5 @@ public interface UserService {
 	
 	public List<User> getByActiveStatus(String active);
 	
+	public User getByEmail(String email);
 }

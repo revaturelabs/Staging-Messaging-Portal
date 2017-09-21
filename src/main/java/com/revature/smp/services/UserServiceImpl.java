@@ -31,6 +31,11 @@ public class UserServiceImpl implements UserService {
 	public List<User> getByActiveStatus(String active) {
 		return userRepo.findByActive(active);
 	}
+
+	@Override
+	public User getByEmail(String email) {
+		return userRepo.findByEmail(email);
+	}
 	
 	// USE THIS AS A REFERENCE IF NECESSARY!!!!
 	// private static final String PATTERN = "dd-MMM-yy";
