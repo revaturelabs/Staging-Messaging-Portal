@@ -50,12 +50,25 @@ public class MessageController {
 		return responseMap;
 	}
 	
-	@RequestMapping(value="/fetch-all/{roomId}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(value="/fetch-room/{roomId}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
 	public Map<String, Object> fetchMessagesByRoomId(@PathVariable Integer roomId)
 	{
 		List<Message> messageList = new ArrayList<Message>();
 		
-		msgSvc.getMessagesByRoomId(roomId);
+		messageList = msgSvc.getMessagesByRoomId(roomId);
+		
+		Map<String, Object> responseMap = new HashMap<String, Object>();
+		responseMap.put("messages", messageList);
+		
+		return responseMap;
+	}
+	
+	@RequestMapping(value="/fetch-room/public", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
+	public Map<String, Object> fetchPublicMessages()
+	{
+		List<Message> messageList = new ArrayList<Message>();
+		
+		messageList = msgSvc.getMessagesByRoomName("public");
 		
 		Map<String, Object> responseMap = new HashMap<String, Object>();
 		responseMap.put("messages", messageList);
