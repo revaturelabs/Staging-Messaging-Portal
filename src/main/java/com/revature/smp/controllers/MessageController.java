@@ -1,5 +1,6 @@
 package com.revature.smp.controllers;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -16,7 +17,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.revature.smp.beans.Message;
+import com.revature.smp.beans.User;
 import com.revature.smp.services.MessageService;
+import com.revature.smp.services.UserService;
 
 @RestController
 @RequestMapping("/msg")
@@ -24,6 +27,9 @@ public class MessageController {
 	
 	@Autowired
 	MessageService msgSvc;
+	
+	@Autowired
+	UserService userSvc;
 	
 	@RequestMapping(value="/post", method=RequestMethod.POST)
 	public Map<String, Object> postMessage(@RequestBody Message message) 
@@ -68,7 +74,12 @@ public class MessageController {
 	{
 		List<Message> messageList = new ArrayList<Message>();
 		
-		messageList = msgSvc.getMessagesByRoomName("public");
+		try {
+			messageList = msgSvc.getMessagesByRoomName("public");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		Map<String, Object> responseMap = new HashMap<String, Object>();
 		responseMap.put("messages", messageList);
@@ -76,16 +87,31 @@ public class MessageController {
 		return responseMap;
 	}
 	
-//	@RequestMapping(value="/fetch-update/{roomId}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
-//	public ResponseEntity<List<Message>> getUpdate(
-//			@PathVariable Integer roomId) {
-//		return new ResponseEntity<List<Message>>(msgSvc.getUpdate(roomId), HttpStatus.OK);
-//	}
-//	
-//	@RequestMapping(value="/fetch-previous/{roomId}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
-//	public ResponseEntity<List<MessageCache>> getPrevious(
-//			@PathVariable Integer roomId) {
-//		return new ResponseEntity<List<MessageCache>>(msgSvc.getPrevious(roomId), HttpStatus.OK);
-//	}
+	@RequestMapping(value="/fetch-room/private", method=RequestMethod.POST, produces=MediaType.APPLICATION_JSON_VALUE)
+	public Map<String, Object> fetchPrivateMessages(@RequestBody User user)
+	{
+		List<Message> messageList = new ArrayList<Message>();
+		
+		System.out.println(user);
+		
+		String privRoomName = (user != null && user.getUsername() != null
+				&& !user.getUsername().isEmpty() 
+				? ("priv_"+user.getUsername()) : null);
+		
+		if (privRoomName != null)
+		{
+			try {
+				messageList = msgSvc.getMessagesByRoomName(privRoomName);
+			} catch (SQLException e) {
+				System.out.println("frak this message private controller fetch thing");
+				e.printStackTrace();
+			}
+		}
+		
+		Map<String, Object> responseMap = new HashMap<String, Object>();
+		responseMap.put("messages", messageList);
+		
+		return responseMap;
+	}
 	
 }
