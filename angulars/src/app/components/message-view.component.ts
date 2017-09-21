@@ -1,6 +1,5 @@
 import { Component, Input, OnInit} from '@angular/core';
 
-
 import { Message } from '../classes/message';
 import { MessageBlob } from '../classes/messageBlob'
 import { MessageService } from '../services/message.service'
@@ -14,6 +13,7 @@ import { MessageService } from '../services/message.service'
 export class MessageViewComponent implements OnInit{
     @Input() roomId: number = 1;
     blobs: MessageBlob[]= [];
+    messages: Message[] = [];
     oldest: number = 0;
     newest: number = 0;
     hadstuff: boolean = true;
@@ -33,12 +33,10 @@ export class MessageViewComponent implements OnInit{
             .catch(err=>console.log(err));
     }
 
-    loadMore(): void {
-        if(this.hadstuff){
-            this.messageService.getPrevious(this.roomId,this.oldest)
-                .then(blobs => this.addBlobs(blobs))
-                .catch(err=>console.log(err));
-        }
+    getPublic(): void {
+        this.messageService.getPublic()
+        .then(messages => messages.forEach(msg => this.messages.push(msg)))
+        .catch(err=>console.log(err));
     }
 
     getUpdate(): void{
@@ -54,17 +52,23 @@ export class MessageViewComponent implements OnInit{
         }
     }
 
+    loadMore(): void {
+        if(this.hadstuff){
+            this.messageService.getPrevious(this.roomId,this.oldest)
+                .then(blobs => this.addBlobs(blobs))
+                .catch(err=>console.log(err));
+        }
+    }
+
     post(): void{
         var msg = this.outmessage;
-        this.outmessage = new Message;
-        
+        msg.roomId = this.roomId;
+
         this.messageService.post(this.roomId,msg)
             .then(()=>{
                 this.getUpdate();
             })
             .catch(err=>console.log(err));
-
-        this.messageService.post(this.roomId,msg);
     }
 
     addBlobs(blobs:MessageBlob[]): void {
@@ -91,8 +95,9 @@ export class MessageViewComponent implements OnInit{
         }
     }
 
-    ngOnInit(): void {
-        this.getMessages();
-    }
 
+
+    ngOnInit(): void {
+        this.getPublic();
+    }
 }
