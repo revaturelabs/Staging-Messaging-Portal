@@ -64,6 +64,8 @@ export class MessageViewComponent implements OnInit{
         var msg = this.outmessage;
         msg.roomId = this.roomId;
 
+        this.outmessage = new Message; // Clear the message
+
         this.messageService.post(this.roomId,msg)
             .then(()=>{
                 this.getUpdate();
