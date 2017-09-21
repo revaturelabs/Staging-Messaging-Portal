@@ -1,5 +1,6 @@
 package com.revature.smp.services;
 
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
@@ -50,18 +51,24 @@ public class MessageServiceImpl implements MessageService {
 	}
 
 	@Override
-	public List<Message> getMessagesByRoomName(String roomName) 
+	public List<Message> getMessagesByRoomName(String roomName) throws SQLException
 	{
-		Optional<MessageRoom> optionals = null;
+		MessageRoom messageRoom = null;
 		
 		if (roomName.toLowerCase().equals("public"))
 		{
-			optionals = msgRoomRepo.findById(1);
+			Optional<MessageRoom> optional = msgRoomRepo.findById(1);
+			if (optional != null && optional.isPresent())
+				messageRoom = optional.get();
+		}
+		else
+		{
+			messageRoom = msgRoomRepo.findByRoomName(roomName);
 		}
 		
-		if (optionals.get() != null)
+		if (messageRoom != null)
 		{
-			return optionals.get().getMessages();
+			return messageRoom.getMessages();
 		}
 		
 		return null;
