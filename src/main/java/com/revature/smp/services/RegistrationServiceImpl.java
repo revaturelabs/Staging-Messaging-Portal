@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.revature.smp.beans.User;
-import com.revature.smp.repo.UserRepository;
 
 @Service
 @Transactional
@@ -49,14 +48,10 @@ public class RegistrationServiceImpl implements RegistrationService {
 		String uniqueUsername = fullName;
 		int i = 1;
 		
-		try {
-			while( userSvc.getByUsername(uniqueUsername) != null) {
-				uniqueUsername = fullName + i;
-				i++;
-			}
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		while( userSvc.getByUsername(uniqueUsername) != null) 
+		{
+			uniqueUsername = fullName + i;
+			i++;
 		}
 		
 		return uniqueUsername;
@@ -76,7 +71,7 @@ public class RegistrationServiceImpl implements RegistrationService {
 	}
 	
 	@Override
-	public List<User> getRegisteringUsers(){
+	public List<User> getRegisteringUsers() {
 		return userSvc.getByActiveStatus("n");
 	}
 	
