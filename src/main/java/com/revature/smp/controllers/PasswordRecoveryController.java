@@ -9,27 +9,41 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.revature.smp.beans.User;
 import com.revature.smp.domain.PasswordRecoveryRequest;
-import com.revature.smp.services.PasswordRecoveryService;
+import com.revature.smp.services.PasswordRecoveryServiceImpl;
 
 @RestController
 @RequestMapping(value = "/api")
 public class PasswordRecoveryController {
 	
-	PasswordRecoveryService recover;
+	PasswordRecoveryServiceImpl recover;
 	
 	public static final String RECOVER_USER_URL = "/password-recovery";
 	
 	@RequestMapping(value = RECOVER_USER_URL, method = RequestMethod.POST, consumes="application/json")
 	public void recoverPass(@RequestBody PasswordRecoveryRequest request, HttpServletResponse response) {
-		User user = recover.getRegisteredUser(request.getEmail());
+		System.out.println("Email is: " + request.getEmail());
+		User user = new User();
 		
-		user.setPassword(recover.generateTemporaryPassword());
-		System.out.println(user.getEmail());
 		try {
-			recover.updateUserPassword(user);
-		}
-		catch(Exception e){
+			user = recover.getRegisteredUser(request.getEmail());
+			
+			if (user != null) {
+				recover.updateUserPassword(user);
+				
+				user.setPassword(recover.generateTemporaryPassword());
+			} else {
+				//throw custom exception that user is not found -- need to create exception
+				//this will be then handled by front end app to notify user
+				System.out.print("User not found");
+			}
+		} catch (NullPointerException e) {
 			e.printStackTrace();
+			//throw custom exception that user is not found -- need to create exception
+			//this will be then handled by front end app to notify user
+			System.out.print("User not found");
 		}
+		
+
+		
 	}
 }

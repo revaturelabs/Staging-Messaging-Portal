@@ -41,7 +41,15 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public User getByEmail(String email) {
-		return userRepo.findByEmail(email);
+		User user = userRepo.findByEmail(email);
+		
+		if(user != null) {
+			System.out.print(user.getFirstName());
+			return user;
+		}
+		else {
+			return null;
+		}
 	}
 	
 }

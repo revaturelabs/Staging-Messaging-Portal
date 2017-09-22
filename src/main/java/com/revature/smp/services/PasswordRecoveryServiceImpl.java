@@ -8,7 +8,7 @@ import com.revature.smp.beans.User;
 public class PasswordRecoveryServiceImpl implements PasswordRecoveryService{
 	
 	@Autowired
-	UserService userSvc;
+	UserServiceImpl userSvc;
 	
 	@Override
 	public String generateTemporaryPassword() {
@@ -21,6 +21,7 @@ public class PasswordRecoveryServiceImpl implements PasswordRecoveryService{
 	@Override
 	public User getRegisteredUser(String email) {
 		return userSvc.getByEmail(email);
+		
 	}
 
 	@Override

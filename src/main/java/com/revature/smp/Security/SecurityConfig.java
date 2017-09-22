@@ -1,4 +1,4 @@
-package com.revature.smp.Security;
+/*package com.revature.smp.Security;
 
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -20,4 +20,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	}
 	
 
-}
+}*/
