@@ -1,6 +1,5 @@
 package com.revature.smp.services;
 
-import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
@@ -51,7 +50,7 @@ public class MessageServiceImpl implements MessageService {
 	}
 
 	@Override
-	public List<Message> getMessagesByRoomName(String roomName) throws SQLException
+	public List<Message> getMessagesByRoomName(String roomName)
 	{
 		MessageRoom messageRoom = null;
 		

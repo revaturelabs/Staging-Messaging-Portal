@@ -1,6 +1,5 @@
 package com.revature.smp.services;
 
-import java.sql.SQLException;
 import java.util.List;
 
 import javax.transaction.Transactional;
@@ -24,7 +23,7 @@ public class UserServiceImpl implements UserService {
 	}
 	
 	@Override
-	public User getByUsername(String username) throws SQLException {
+	public User getByUsername(String username) {
 		
 		User user = userRepo.findByUsername(username);
 		
@@ -37,6 +36,11 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public List<User> getByActiveStatus(String active) {
 		return userRepo.findByActive(active);
+	}
+
+	@Override
+	public User getByEmail(String email) {
+		return userRepo.findByEmail(email);
 	}
 	
 }
