@@ -36,6 +36,9 @@ export class PasswordRecoveryComponent {
 
   onSubmit(passwordRecoveryForm: NgForm) {
     let useremail = passwordRecoveryForm.value;
-
+    console.log("useremail is: " + useremail.email);
+    console.log("In end of onSubmit");
+    this.resetUser(useremail);
+    
   }
 }
