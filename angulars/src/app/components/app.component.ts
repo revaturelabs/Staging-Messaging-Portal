@@ -9,7 +9,7 @@ import 'rxjs/add/operator/map';
 })
 export class AppComponent {
   title = 'Staging Messaging Portal';
-  private apiUrl = 'http://localhost:1111/users';
+  private apiUrl = 'http://localhost:8090/users';
   data: any = {};
 
 constructor(private http: Http) {

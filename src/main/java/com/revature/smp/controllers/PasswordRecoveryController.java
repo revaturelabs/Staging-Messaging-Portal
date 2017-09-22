@@ -17,7 +17,7 @@ public class PasswordRecoveryController {
 	
 	PasswordRecoveryService recover;
 	
-	public static final String RECOVER_USER_URL = "/recover-password";
+	public static final String RECOVER_USER_URL = "/password-recovery";
 	
 	@RequestMapping(value = RECOVER_USER_URL, method = RequestMethod.POST, consumes="application/json")
 	public void recoverPass(@RequestBody PasswordRecoveryRequest request, HttpServletResponse response) {

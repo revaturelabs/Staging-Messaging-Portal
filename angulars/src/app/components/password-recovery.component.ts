@@ -9,11 +9,14 @@ import { Router } from '@angular/router';
   styleUrls: ['../css/password-recovery.css']
 })
 export class PasswordRecoveryComponent {
+
   constructor(private http: HttpClient, private router: Router) {}
 
   resetUser = function(useremail){
-    let response = this.http.post('/api/recover-password', useremail, {Observe: 'response'});
-
+    console.log("In the password-recovery.component.ts");
+    
+    let response = this.http.post('/api/password-recovery', useremail, {Observe: 'response'});
+   
     response.subscribe(
       res => {
         console.log(res);

@@ -1,5 +1,6 @@
 package com.revature.smp.services;
 
+import java.sql.SQLException;
 import java.util.List;
 
 import javax.transaction.Transactional;
@@ -48,9 +49,14 @@ public class RegistrationServiceImpl implements RegistrationService {
 		String uniqueUsername = fullName;
 		int i = 1;
 		
-		while( userSvc.getByUsername(uniqueUsername) != null) {
-			uniqueUsername = fullName + i;
-			i++;
+		try {
+			while( userSvc.getByUsername(uniqueUsername) != null) {
+				uniqueUsername = fullName + i;
+				i++;
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		
 		return uniqueUsername;

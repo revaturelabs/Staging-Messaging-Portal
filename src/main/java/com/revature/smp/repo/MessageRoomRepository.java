@@ -7,5 +7,6 @@ import com.revature.smp.beans.MessageRoom;
 
 @Repository
 public interface MessageRoomRepository extends JpaRepository<MessageRoom, Integer> {
-
+     
+    MessageRoom findByRoomName(String roomName);
 }
