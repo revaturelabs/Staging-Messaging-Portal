@@ -12,8 +12,16 @@ export class MessageService {
         'Authorization': 'Basic dXNlcjp1c2Vy'
     })
     private options = new RequestOptions({headers: this.headers});
-    private messageurl = 'http://localhost:8080/msg'
+    private messageurl = 'http://localhost:8090/msg'
     constructor(private http: Http) {}
+
+    getByRoom(roomId:number): Promise<Message[]> {
+        var url = `${this.messageurl}/fetch-room/${roomId}`;
+
+        return this.http.get(url,{headers:this.headers}).toPromise()
+        .then(response => response.json())
+        .catch(this.handleError)
+    }
 
     getMostRecent(roomId:number): Promise<MessageBlob[]> {
         var url = `${this.messageurl}/getmostrecent/${roomId}`;
@@ -31,6 +39,14 @@ export class MessageService {
             .catch(this.handleError);
     }
 
+    getPublic(): Promise<Message[]> {
+        var url = `${this.messageurl}/fetch-room/public`;
+        
+        return this.http.get(url,{headers:this.headers}).toPromise()
+        .then(response => response.json().messages)
+        .catch(this.handleError);
+    }
+
     getUpdate(roomId:number,blobId:number): Promise<MessageBlob[]>{
         var url = `${this.messageurl}/getupdate/${roomId}/${blobId}`;
         
@@ -40,7 +56,7 @@ export class MessageService {
     }
 
     post(roomId:number,message:Message): Promise<void>{
-        var url = `${this.messageurl}/post/${roomId}`;
+        var url = `${this.messageurl}/post`;
 
         return this.http.post(url, message,{headers:this.headers}).toPromise()
             .then(response => {})

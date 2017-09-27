@@ -8,6 +8,8 @@ public interface UserService {
 	
 	public void saveUser(User user);
 	
+	public User getByEmail(String email);
+	
 	public User getByUsername(String username);
 	
 	public List<User> getByActiveStatus(String active);

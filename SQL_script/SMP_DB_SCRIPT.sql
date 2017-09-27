@@ -6,7 +6,7 @@
    Author: Richard C. Smith
    Company: Revature LLC
    Date of creation: 2017/08/27
-   Version: 2017.09.18
+   Version: 2017.09.21
    License: Copyright 2017 Revature
 *******************************************************************************/
 
@@ -187,6 +187,7 @@ CREATE OR REPLACE TRIGGER TRIG_USER_UPDATE_ACTIVE
 END;
 /
 
+/* DISABLING CACHE FOR NOW
 CREATE OR REPLACE TRIGGER TRIG_CACHE
   AFTER INSERT ON MESSAGE_TABLE
   FOR EACH ROW
@@ -202,6 +203,7 @@ CREATE OR REPLACE TRIGGER TRIG_CACHE
     END IF;
 END;
 /  
+*/
 
 /*******************************************************************************
    PACKAGES
@@ -260,7 +262,16 @@ CREATE OR REPLACE PACKAGE BODY msg_pkg
       WHERE MESSAGE_ROOM.room_name = this_room_name;
     
     INSERT INTO USER_MSGROOM_JUNC(user_id, room_id) 
+      VALUES(in_user_id, 1);
+      
+    INSERT INTO USER_MSGROOM_JUNC(user_id, room_id) 
       VALUES(in_user_id, this_room_id);
+      
+    INSERT INTO MESSAGE_TABLE (message_id, room_id, username, message_text,
+      message_time)
+      VALUES (SEQ_MESSAGE.NEXTVAL, this_room_id, 'Revature',
+        'Welcome to your private channel with the staging manager.',
+        systimestamp);
   
     EXCEPTION
       WHEN NO_DATA_FOUND THEN

@@ -1,5 +1,6 @@
 package com.revature.smp.services;
 
+import java.sql.SQLException;
 import java.util.List;
 
 import javax.transaction.Transactional;
@@ -9,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.revature.smp.beans.User;
-import com.revature.smp.repo.UserRepository;
 
 @Service
 @Transactional
@@ -48,7 +48,8 @@ public class RegistrationServiceImpl implements RegistrationService {
 		String uniqueUsername = fullName;
 		int i = 1;
 		
-		while( userSvc.getByUsername(uniqueUsername) != null) {
+		while( userSvc.getByUsername(uniqueUsername) != null) 
+		{
 			uniqueUsername = fullName + i;
 			i++;
 		}
@@ -70,7 +71,7 @@ public class RegistrationServiceImpl implements RegistrationService {
 	}
 	
 	@Override
-	public List<User> getRegisteringUsers(){
+	public List<User> getRegisteringUsers() {
 		return userSvc.getByActiveStatus("n");
 	}
 	

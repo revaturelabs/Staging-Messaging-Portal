@@ -50,18 +50,24 @@ public class MessageServiceImpl implements MessageService {
 	}
 
 	@Override
-	public List<Message> getMessagesByRoomName(String roomName) 
+	public List<Message> getMessagesByRoomName(String roomName)
 	{
-		Optional<MessageRoom> optionals = null;
+		MessageRoom messageRoom = null;
 		
 		if (roomName.toLowerCase().equals("public"))
 		{
-			optionals = msgRoomRepo.findById(1);
+			Optional<MessageRoom> optional = msgRoomRepo.findById(1);
+			if (optional != null && optional.isPresent())
+				messageRoom = optional.get();
+		}
+		else
+		{
+			messageRoom = msgRoomRepo.findByRoomName(roomName);
 		}
 		
-		if (optionals.get() != null)
+		if (messageRoom != null)
 		{
-			return optionals.get().getMessages();
+			return messageRoom.getMessages();
 		}
 		
 		return null;
