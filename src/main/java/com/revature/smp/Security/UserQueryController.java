@@ -2,8 +2,7 @@ package com.revature.smp.Security;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,12 +23,27 @@ public class UserQueryController  {
 //		return "Greetings from Spring Boot!";
 //	}
 	
-	@RequestMapping( value = "/{Username}", method=RequestMethod.GET,
-			produces=MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping( value = "/access", method=RequestMethod.POST)
+	
+	public User  Username(@RequestBody  User username ) {
+//		System.err.println(username);
+		User user = userrepo.findByUsername(username.getUsername());
+		System.err.println(user.getUsername());
 
-	public User  Username(@PathVariable String Username ) {
-		User user = userrepo.findByUsername(Username);
-		return user;
+		if (user != null){
+			if (!(username.getUsername().equals(user.getUsername())) && !(username.getPassword().equals(user.getPassword())))
+					{
+				
+				System.out.println("who you?");
+	
+				
+			}
+			System.out.println("you good ?");
+
+			return user;
+		}
+		return null;
+		
 	}
 	
 //	@RequestMapping( value = "/password/{Username}", method=RequestMethod.GET,
