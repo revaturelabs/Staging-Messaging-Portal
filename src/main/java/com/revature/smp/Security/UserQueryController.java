@@ -2,6 +2,8 @@ package com.revature.smp.Security;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -25,24 +27,18 @@ public class UserQueryController  {
 	
 	@RequestMapping( value = "/access", method=RequestMethod.POST)
 	
-	public User  Username(@RequestBody  User username ) {
+	public ResponseEntity<User>  Username(@RequestBody  User username ) {
 //		System.err.println(username);
 		User user = userrepo.findByUsername(username.getUsername());
 		System.err.println(user.getUsername());
 
-		if (user != null){
-			if (!(username.getUsername().equals(user.getUsername())) && !(username.getPassword().equals(user.getPassword())))
-					{
-				
-				System.out.println("who you?");
-	
-				
-			}
-			System.out.println("you good ?");
-
-			return user;
+		if (user != null &&
+			username.getUsername().equals(user.getUsername()) &&
+			username.getPassword().equals(user.getPassword()) &&
+			user.getActive().equals("y")){
+			return new ResponseEntity<User>(user, HttpStatus.ACCEPTED);
 		}
-		return null;
+		return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
 		
 	}
 	
