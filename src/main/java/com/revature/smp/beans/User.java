@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.persistence.Column;
@@ -13,7 +14,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -81,12 +84,25 @@ public class User implements Serializable {
 	@Column(name = "created")
 	private Date created;
 	
-	public User() {
-	}
+	@OneToMany(fetch = FetchType.EAGER, targetEntity = MessageRoom.class)
+	@JoinTable(
+		name = "USER_MSGROOM_JUNC",
+		joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "user_id"),
+		inverseJoinColumns = @JoinColumn(name = "room_id", referencedColumnName = "room_id")
+	)
+	private List<MessageRoom> messageRooms;
 	
-	public User(int userId, String username, String password, String firstName, String lastName, String email,
-			Location location, Status status, Role role, String logged, String useTemp, String active, Date created) 
+	public User() { }
+	
+	public User(String username)
 	{
+		super();
+		this.username = username;
+	}
+
+	public User(int userId, String username, String password, String firstName, String lastName, String email,
+			Location location, Status status, Role role, String logged, String useTemp, String active, Date created,
+			List<MessageRoom> messageRooms) {
 		super();
 		this.userId = userId;
 		this.username = username;
@@ -101,6 +117,7 @@ public class User implements Serializable {
 		this.useTemp = useTemp;
 		this.active = active;
 		this.created = created;
+		this.messageRooms = messageRooms;
 	}
 
 	public User(String firstName, String lastName, String email, int locationCode) {
@@ -221,21 +238,20 @@ public class User implements Serializable {
 		this.created = created;
 	}
 	
+	public List<MessageRoom> getMessageRooms() {
+		return messageRooms;
+	}
+
+	public void setMessageRooms(List<MessageRoom> messageRooms) {
+		this.messageRooms = messageRooms;
+	}
+
 	@Override
 	public String toString() {
-		return "User [userId=" + userId 
-				+ ", username=" + username
-				+ ", password=" + password
-				+ ", firstName=" + firstName
-				+ ", lastName=" + lastName
-				+ ", email=" + email 
-				+ ", location=" + location 
-				+ ", status=" + status
-				+ ", role=" + role
-				+ ", logged=" + logged
-				+ ", useTemp=" + useTemp
-				+ ", active=" + active
-				+ ", created=" + created
-				+ "]";
+		return "User [userId=" + userId + ", username=" + username + ", password=" + password + ", firstName="
+				+ firstName + ", lastName=" + lastName + ", email=" + email + ", location=" + location + ", status="
+				+ status + ", role=" + role + ", logged=" + logged + ", useTemp=" + useTemp + ", active=" + active
+				+ ", created=" + created + ", messageRooms=" + messageRooms + "]";
 	}
+
 }
