@@ -1,6 +1,0 @@
-[WARN] [160030 ms] [09-28-2017 11:43:20] [PageNotFound (handleHttpRequestMethodNotSupported : 187)] -
-					Request method 'GET' not supported
-[WARN] [161624 ms] [09-28-2017 11:43:21] [PageNotFound (noHandlerFound : 1195)] -
-					No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'dispatcherServlet'
-[WARN] [4065862 ms] [09-28-2017 15:01:10] [PageNotFound (handleHttpRequestMethodNotSupported : 187)] -
-					Request method 'GET' not supported
