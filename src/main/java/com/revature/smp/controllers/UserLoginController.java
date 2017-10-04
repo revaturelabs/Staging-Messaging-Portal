@@ -1,4 +1,4 @@
-package com.revature.smp.Security;
+package com.revature.smp.controllers;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,16 +14,11 @@ import com.revature.smp.repo.UserRepository;
 
 @RestController
 @RequestMapping("/logger")
-public class UserQueryController  {
+public class UserLoginController  {
 	
 	@Autowired
 	
 	UserRepository userrepo;
-//	
-//	@RequestMapping("/hi")
-//	public String index() {
-//		return "Greetings from Spring Boot!";
-//	}
 	
 	@RequestMapping( value = "/access", method=RequestMethod.POST)
 	
@@ -39,13 +34,4 @@ public class UserQueryController  {
 		
 	}
 	
-//	@RequestMapping( value = "/password/{Username}", method=RequestMethod.GET,
-//			produces=MediaType.APPLICATION_JSON_VALUE)
-//	
-//	public String Password(@PathVariable String Username ) {
-//		User user = userrepo.findByUsername(Username);
-//		System.out.println(user);
-//		return user.getPassword();
-//	}
-//	
 }
