@@ -28,10 +28,7 @@ public class UserQueryController  {
 	@RequestMapping( value = "/access", method=RequestMethod.POST)
 	
 	public ResponseEntity<User>  Username(@RequestBody  User username ) {
-//		System.err.println(username);
 		User user = userrepo.findByUsername(username.getUsername());
-		System.err.println(user.getUsername());
-
 		if (user != null &&
 			username.getUsername().equals(user.getUsername()) &&
 			username.getPassword().equals(user.getPassword()) &&
