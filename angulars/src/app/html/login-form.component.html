@@ -2,12 +2,12 @@
   <div>
     <img src="https://3g4d13k75x47q7v53surz1gi-wpengine.netdna-ssl.com/wp-content/themes/revature/imgs/logo.png" class="imageCenter" />
   </div>
-  <form (submit)= "loginUser($event)">
+  <form (submit)= "login($event)">
     <div class="input">
-      <input type="text" placeholder="Username"> 
+      <input [(ngModel)]="user.username" placeholder="Username"> 
     </div>
     <div class="input">
-      <input type="password" placeholder="Password">
+      <input [(ngModel)]="user.password" type="password" placeholder="Password">
     </div>
     <div class="input">
       <input class="btn-primary" type="submit" value="Login">
