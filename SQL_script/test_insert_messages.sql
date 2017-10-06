@@ -20,7 +20,28 @@ select systimestamp from dual;
 INSERT INTO suppliers (supplier_id, supplier_name)
 VALUES (5000, 'Apple');
 
+INSERT INTO USER_TABLE (user_id, username, passwd, firstname, lastname,
+    email, location_id, status_id, role_id)
+  VALUES (SEQ_USER.NEXTVAL, 'pickleric', 'test', 'pickle', 'ric',
+    'pickle.ric@toomanypickles.com', 1, 1, 2);
 
+UPDATE USER_TABLE SET active = 'y' WHERE username = 'pickleric';
+UPDATE USER_TABLE SET active = 'n' WHERE username = 'pickleric';
+
+INSERT INTO MESSAGE_TABLE (message_id, room_id, username,
+    message_text, message_time)
+  VALUES(SEQ_MESSAGE.NEXTVAL, 16,
+    'Revature', 
+    'Welcome to your private channel with the staging manager.', 
+    SYSTIMESTAMP);
+    
+    
+INSERT INTO USER_TABLE (user_id, username, passwd, firstname, lastname,
+    email, location_id, status_id, role_id)
+  VALUES (SEQ_USER.NEXTVAL, 'bobdoyle', 'bobdoyle', 'bob', 'doyle',
+    'bob@doyle.org', 1, 1, 2);
+
+UPDATE USER_TABLE SET active = 'y' WHERE username = 'bobdoyle';
 /*******************************************************************************
    Verify message records exist in MESSAGE_TABLE
 *******************************************************************************/
