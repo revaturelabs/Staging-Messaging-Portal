@@ -9,24 +9,10 @@ import 'rxjs/add/operator/map';
 })
 export class AppComponent {
   title = 'Staging Messaging Portal';
-  private apiUrl = 'http://localhost:1111/users';
-  data: any = {};
 
 constructor(private http: Http) {
-  console.log('For testing purposes login username and password is admin');
-  this.getContacts();
-  this.getData;
 }
 
 
-  getData() {
-    return this.http.get(this.apiUrl).map((res: Response)=> res.json())
-  }
-
-
-  getContacts() {
-    this.getData().subscribe(data => { console.log(data);
-                              this.data=data})
-  }
 
 }
