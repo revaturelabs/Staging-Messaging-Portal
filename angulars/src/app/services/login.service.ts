@@ -8,7 +8,7 @@ import 'rxjs/add/operator/toPromise';
 export class LoginService {
     private headers = new Headers({
         'Authorization': 'Basic dXNlcjp1c2Vy'
-    })
+    });
     private options = new RequestOptions({headers: this.headers});
     private loginurl = 'http://localhost:8090/logger';
     constructor(private http: Http) {}

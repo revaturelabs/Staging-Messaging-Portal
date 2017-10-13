@@ -16,4 +16,5 @@ public interface UserService {
 	
 	public List<User> getByActiveStatus(String active);
 	
+	public List<String> getUsernames();
 }

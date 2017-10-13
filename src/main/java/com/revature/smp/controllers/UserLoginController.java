@@ -1,13 +1,12 @@
 package com.revature.smp.controllers;
 
-
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -39,10 +38,31 @@ public class UserLoginController  {
 		
 	}
 	
-	@RequestMapping( value = "/list-users", method=RequestMethod.GET)
-	public List<User> getUsers() {
+	@RequestMapping( value = "/list-usernames", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE )
+	public List<String> getUsernames() {
+		List<String> usernames = null; // List of users to be returned at the end of the method
 		
-		return null;
+		usernames = userService.getUsernames();
+		
+		System.err.println(usernames);
+		
+		return usernames;
+	}
+	
+	@RequestMapping( value = "/list-users/{username}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE )
+	public List<User> getUsers(@PathVariable String username) {
+		List<User> users = null; // List of users to be returned at the end of the method
+		
+		User user = userService.getByUsername(username);
+		String roleName = (user != null && user.getRole() != null) ? user.getRole().getRoleName() : "";
+		
+		if(roleName.equals("manager")){
+			users = userService.getAllUsers();
+		}
+		
+		System.err.println(users);
+		
+		return users;
 	}
 	
 	

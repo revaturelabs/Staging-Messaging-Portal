@@ -1,4 +1,8 @@
 <div id="menuRight" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" (click)="closeRight()">&times;</a>
-        <a href="#">User list goes here</a>
-      </div>
+  <a href="javascript:void(0)" class="closebtn" (click)="closeRight()">&times;</a>
+  <div *ngFor="let username of usernames" style="text-align:left">
+    <a href="#">
+      <div><p>{{username}}</p></div>
+    </a>
+  </div>
+</div>
