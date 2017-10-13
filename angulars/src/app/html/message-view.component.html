@@ -13,7 +13,7 @@
     <div><button (click)="getUpdate()">Load New Messages</button></div>
     <div>
     <input [(ngModel)]="outmessage.username" placeholder = "name">
-    <input [(ngModel)]="outmessage.text" placeholder = "text">
+    <input [(ngModel)]="outmessage.text" (keyup.enter)="post" placeholder = "text">
     <button class = "btn" (click)="post()">Send</button>
     </div>
 </div>

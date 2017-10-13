@@ -18,26 +18,26 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Entity
-@Table(name="MESSAGE_ROOM")
+@Table(name = "MESSAGE_ROOM")
 public class MessageRoom implements Serializable {
 
 	private static final long serialVersionUID = -2944283440032776431L;
 
 	@Id
-	@SequenceGenerator(name="SEQ_MESSAGEROOM", sequenceName="SEQ_MSGROOM", allocationSize=1)
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="SEQ_MESSAGEROOM")
-	@Column(name="room_id")
+	@SequenceGenerator(name = "SEQ_MESSAGEROOM", sequenceName = "SEQ_MSGROOM", allocationSize = 1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_MESSAGEROOM")
+	@Column(name = "room_id")
 	private int roomId;
-	
-	@Column(name="room_name")
+
+	@Column(name = "room_name")
 	private String roomName;
-	
-	@OneToMany(fetch=FetchType.EAGER, targetEntity=Message.class)
-	@JoinColumn(name="room_id")
+
+	@OneToMany(fetch = FetchType.EAGER, targetEntity = Message.class)
+	@JoinColumn(name = "room_id")
 	private List<Message> messages;
-	
+
 	public MessageRoom() {
-		
+
 	}
 
 	public MessageRoom(int roomId, String roomName, List<Message> messages) {

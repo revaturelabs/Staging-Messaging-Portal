@@ -80,13 +80,13 @@ public class MessageController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		Map<String, Object> responseMap = new HashMap<String, Object>();
 		responseMap.put("messages", messageList);
 		
 		return responseMap;
 	}
-	
+
 	@RequestMapping(value="/fetch-room/private", method=RequestMethod.POST, produces=MediaType.APPLICATION_JSON_VALUE)
 	public Map<String, Object> fetchPrivateMessages(@RequestBody User user)
 	{
