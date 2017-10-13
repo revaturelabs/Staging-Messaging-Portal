@@ -1,6 +1,68 @@
-[WARN] [18670 ms] [09-07-2017 15:29:08] [PageNotFound (noHandlerFound : 1195)] -
+[WARN] [107191 ms] [10-13-2017 12:43:50] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/swagger-ui.html] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [109353 ms] [10-13-2017 12:43:52] [PageNotFound (noHandlerFound : 1195)] -
 					No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'dispatcherServlet'
-
-[WARN] [90738 ms] [09-18-2017 16:30:40] [PageNotFound (noHandlerFound : 1195)] -
+[WARN] [124595 ms] [10-13-2017 12:44:07] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/swagger-ui] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [128576 ms] [10-13-2017 12:44:11] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/swagger] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [147930 ms] [10-13-2017 12:44:31] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/jenkins] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [325843 ms] [10-13-2017 12:47:29] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/msg/swagger-ui] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [333064 ms] [10-13-2017 12:47:36] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/swagger-ui] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [338868 ms] [10-13-2017 12:47:42] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/swagger-ui.html] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [542305 ms] [10-13-2017 12:51:05] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/services.app/swagger-resources/configuration/security] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [567673 ms] [10-13-2017 12:51:30] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/services.app/swagger-resources/configuration/security] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [577043 ms] [10-13-2017 12:51:40] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/services.app/swagger-resources/configuration/security] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [752089 ms] [10-13-2017 12:54:35] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/services.app/docs/index.html] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [757135 ms] [10-13-2017 12:54:40] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/docs/index.html] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [863300 ms] [10-13-2017 12:56:26] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/sdoc.jsp] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [1947927 ms] [10-13-2017 13:14:31] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/swagger_ui.html] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [1951269 ms] [10-13-2017 13:14:34] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/swagger-ui.html] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [2758469 ms] [10-13-2017 13:28:01] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/swagger-ui.html] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [2763610 ms] [10-13-2017 13:28:06] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/swagger-ui.html] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [2794889 ms] [10-13-2017 13:28:38] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/swagger-ui.html] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [3072767 ms] [10-13-2017 13:33:16] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/swagger-ui.html] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [3288657 ms] [10-13-2017 13:36:51] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/swagger-ui.html] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [224757 ms] [10-13-2017 13:41:38] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/swagger-ui.html] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [245050 ms] [10-13-2017 13:41:58] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/swagger-ui.html] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [260081 ms] [10-13-2017 13:42:13] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/swagger-ui.html] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [562717 ms] [10-13-2017 13:47:16] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/smp/swagger-ui.html] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [1230597 ms] [10-13-2017 13:58:23] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/smp/swagger-ui.html] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [1235786 ms] [10-13-2017 13:58:29] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/smp/swagger-ui.html] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [1245471 ms] [10-13-2017 13:58:38] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/swagger-ui.html] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [1500247 ms] [10-13-2017 14:02:53] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/swagger-ui.html] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [1687794 ms] [10-13-2017 14:06:01] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/swagger-ui.html] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [52291 ms] [10-13-2017 14:30:06] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/swagger-ui] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [53297 ms] [10-13-2017 14:30:07] [PageNotFound (noHandlerFound : 1195)] -
 					No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'dispatcherServlet'
-
+[WARN] [3361785 ms] [10-13-2017 15:25:16] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/v2/api/docs] in DispatcherServlet with name 'dispatcherServlet'
+[WARN] [3363335 ms] [10-13-2017 15:25:17] [PageNotFound (noHandlerFound : 1195)] -
+					No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'dispatcherServlet'
