@@ -1,4 +1,4 @@
-package com.revature.smp;
+package com.revature.smp.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

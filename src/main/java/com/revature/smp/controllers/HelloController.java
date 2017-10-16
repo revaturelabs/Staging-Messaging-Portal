@@ -1,4 +1,4 @@
-package com.revature.smp;
+package com.revature.smp.controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
