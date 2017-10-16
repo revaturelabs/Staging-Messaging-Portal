@@ -12,5 +12,5 @@ public interface UserQuery extends Repository <User, String> {
 	String getUserByUsername(@Param("Username") String Username);
 	
 	@Query("SELECT password FROM user_table WHERE password = Password ")
-	String getPasswordByPassword(@Param("PAssword") String Username);
+	String getPasswordByPassword(@Param("Password") String Username);
 }
