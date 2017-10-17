@@ -8,6 +8,7 @@ target/
 spartanizer.xml
 
 ### STS/Eclipse ###
+
 .apt_generated
 .classpath
 .factorypath
