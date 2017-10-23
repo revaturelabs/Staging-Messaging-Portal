@@ -1,18 +1,19 @@
 let angApp = angular.module("SMPApp", ["ui.router"]);
 
-angApp.config(function($stateProvider)
+angApp.config(function($stateProvider, $urlRouterProvider)
 		{
-
-    let tmp = {
-        name: "tmpState",
+	$urlRouterProvider.otherwise('');
+    let tmpState = {
+    	url:'',
+    	abtract: true,
+        name: 'tmpState',
         views: {
-            "tmpView": {
-                templateUrl: "templates/tmp.html",
+            'tmpView': {
+                templateUrl: "static/templates/tmp.html",
                 controller: "tmpController"
             }
         }
     };
-    
     $stateProvider.state(tmpState);
 
 });
