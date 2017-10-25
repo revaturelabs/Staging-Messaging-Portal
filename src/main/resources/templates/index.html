@@ -1,10 +1,49 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>Getting Started: Serving Web Content</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="The place where messaging happens.">
+	<meta name="author" content="Staging">
+
+	<title>S.M.P.</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="../static/resources/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../static/resources/css/bootstrap.css" rel="stylesheet">
+	<link href="../static/resources/css/bootstrap-theme.css" rel="stylesheet">
+	<link href="../static/resources/css/bootstrap-theme.min.css" rel="stylesheet">
+
+
+	<!-- Custom styles for this template -->
+	<link href="../static/resources/css/app.component.css" rel="stylesheet">
+	<link href="../static/resources/css/footer.component.css" rel="stylesheet">
+	
+	<!-- JavaScript Frameworks -->
+	<script type="text/javascript" src="../static/jsframeworks/angular.min.js"></script>
+	<script type="text/javascript" src="../static/jsframeworks/angular-ui-router.js"></script>
+
+	<!-- AngularJS controllers -->
+	<script type="text/javascript" src="../static/angularjs-config.js"></script>
+	<script type="text/javascript" src="../static/controllers/tmp.js"></script>
+	<script type="text/javascript" src="../static/controllers/RegisterController.js"></script>
+
 </head>
-<body>
-    <p>Get your greeting <a href="/greeting">here</a></p>
+
+<body ng-app="SMPApp">
+<h3><strong>From the index html</strong></h3>
+	
+	<div ui-view="tmpView"></div>
+	<div ui-view="registerView"></div>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="../static/jsframeworks/jquery-3.2.1.js"></script>
+	<script src="../static/jsframeworks/bootstrap.min.js"></script>
+	<script src="../static/jsframeworks/popper.js"></script>
+	<!--<script src="static/jsframeworks/npm.js"></script>-->
+
 </body>
+
 </html>

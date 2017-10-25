@@ -3,7 +3,7 @@ target/
 
 ### Non useful files ###
 *.log
-logs/
+.tern-project
 
 ### Eclipse plugin file ###
 spartanizer.xml
