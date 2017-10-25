@@ -1,4 +1,4 @@
-package com.revature.smp.domain;
+package com.revature.smp.beans;
 
 public class UserRegistrationRequest {
 	

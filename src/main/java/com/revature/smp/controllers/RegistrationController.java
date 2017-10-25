@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.revature.smp.beans.User;
-import com.revature.smp.domain.UserRegistrationRequest;
+import com.revature.smp.beans.UserRegistrationRequest;
 import com.revature.smp.services.RegistrationService;
 
 @RestController
