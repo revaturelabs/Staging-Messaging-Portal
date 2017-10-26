@@ -1,6 +1,5 @@
 package com.revature.smp.services;
 
-import java.sql.SQLException;
 import java.util.List;
 
 import javax.transaction.Transactional;
@@ -10,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.revature.smp.beans.User;
+import com.revature.smp.exceptions.UsernameExistsException;
 
 @Service
 @Transactional
@@ -19,13 +19,18 @@ public class RegistrationServiceImpl implements RegistrationService {
 	UserService userSvc;
 	
 	/**
-	 * 
-	 * @param request - contains First name, last name and email fields 
+	 * Checks if the provided email is already in the database.
+	 * Creates a new user with a random new password and pseudo-random username.
+	 * @param request - contains First name, location, last name and email fields 
 	 * @throws Exception
 	 */
 	@Override
-	public void registerAssociate(User userRequest) throws Exception{
-		// TODO - username may need to be updated if duplicate already exists in DB
+	public void registerAssociate(User userRequest) throws UsernameExistsException{
+		User userInDatabase = userSvc.getByEmail(userRequest.getEmail());
+		if(userInDatabase == null)
+		{
+			throw new UsernameExistsException("That email is already in use.");
+		}
 		userRequest.setUsername(this.generateUniqueUsername(userRequest));
 		
 		// Once username is determined, persist user to DB

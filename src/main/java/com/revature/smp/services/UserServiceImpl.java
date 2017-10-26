@@ -27,10 +27,14 @@ public class UserServiceImpl implements UserService {
 		
 		User user = userRepo.findByUsername(username);
 		
-		if (user != null)		
+		if (user != null)
+		{
 			return user;
+		}
 		else
+		{
 			return null;
+		}
 	}
 
 	@Override

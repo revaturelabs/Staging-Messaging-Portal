@@ -16,38 +16,36 @@ import com.revature.smp.services.RegistrationService;
 @RequestMapping(value = "/api")
 public class RegistrationController {
 	
-	public static final String REGISTER_USER_URL = "/register-user";
-	
 	@Autowired
 	RegistrationService registrationService;
 	
 	/**
-	 * 
 	 * @param UserRegistrationRequest object created from consuming JSON
 	 * @return 201 - successfully created new user
 	 * 		   409 - user already exists with requested email
 	 * 		   501 - service unavailable (trouble connecting to database)
 	 */
-	@RequestMapping(value = REGISTER_USER_URL, method = RequestMethod.POST, consumes="application/json")
+	@RequestMapping(value = "/register-user", method = RequestMethod.POST, consumes="application/json")
 	public void register(@RequestBody UserRegistrationRequest request, HttpServletResponse response) 
 	{
-
 		User userRegistration = new User(request.getFirstName(), request.getLastName(),
-				request.getEmail(), request.getLocationId());
-		
-		try {
+				request.getEmail(), request.getLocationId());		
+		try
+		{
 			registrationService.registerAssociate(userRegistration);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			response.setStatus(HttpServletResponse.SC_OK);
 		}
-		
-		////System.out.println(request.toString());
-		response.setStatus(HttpServletResponse.SC_OK);
+		catch (Exception e)
+		{
+			response.setStatus(HttpServletResponse.SC_CONFLICT);
+			response.addHeader("error", e.toString());
+		}
 	}
 	
 	@RequestMapping(value="/all-pending-users", method = RequestMethod.GET)
-	public String getAllPendingUsers() {
+	public String getAllPendingUsers()
+	{
+		// TODO make this do something useful…
 		System.out.println(registrationService.getRegisteringUsers());
 		return null;
 	}
