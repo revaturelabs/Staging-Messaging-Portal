@@ -41,6 +41,9 @@ public class RegistrationController {
 			response.setStatus(HttpServletResponse.SC_CONFLICT);
 			response.addHeader("error", e.toString());
 		}
+		catch (Exception e) {
+			response.setStatus(HttpServletResponse.SC_EXPECTATION_FAILED);
+		}
 	}
 	
 	@RequestMapping(value="/all-pending-users", method = RequestMethod.GET)

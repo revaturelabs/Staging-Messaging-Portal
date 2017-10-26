@@ -27,7 +27,7 @@ public class RegistrationServiceImpl implements RegistrationService {
 	@Override
 	public void registerAssociate(User userRequest) throws UsernameExistsException{
 		User userInDatabase = userSvc.getByEmail(userRequest.getEmail());
-		if(userInDatabase == null)
+		if(userInDatabase != null)
 		{
 			throw new UsernameExistsException("That email is already in use.");
 		}

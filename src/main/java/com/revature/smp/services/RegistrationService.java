@@ -7,7 +7,7 @@ import com.revature.smp.exceptions.UsernameExistsException;
 
 public interface RegistrationService {
 
-	void registerAssociate(User userRequest) throws UsernameExistsException;
+	void registerAssociate(User userRequest) throws Exception, UsernameExistsException;
 	
 	String generateUniqueUsername(User user);
 	
