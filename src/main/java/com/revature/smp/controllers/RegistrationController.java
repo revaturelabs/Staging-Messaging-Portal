@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.revature.smp.beans.User;
 import com.revature.smp.beans.UserRegistrationRequest;
+import com.revature.smp.exceptions.UsernameExistsException;
 import com.revature.smp.services.RegistrationService;
 
 @RestController
@@ -35,7 +36,7 @@ public class RegistrationController {
 			registrationService.registerAssociate(userRegistration);
 			response.setStatus(HttpServletResponse.SC_OK);
 		}
-		catch (Exception e)
+		catch (UsernameExistsException e)
 		{
 			response.setStatus(HttpServletResponse.SC_CONFLICT);
 			response.addHeader("error", e.toString());

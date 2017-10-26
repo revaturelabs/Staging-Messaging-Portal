@@ -23,10 +23,9 @@ public class UserServiceImpl implements UserService {
 	}
 	
 	@Override
-	public User getByUsername(String username) {
-		
-		User user = userRepo.findByUsername(username);
-		
+	public User getByUsername(String username)
+	{		
+		User user = userRepo.findByUsername(username);		
 		if (user != null)
 		{
 			return user;
@@ -45,6 +44,5 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public User getByEmail(String email) {
 		return userRepo.findByEmail(email);
-	}
-	
+	}	
 }

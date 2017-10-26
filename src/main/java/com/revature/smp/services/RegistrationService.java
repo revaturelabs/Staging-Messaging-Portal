@@ -3,10 +3,11 @@ package com.revature.smp.services;
 import java.util.List;
 
 import com.revature.smp.beans.User;
+import com.revature.smp.exceptions.UsernameExistsException;
 
 public interface RegistrationService {
 
-	void registerAssociate(User userRequest) throws Exception;
+	void registerAssociate(User userRequest) throws UsernameExistsException;
 	
 	String generateUniqueUsername(User user);
 	
