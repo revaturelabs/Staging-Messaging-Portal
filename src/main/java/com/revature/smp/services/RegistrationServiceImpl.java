@@ -22,7 +22,7 @@ public class RegistrationServiceImpl implements RegistrationService {
 	 * Checks if the provided email is already in the database.
 	 * Creates a new user with a random new password and pseudo-random username.
 	 * @param request - contains First name, location, last name and email fields 
-	 * @throws Exception
+	 * @throws UsernameExistsException
 	 */
 	@Override
 	public void registerAssociate(User userRequest) throws UsernameExistsException{
