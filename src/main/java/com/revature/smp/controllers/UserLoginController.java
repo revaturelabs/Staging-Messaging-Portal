@@ -30,7 +30,6 @@ public class UserLoginController  {
 	public ResponseEntity<List<MessageRoom>>  Username(@RequestBody  User username )
 	{
 		User user = userrepo.findByUsername(username.getUsername());
-		System.out.println(username.getPassword());
 		if (user != null && username.getUsername().equals(user.getUsername()) &&
 				username.getPassword().equals(user.getPassword()) &&
 				user.getActive().equals("y"))
