@@ -1,3 +1,33 @@
 
 <h2>Got to registration</h2><br>
 <button ui-sref="tmpState">tmpState</button>
+<div class="container" align="center">
+    <h1 style = 'font-size: 3vw;'>Registration Form</h1>
+    <form ng-submit="register()" >
+      <div class="form-group">
+        <input type="text" placeholder="First name" class="form-control" id="firstName" required
+        ng-model="newUser.firstName" name="firstName">
+      </div>
+
+      <div class="form-group">
+        <input type="text" placeholder="Last name" class="form-control" id="lastName" required
+        ng-model="newUser.lastName" name="lastName">
+      </div>
+      
+      <div class="form-group">
+        <input type="email"  placeholder="Email address" class="form-control" id="email" required
+        ng-model="newUser.email" name="email">
+      </div>
+      
+      <div class="form-group">
+		  <select class="form-control" id="location" required 
+		  ng-model="newUser.locationId" ng-options="location.id as location.place for location in locations" name="location" >
+		    <option value="" selected="true">Choose a location... </option>
+		  </select>
+	  </div>
+
+      <button type="submit" class="btn btn-success">Submit</button>
+      <button ui-sref="tmpState" class='btn'>Cancel</button>
+
+    </form>
+</div>
