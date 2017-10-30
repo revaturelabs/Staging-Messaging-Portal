@@ -19,6 +19,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
 
 import org.springframework.stereotype.Component;
 
@@ -91,6 +92,7 @@ public class User implements Serializable {
 	private String active;
 	
 	@Column(name = "created")
+	@Temporal(javax.persistence.TemporalType.DATE)
 	@JsonIgnore
 	private Date created;
 	
