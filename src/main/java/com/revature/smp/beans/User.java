@@ -22,6 +22,8 @@ import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Component
 @Entity
 @Table(name = "USER_TABLE")
@@ -58,30 +60,38 @@ public class User implements Serializable {
 	private String lastName;
 	
 	@Column(name = "email")
+	@JsonIgnore
 	private String email;
 	
 	@ManyToOne(fetch = FetchType.EAGER, targetEntity = Location.class)
 	@JoinColumn(name = "location_id")
+	@JsonIgnore
 	private Location location;
 	
 	@ManyToOne(fetch = FetchType.EAGER, targetEntity = Status.class)
 	@JoinColumn(name = "status_id")
+	@JsonIgnore
 	private Status status;
 	
 	@ManyToOne(fetch = FetchType.EAGER, targetEntity = Role.class)
 	@JoinColumn(name = "role_id")
+	@JsonIgnore
 	private Role role;
 	
 	@Column(name = "loggedin")
+	@JsonIgnore
 	private String logged;
 	
 	@Column(name = "use_temp")
+	@JsonIgnore
 	private String useTemp;
 	
 	@Column(name = "active")
+	@JsonIgnore
 	private String active;
 	
 	@Column(name = "created")
+	@JsonIgnore
 	private Date created;
 	
 	@OneToMany(fetch = FetchType.EAGER, targetEntity = MessageRoom.class)
