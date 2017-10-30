@@ -17,7 +17,7 @@ import com.revature.smp.repo.UserRepository;
 public class UserLoginController  {
 	
 	@Autowired
-	
+	 
 	UserRepository userrepo;
 	
 	@RequestMapping( value = "/access", method=RequestMethod.POST)
@@ -30,8 +30,7 @@ public class UserLoginController  {
 			user.getActive().equals("y")){
 			return new ResponseEntity<User>(user, HttpStatus.ACCEPTED);
 		}
-		return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
-		
+		return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);	
 	}
 	
 }
