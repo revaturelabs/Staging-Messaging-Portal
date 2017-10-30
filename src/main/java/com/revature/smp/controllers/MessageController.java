@@ -7,9 +7,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,42 +36,52 @@ public class MessageController {
 	@Autowired
 	UserService userSvc;
 	
+	@Autowired
+	HttpSession session;
+	/**
+	 * In order to post a new message, the user must be logged on.
+	 * User is identified by the cookie the supply, and matched with the logged in users in the session.
+	 * @param message: The message that the user wishes to post.
+	 * @param WhosCookie: a cookie just holding the username.
+	 * @return
+	 */
 	@RequestMapping(value="/post", method=RequestMethod.POST)
-	public Map<String, Object> postMessage(@RequestBody Message message) 
+	public void postMessage(@RequestBody Message message, @CookieValue("YonToken") String WhosCookie, HttpServletResponse response) 
 	{
 		boolean success = false;
 		while (!success) 
 		{
-			try {
-				message.setTime(new Date());
-				
+			try
+			{
+				message.setTime(new Date());				
 				success = msgSvc.postMessage(message);
-			} catch (Exception e) {
-				System.out.println("frak... post failed");
 			}
-		}
-		
-		Map<String, Object> responseMap = new HashMap<String, Object>();
-		
+			catch (Exception e)
+			{
+				response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+			}
+		}				
 		if (success)
-			responseMap.put("response", HttpStatus.OK);
+		{
+			response.setStatus(HttpServletResponse.SC_CREATED);
+		}
 		else
-			responseMap.put("response", HttpStatus.I_AM_A_TEAPOT);
-		
-		return responseMap;
+		{
+			response.setStatus(HttpServletResponse.SC_NO_CONTENT);
+		}
 	}
-	
+	/**
+	 * Pulls all the messages from the specified room.
+	 * @param roomId: The room to pull from.
+	 * @param response: For better control over the response.
+	 * @return A list of messages.
+	 */
 	@RequestMapping(value="/fetch-room/{roomId}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
-	public Map<String, Object> fetchMessagesByRoomId(@PathVariable Integer roomId)
+	public ResponseEntity<List<Message>> fetchMessagesByRoomId(@PathVariable Integer roomId,HttpServletResponse response)
 	{
-		List<Message> messageList = new ArrayList<Message>();
-		
-		messageList = msgSvc.getMessagesByRoomId(roomId);
-		
-		Map<String, Object> responseMap = new HashMap<String, Object>();
-		responseMap.put("messages", messageList);
-		
-		return responseMap;
+		List<Message> messageList = new ArrayList<Message>();		
+		messageList = msgSvc.getMessagesByRoomId(roomId);		
+		return new ResponseEntity<List<Message>>(messageList,HttpStatus.OK);
 	}
 	
 	@RequestMapping(value="/fetch-room/public", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
