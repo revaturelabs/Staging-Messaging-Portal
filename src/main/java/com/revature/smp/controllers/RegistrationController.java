@@ -63,5 +63,5 @@ public class RegistrationController {
 	
 	@RequestMapping("/notify-associate")*/
 	
-
+	
 }

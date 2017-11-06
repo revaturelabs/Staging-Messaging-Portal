@@ -26,7 +26,17 @@ angApp.config(function($stateProvider, $urlRouterProvider)
     			}
     		}
     };
+    let loginState={
+    		url:'login',
+    		name:'loginState',
+    		views:{
+    			'loginView':{
+    				templateUrl:"static/templates/login.html",
+    				controller:"loginController"
+    			}
+    		}
+    };
     $stateProvider.state(tmpState);
     $stateProvider.state(registerState);
-
+    $stateProvider.state(loginState);
 });

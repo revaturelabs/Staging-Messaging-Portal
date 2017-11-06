@@ -1,0 +1,22 @@
+<div class="container">
+  <div>
+    <img src="https://3g4d13k75x47q7v53surz1gi-wpengine.netdna-ssl.com/wp-content/themes/revature/imgs/logo.png" class="imageCenter" />
+  </div>
+  <form ng-submit="login()">
+    <div class="input">
+      <input ng-model="user.username" placeholder="Username" required> 
+    </div>
+    <div class="input">
+      <input ng-model="user.password" type="password" placeholder="Password" required>
+    </div>
+    <div class="input">
+      <button class="btn-primary" type="submit" >Login</button>
+    </div>
+  </form>
+  <div class="panel-heading">
+      <a routerLink="/passwordrecover" routerLinkActive = "active">Forgot your password?</a>
+  </div>
+  <div class="panel-heading">
+      <button ui-sref="registerState">Register</button>
+  </div>
+</div>

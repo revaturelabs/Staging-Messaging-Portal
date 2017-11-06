@@ -38,9 +38,9 @@ public class UserLoginController  {
 	@RequestMapping( value = "/access", method=RequestMethod.POST)	
 	public ResponseEntity<List<MessageRoom>>  Username(@RequestBody  User username, HttpServletResponse response)
 	{
-		User user = userrepo.findByUsername(username.getUsername());
-		if(session.getAttribute(user.getUsername()) == null)
+		if(session.getAttribute(username.getUsername()) == null)
 		{
+			User user = userrepo.findByUsername(username.getUsername());
 			if (user != null && username.getUsername().equals(user.getUsername())
 					&& username.getPassword().equals(user.getPassword()) && user.getActive().equals("y"))
 			{
@@ -55,6 +55,7 @@ public class UserLoginController  {
 		}
 		else
 		{
+			User user = (User) session.getAttribute(username.getUsername());
 			return new ResponseEntity<List<MessageRoom>>(user.getMessageRooms(), HttpStatus.ACCEPTED);
 		}
 	}	
